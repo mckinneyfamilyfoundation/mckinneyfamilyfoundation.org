@@ -1,0 +1,83 @@
+---
+layout: base.njk
+---
+
+<header class="cover">
+  <div class="cluster justify-content:space-between">
+    <a href="/" class="logo">Logo Here</a>
+    <nav>
+      <ul class="cluster" role="list">
+        <li>
+          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+        </li>
+        {% for page in collections.pages %}
+          <li>
+            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+              {{ page.data.title }}
+            </a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="stack centered ">
+    <h1>McKinney Family Foundation</h1>
+    <p>Building a sustainable Indiana</p>
+  </div>
+  <p></p>
+</header>
+<main class="stack">
+  {# Affiliation Logos Banner #}
+  
+<section class="switcher bg-dark">
+  <div class="frame">
+    <img src="/images/skyline.jpg" alt="Beijing highway from bridge at night" loading="lazy"></>
+  </div>
+  <div class="box invert">
+    <div class="stack">
+      <h2>Our Mission</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam.</p>
+      <a class="button">Click Here</a>
+    </div>
+  </div>
+</section>
+{# Areas of Focus Cards #}
+<section class="grid">
+  <div class="box invert">
+    <div class="frame">
+      <img src="images/skyline.jpg" alt=""></div>
+      <div class="box invert">
+        <div class="stack">
+          <h4>Our Focus</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box invert">
+    <div class="frame">
+      <img src="images/skyline.jpg" alt=""></div>
+      <div class="box invert">
+        <div class="stack">
+          <h4>Our Focus</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box invert">
+    <div class="frame">
+      <img src="images/skyline.jpg" alt=""></div>
+      <div class="box invert">
+        <div class="stack">
+          <h4>Our Focus</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></main>

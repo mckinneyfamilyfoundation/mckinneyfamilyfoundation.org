@@ -8,15 +8,14 @@
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
-  {% include "nav.njk" %}
 
   {{ content | safe }}
 
-  <footer>
+  {# <footer>
     <div>
       <p>&copy; {% year %} {{ meta.siteName }}{% if meta.authorName %} • {{ meta.authorName }}{% endif %}</p>
     </div>
-  </footer>
+  </footer> #}
 
 </body>
 </html>
