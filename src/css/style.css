@@ -51,6 +51,11 @@
 ul,
 ol {
   list-style: none;
+  padding: 0;
+}
+
+p {
+  max-width: 60ch;
 }
 
 /* cover primitive */
@@ -198,6 +203,10 @@ img {
   text-align: center;
 }
 
+.align-self\:flex-end {
+  align-self: flex-end;
+}
+
 .justify-content\:space-between {
   justify-content: space-between;
 }
@@ -221,6 +230,10 @@ img {
 
 .padding\:s1 {
   padding: var(--s1);
+}
+
+.padding\:s3 {
+  padding: var(--s3);
 }
 
 .aff {

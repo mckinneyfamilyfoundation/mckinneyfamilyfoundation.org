@@ -1,0 +1,108 @@
+---
+layout: base.njk
+---
+
+<header>
+    <div class="cluster justify-content:space-between padding:s1">
+        <a href="/" class="logo">Logo Here</a>
+        <nav>
+            <ul class="cluster" role="list">
+                <li>
+                    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                </li>
+                {% for page in collections.pages %}
+                    <li>
+                        <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                            {{ page.data.title }}
+                        </a>
+                    </li>
+                {%- endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    {# Our Story #}
+    <section class="switcher">
+        <div class="frame">
+            <img src="/images/skyline.jpg" alt="Beijing highway from bridge at night" loading="lazy"></>
+        </div>
+        <div class="box invert cover">
+            <div class="centered stack">
+                <h1>Grants & Partnerships</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+    </section>
+    {# Staff Cards #}
+    <section>
+        <div class="box headline">
+            <h2 class="">Grants</h2>
+        </div>
+        <div class="box">
+            <div class="grid">
+                <div class="box invert">
+                    <div class="frame">
+                        <img src="../images/skyline.jpg" alt=""></>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack">
+                            <h3>Grantee</h3>
+                            <p>Sector</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box invert">
+                    <div class="frame">
+                        <img src="../images/skyline.jpg" alt=""></>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack">
+                            <h3>Grantee</h3>
+                            <p>Sector</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box invert">
+                    <div class="frame">
+                        <img src="../images/skyline.jpg" alt=""></>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack">
+                            <h3>Grantee</h3>
+                            <p>Sector</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# Footer #}
+    <footer>
+        <div class="box invert">
+            <div class="grid">
+                <div class="box invert stack">
+                    <h2>Logo Here</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="cluster justify-content:flex-end">
+                    <ul class="" role="list">
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
