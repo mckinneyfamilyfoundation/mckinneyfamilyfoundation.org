@@ -1,5 +1,5 @@
 ---
-title: Smol 11ty Starter
+title: McKinney Family Foundation
 layout: page.njk
 intro:
   main: "McKinney Family Foundation"
