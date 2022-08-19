@@ -1,5 +1,5 @@
 ---
 title: About
-layout: about.njk
+layout: about-us.njk
 tags: pages
 ---

@@ -16,6 +16,14 @@
   --color-light: #fafafa;
   --color-mid: grey;
 
+  --step--2: clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem);
+  --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
+  --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem);
+  --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
   --ratio: 1.5;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
@@ -29,7 +37,7 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
 
-  --measure: 65ch;
+  --measure: 95ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8*var(--ratio));
   --border-thin: var(--s-5);
@@ -41,11 +49,73 @@
   color: var(--color-dark)
 }
 
+/* typography */
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+h4 {
+  font-size: var(--step-0);
+}
+
+p {
+  font-size: var(--step--1);
+}
+
+a {
+  font-size: var(--step--1);
+}
+
 /* Very Smol Reset */
 
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+details summary>* {
+  display: inline;
+}
+
+details>summary {
+
+  list-style: none;
+}
+
+summary {
+  border-bottom: solid 5px #000;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  content: ' ►';
+  display: inline;
+  padding: 5px;
+  font-size: 20px;
+}
+
+details[open] summary:after {
+  content: " ▼";
+  border-bottom: none;
+}
+
+details[open] summary {
+  border-bottom: none;
 }
 
 ul,
@@ -54,26 +124,6 @@ ol {
   padding: 0;
 }
 
-p {
-  max-width: 60ch;
-}
-
-/* cover primitive */
-
-.cover {
-  display: flex;
-  flex-direction: column;
-  min-block-size: 30vh;
-  padding: var(--s1);
-}
-
-.cover>* {
-  margin-block: 1rem;
-}
-
-.cover>.centered {
-  margin-block: auto;
-}
 
 /* stack primitive */
 
@@ -96,7 +146,7 @@ p {
 .cluster {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space, 1rem);
+  gap: var(--s1, 1rem);
   justify-content: flex-start;
   align-items: center;
 }
@@ -120,8 +170,8 @@ p {
 }
 
 .box.gray {
-  color: var(--color-darkish);
-  background-color: var(--color-lightish);
+  color: var(--color-lightish);
+  background-color: var(--color-darkish);
 }
 
 
@@ -161,10 +211,18 @@ p {
   object-fit: cover;
 }
 
+.frame.staff {
+  --n: 1;
+  --d: 1;
+  aspect-ratio: var(--n) / var(--d);
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+}
+
 .center {
   box-sizing: content-box;
   margin-inline: auto;
-  text-align: start;
   max-inline-size: var(--measure);
 }
 
@@ -203,7 +261,7 @@ p {
   block-size: auto;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-color: #fff #000;
+  scrollbar-color: #000 #fff;
 }
 
 .reel::-webkit-scrollbar {
@@ -239,9 +297,20 @@ p {
 
 
 /* utility */
+.wrapper {
+  max-width: 70rem;
+  padding: 0 var(--s1);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
 
 .text-align\:center {
   text-align: center;
+}
+
+.max-width\:30ch {
+  max-width: 30ch;
 }
 
 .align-self\:flex-end {
@@ -269,6 +338,14 @@ p {
   color: var(--color-light);
 }
 
+.color\:color-dark {
+  color: var(--color-dark);
+}
+
+.color\:color-light {
+  color: var(--color-light);
+}
+
 .padding\:s1 {
   padding: var(--s1);
 }
@@ -289,18 +366,35 @@ p {
   padding-bottom: 0;
 }
 
-.button {
-  padding: var(--s-2);
-  inline-size: fit-content;
-  color: var(--color-dark);
-  background-color: var(--color-light);
+
+
+.measure {
+  max-width: var(--measure);
 }
 
-.button * {
-  color: inherit;
+/* bg-image */
+
+.bg-image {
+  --bg-image: url("../images/skyline.jpg");
+  --bg-image-opacity: 0.60;
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 500px;
+
+  position: relative;
+  isolation: isolate;
 }
 
-.button.invert {
-  color: var(--color-light);
-  background-color: var(--color-dark);
+.bg-image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  filter: contrast(0.6);
+  opacity: var(--bg-image-opacity);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
 }

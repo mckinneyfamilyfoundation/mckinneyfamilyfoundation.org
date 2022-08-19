@@ -3,121 +3,127 @@ layout: base.njk
 ---
 
 <header>
-    <div class="cluster justify-content:space-between padding:s1">
-        <a href="/" class="logo">Logo Here</a>
-        <nav>
-            <ul class="cluster" role="list">
-                <li>
-                    <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                </li>
-                {% for page in collections.pages %}
+    <div class="box invert">
+        <div class="cluster justify-content:space-between center">
+            <a href="/" class="logo">Logo Here</a>
+            <nav>
+                <ul class="cluster" role="list">
                     <li>
-                        <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
-                            {{ page.data.title }}
-                        </a>
+                        <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
                     </li>
-                {%- endfor %}
-            </ul>
-        </nav>
+                    {% for page in collections.pages %}
+                        <li>
+                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                {{ page.data.title }}
+                            </a>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        </div>
     </div>
     {# TODO: FIX GRID REACTION TO IMAGE AKA MAKE IMAGE FIT THE GRID CELL THRIUGH RESIZING #}
 </header>
 <main>
-    {# Our Mission #}
-    <section class="switcher">
-        <div class="frame">
-            <img src="/images/skyline.jpg" alt="Beijing highway from bridge at night" loading="lazy"></>
+    {# intro big picture #}
+    <section>
+        <div class="bg-image box">
+            <div class="center">
+                <h1 class="">McKinney Family Foundation</h1>
+                <p>
+                    Building a sustainable Indiana
+                </p>
+            </div>
         </div>
-        <div class="box invert cover">
-            <div class="centered stack">
-                <h2>Our Mission</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.</p>
-                <a class="button">Click Here</a>
+    </section>
+    {# Our Mission #}
+    <section>
+        <div class="box invert">
+            <div class="center">
+                <div class="stack">
+                    <h2 class="">Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.</p>
+                </div>
             </div>
         </div>
     </section>
     {# Focus Cards #}
     <section>
-        <div class="box headline">
-            <h2 class="">Focus Areas</h2>
-        </div>
-        <div class="box">
-            <div class="grid">
-                <div class="box invert">
-                    <div class="stack">
-                        <div class="frame">
-                            <img src="images/skyline.jpg" alt=""></>
-                        </div>
-                        <h3>Our Focus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                </div>
-                <div class="box invert">
-                    <div class="stack">
-                        <div class="frame">
-                            <img src="images/skyline.jpg" alt=""></>
-                        </div>
-                        <h3>Our Focus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                </div>
-                <div class="box invert">
-                    <div class="stack">
-                        <div class="frame">
-                            <img src="images/skyline.jpg" alt=""></>
-                        </div>
-                        <h3>Our Focus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {# Board of Directors #}
-    <section>
-        <div class="box invert padding:s3">
+        <div class="box ">
             <div class="center stack">
-                <h2 class="text-align:center">Our Story</h2>
+                <h2>Focus Areas</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam.</p>
-                {# <a class=" button">Click Here</a> #}
+                <div class="grid">
+                    <div class="box invert">
+                        <div class="stack">
+                            <div class="frame">
+                                <img src="images/skyline.jpg" alt=""></>
+                            </div>
+                            <h3>Our Focus</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack">
+                            <div class="frame">
+                                <img src="images/skyline.jpg" alt=""></>
+                            </div>
+                            <h3>Our Focus</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack ">
+                            <div class="frame">
+                                <img src="images/skyline.jpg" alt=""></>
+                            </div>
+                            <h3>Our Focus</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     {# News Reel #}
-    {# need to fix the img interaction on news reel #}
     <section>
-        <div class="box headline">
-            <h2 class="">News Reel</h2>
-        </div>
-        <div class="box">
-            <div class="reel overflowing">
-                <div class="box invert">
-                    <div class="stack">
-                        {# <img src="images/skyline.jpg" alt=""></> #}
-                        <h3>Our Focus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.</p>
+        <div class="box ">
+            <div class="stack center">
+                <h2 class="">News Reel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                <div class="reel overflowing">
+                    <div class="box invert">
+                        <div
+                            class="stack">
+                            {# <img src="images/skyline.jpg" alt=""></> #}
+                            <h3>News</h3>
+                            <p class="max-width:30ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box invert">
-                    <div class="stack">
-                        {# <img src="images/skyline.jpg" alt=""></> #}
-                        <h3>Our Focus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.</p>
+                    <div class="box invert">
+                        <div
+                            class="stack">
+                            {# <img src="images/skyline.jpg" alt=""></> #}
+                            <h3>News</h3>
+                            <p class="max-width:30ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box invert">
-                    <div class="stack">
-                        {# <img src="images/skyline.jpg" alt=""></> #}
-                        <h3>Our Focus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam.</p>
+                    <div class="box invert">
+                        <div
+                            class="stack">
+                            {# <img src="images/skyline.jpg" alt=""></> #}
+                            <h3>News</h3>
+                            <p class="max-width:30ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,8 +132,8 @@ layout: base.njk
     {# Footer #}
     <footer>
         <div class="box invert">
-            <div class="grid">
-                <div class="box invert stack">
+            <div class="center grid">
+                <div class="stack">
                     <h2>Logo Here</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                 </div>
