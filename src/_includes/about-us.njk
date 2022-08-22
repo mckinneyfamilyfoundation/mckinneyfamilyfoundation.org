@@ -3,9 +3,9 @@ layout: base.njk
 ---
 
 <header>
-    <div class="box invert">
+    <div class="box">
         <div class="cluster justify-content:space-between center">
-            <a href="/" class="logo">Logo Here</a>
+            <a href="/" class="">Logo Here</a>
             <nav>
                 <ul class="cluster" role="list">
                     <li>
@@ -27,7 +27,7 @@ layout: base.njk
 <main>
     {# intro big picture #}
     <section>
-        <div class="bg-image box">
+        <div class="bg-image box brand">
             <div class="center">
                 <h1 class="">About Us</h1>
                 <p>
@@ -41,80 +41,93 @@ layout: base.njk
         <div class="box">
             <div class="center switcher">
                 <div class="stack">
-                    <h2 class="">Our Story</h2>
+                    <h2>Our Story</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua. Ut enim ad minim veniam.</p>
                 </div>
-                <div class="frame"><img src="../images/skyline.jpg" alt=""></div>
+                <div class="frame">
+                    <img src="../images/skyline.jpg" alt=""></>
+                </div>
             </div>
         </div>
     </section>
+    <div class="hr-box">
+        <hr class="center"></>
+    </div>
+    {# Our Story + Our Mission#}
+    <section>
+        <div class="box">
+            <div class="center switcher flex-wrap:wrap-reverse">
+                <div class="frame">
+                    <img src="../images/skyline.jpg" alt=""></>
+                </div>
+                <div class="stack">
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hr-box">
+        <hr class="center"></>
+    </div>
     {# Board Members #}
     <section>
         <div class="box">
-            <div class="center">
-                <div class="stack">
-                    <h2 class="">Board Members</h2>
-                    
-                        <ul class="cluster justify-content:flex-start">
-                            
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                            <li>
-                                <h3>Alex</h3>
-                            </li>
-                        </ul>
-                    
+            <div class="center stack">
+                <h2>Board</h2>
+            </div>
+            <div class="box center">
+                <div class="grid">
+                    <div class="box">
+                        <div class="stack">
+                            <h4 class="text-align:center">Robert H. McKinney</h4>
+                            <p class="text-align:center">Chair</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="stack">
+                            <h4 class="text-align:center">Marni McKinney Waterfield</h4>
+                            <p class="text-align:center">President</p>
+                        </div>
+                    </div>
+                    <div class="box ">
+                        <div class="stack">
+                            <h4 class="text-align:center">Kevin K. McKinney</h4>
+                            <p class="text-align:center">Vice President</p>
+                        </div>
+                    </div>
+                    <div class="box ">
+                        <div class="stack">
+                            <h4 class="text-align:center">Lisa C. McKinney</h4>
+                            <p class="text-align:center">Treasurer</p>
+                        </div>
+                    </div>
+                    <div class="box ">
+                        <div class="stack">
+                            <h4 class="text-align:center">Robert C. McKinney</h4>
+                            <p class="text-align:center">Director</p>
+                        </div>
+                    </div>
+                    <div class="box ">
+                        <div class="stack">
+                            <h4 class="text-align:center">Kent A. McKinney</h4>
+                            <p class="text-align:center">Director</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    {# Our Mission #}
-    <section>
-        <div class="box">
-            <div class="center switcher">
-                
-                <div class="frame"><img src="../images/skyline.jpg" alt=""></div>
-                <div class=" stack">
-                    <h2 class="">Our Mission</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="hr-box">
+        <hr class="center"></>
+    </div>
     {# Focus Cards #}
     <section>
         <div class="box">
             <div class="center stack">
                 <h2>Staff</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.</p>
             </div>
             <div class="box center">
                 <div class="grid">
@@ -123,7 +136,7 @@ layout: base.njk
                             <div class="frame staff">
                                 <img src="../images/skyline.jpg" alt=""></>
                             </div>
-                            <h3 class="text-align:center">Stephanie</h3>
+                            <h4 class="text-align:center">Stephanie</h4>
                             <p class="text-align:center">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
@@ -132,7 +145,7 @@ layout: base.njk
                             <div class="frame staff">
                                 <img src="../images/skyline.jpg" alt=""></>
                             </div>
-                            <h3 class="text-align:center">Angelica</h3>
+                            <h4 class="text-align:center">Angelica</h4>
                             <p class="text-align:center">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
@@ -141,10 +154,22 @@ layout: base.njk
                             <div class="frame staff">
                                 <img src="../images/skyline.jpg" alt=""></>
                             </div>
-                            <h3 class="text-align:center">Victoria</h3>
+                            <h4 class="text-align:center">Victoria</h4>
                             <p class="text-align:center">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# CTA Contact #}
+    <section>
+        <div class="box brand">
+            <div class="center">
+                <div class="stack">
+                    <h2 class="">Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </div>
         </div>

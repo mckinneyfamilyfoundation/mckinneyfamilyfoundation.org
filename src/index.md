@@ -1,6 +1,6 @@
 ---
 title: McKinney Family Foundation
-layout: page.njk
+layout: home.njk
 intro:
   main: "McKinney Family Foundation"
   tagline: "Building A Sustainable Indiana"

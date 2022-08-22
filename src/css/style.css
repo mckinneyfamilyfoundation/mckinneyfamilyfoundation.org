@@ -15,6 +15,8 @@
   --color-lightish: #e6e6e6;
   --color-light: #fafafa;
   --color-mid: grey;
+  --color-brand: #B4D586;
+  --color-brand-text: #19220c;
 
   --step--2: clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem);
   --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
@@ -40,7 +42,7 @@
   --measure: 95ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8*var(--ratio));
-  --border-thin: var(--s-5);
+  --border-thin: var(--s-4);
   --border-thick: var(--s-2);
   line-height: var(--ratio);
   font-size: calc(.333vw + 1em);
@@ -59,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--step-1);
+  font-size: var(--step-0);
 }
 
 h4 {
@@ -85,6 +87,7 @@ a {
 .nav {
   text-decoration: none;
 }
+
 details summary {
   cursor: pointer;
 }
@@ -99,7 +102,6 @@ details>summary {
 }
 
 summary {
-  border-bottom: solid 5px #000;
 }
 
 summary::-webkit-details-marker {
@@ -160,8 +162,8 @@ ol {
 .box {
   padding: var(--s1);
 
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  color: var(--color-brand-text);
+  background-color: var(--color-lightish);
 }
 
 .box * {
@@ -169,14 +171,15 @@ ol {
 }
 
 .box.invert {
-  color: var(--color-light);
-  background-color: var(--color-dark);
+  color: var(--color-lightish);
+  background-color: var(--color-brand-text);
 }
 
-.box.gray {
-  color: var(--color-lightish);
-  background-color: var(--color-darkish);
+.box.brand {
+  color: var(--color-brand-text);
+  background-color: var(--color-brand);
 }
+
 
 
 /* switcher primitive */
@@ -267,7 +270,6 @@ ol {
   block-size: auto;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-color: #000 #fff;
 }
 
 .reel::-webkit-scrollbar {
@@ -275,12 +277,13 @@ ol {
 }
 
 .reel::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: var(--color-brand-text);
+
 }
 
 .reel::-webkit-scrollbar-thumb {
-  background-color: #000;
-  background-image: linear-gradient(#000 0, #000 0.25rem, #fff 0.25rem, #fff 0.75rem, #000 0.75rem);
+  background-color: var(--color-lightish);
+  background-image: linear-gradient(var(--color-brand-text) 0, var(--color-brand-text) 0.25rem, var(--color-lightish) 0.25rem, var(--color-lightish) 0.75rem, var(--color-brand-text) 0.75rem);
 }
 
 .reel>* {
@@ -357,7 +360,18 @@ ol {
 }
 
 .padding\:s1 {
-  padding: var(--s1);
+  padding-left: var(--s3);
+  padding-right: var(--s3);
+
+}
+
+.border-bottom {
+  border-bottom: solid var(--border-thin) #19220c;
+  width: fit-content;
+}
+
+.flex-wrap\:wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .padding\:s3 {
@@ -372,10 +386,13 @@ ol {
   grid-gap: 0;
 }
 
-.headline {
-  padding-bottom: 0;
-}
+/* .radius {
+  border-radius: 0.50rem;
+} */
 
+.logo {
+  height: 75px;
+}
 
 
 .measure {
@@ -385,7 +402,7 @@ ol {
 /* bg-image */
 
 .bg-image {
-  --bg-image: url("../images/skyline.jpg");
+  --bg-image: url("../images/sunrise.jpg");
   --bg-image-opacity: 0.60;
 
   display: grid;
@@ -407,4 +424,11 @@ ol {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
+}
+
+.hr-box {
+  padding-right: var(--s1);
+  padding-left: var(--s1);
+  color: var(--color-brand-text);
+  background-color: var(--color-lightish);
 }

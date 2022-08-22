@@ -2,82 +2,179 @@
 layout: base.njk
 ---
 
-<header class="cover">
-  <div class="cluster justify-content:space-between">
-    <a href="/" class="logo">Logo Here</a>
-    <nav>
-      <ul class="cluster" role="list">
-        <li>
-          <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-        </li>
-        {% for page in collections.pages %}
-          <li>
-            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
-              {{ page.data.title }}
+<header>
+    <div class="box">
+        <div class="cluster justify-content:space-between center">
+            <a href="/">
+                Logo Here
             </a>
-          </li>
-        {%- endfor %}
-      </ul>
-    </nav>
-  </div>
-  <div class="stack centered ">
-    <h1>McKinney Family Foundation</h1>
-    <p>Building a sustainable Indiana</p>
-  </div>
-  <p></p>
+            <nav>
+                <ul class="cluster" role="list">
+                    <li>
+                        <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                    </li>
+                    {% for page in collections.pages %}
+                        <li>
+                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                {{ page.data.title }}
+                            </a>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
-<main class="stack">
-  {# Affiliation Logos Banner #}
-  
-<section class="switcher bg-dark">
-  <div class="frame">
-    <img src="/images/skyline.jpg" alt="Beijing highway from bridge at night" loading="lazy"></>
-  </div>
-  <div class="box invert">
-    <div class="stack">
-      <h2>Our Mission</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam.</p>
-      <a class="button">Click Here</a>
-    </div>
-  </div>
-</section>
-{# Areas of Focus Cards #}
-<section class="grid">
-  <div class="box invert">
-    <div class="frame">
-      <img src="images/skyline.jpg" alt=""></div>
-      <div class="box invert">
-        <div class="stack">
-          <h4>Our Focus</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.</p>
+<main>
+    {# intro big picture #}
+    <section>
+        <div class="bg-image box brand">
+            <div class="center">
+                <h1 class="">McKinney Family Foundation</h1>
+                <p>
+                    Building a sustainable Indiana
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="box invert">
-    <div class="frame">
-      <img src="images/skyline.jpg" alt=""></div>
-      <div class="box invert">
-        <div class="stack">
-          <h4>Our Focus</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.</p>
+    </section>
+    {# Our Mission #}
+    <section>
+        <div class="box">
+            <div class="center switcher">
+                <div class="stack">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="frame">
+                    <img src="../images/skyline.jpg" alt=""></>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <div class="hr-box">
+        <hr class="center"></>
     </div>
-  </div>
-  <div class="box invert">
-    <div class="frame">
-      <img src="images/skyline.jpg" alt=""></div>
-      <div class="box invert">
-        <div class="stack">
-          <h4>Our Focus</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.</p>
+    {# Focus Cards #}
+    <section>
+        <div class="box ">
+            <div class="center stack">
+                <h2>Focus Areas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                <div class="grid">
+                    <div class="box invert radius">
+                        <div class="stack">
+                            <div class="frame">
+                                <img src="images/skyline.jpg" alt=""></>
+                            </div>
+                            <h3>Energy</h3>
+                            <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+                        </div>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack">
+                            <div class="frame">
+                                <img src="images/skyline.jpg" alt=""></>
+                            </div>
+                            <h3>Agriculture</h3>
+                            <p>Transforming agricultural infrastructure to ensure sustainable methods and improve the distribution, affordability
+                                and availability of locally grown nutritious food.</p>
+                        </div>
+                    </div>
+                    <div class="box invert">
+                        <div class="stack ">
+                            <div class="frame">
+                                <img src="images/skyline.jpg" alt=""></>
+                            </div>
+                            <h3>Leadership</h3>
+                            <p>Ensuring the long-term viability of the nonprofit environmental sector through capacity building and leadership
+                                development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <div class="hr-box">
+        <hr class="center"></>
     </div>
-  </div>
-</section></main>
+    {# News Reel #}
+    <section>
+        <div class="box">
+            <div class="stack center">
+                <h2>News Reel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                <div class="reel overflowing">
+                    <div class="box invert">
+                        <div
+                            class="stack">
+                            {# <img src="images/skyline.jpg" alt=""></> #}
+                            <h3>News</h3>
+                            <p class="max-width:30ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="box invert">
+                        <div
+                            class="stack">
+                            {# <img src="images/skyline.jpg" alt=""></> #}
+                            <h3>News</h3>
+                            <p class="max-width:30ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="box invert">
+                        <div
+                            class="stack">
+                            {# <img src="images/skyline.jpg" alt=""></> #}
+                            <h3>News</h3>
+                            <p class="max-width:30ch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# CTA Contact #}
+    <section>
+        <div class="box brand">
+            <div class="center">
+                <div class="stack">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# Footer #}
+    <footer>
+        <div class="box invert">
+            <div class="center grid">
+                <div class="stack">
+                    <h2>Logo Here</h2>
+                    <p>Building a sustainable Indiana.</p>
+                </div>
+                <div class="cluster justify-content:flex-end">
+                    <ul class="" role="list">
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                        <li>
+                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
