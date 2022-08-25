@@ -1,0 +1,129 @@
+---
+layout: base.njk
+---
+
+<header>
+    <div class="box nav invert">
+        <div class="cluster justify-content:space-between">
+            <a href="/" class="logo">
+                <img src="../images/mff-logo.svg" alt=""></>
+            </a>
+            <nav>
+                <ul class="cluster" role="list">
+                    {% for page in collections.pages %}
+                        <li>
+                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                {{ page.data.title }}
+                            </a>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="bg-image box">
+            <div class="">
+                <h1>About us</h1>
+                <p>Staff & Board</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box brand leaf">
+            <div class="center bg-image1">
+                <div class="justify-content:center stack">
+                    <h2 class="text-align:center">Meet Our Team</h2>
+                    <p class="text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="/about-us" class=" text-align:center button">Hello there</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <div class="center stack">
+                <h2>Staff</h2>
+            </div>
+            <div class="box center">
+                <div class="grid">
+                    <div class="box">
+                        <div class="stack">
+                            <div class="frame staff">
+                                <img src="../images/skyline.jpg" alt=""></>
+                            </div>
+                            <h4 class="text-align:center">Stephanie</h4>
+                            <p class="text-align:center">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="stack">
+                            <div class="frame staff">
+                                <img src="../images/skyline.jpg" alt=""></>
+                            </div>
+                            <h4 class="text-align:center">Angelica</h4>
+                            <p class="text-align:center">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                    <div class="box ">
+                        <div class="stack">
+                            <div class="frame staff">
+                                <img src="../images/skyline.jpg" alt=""></>
+                            </div>
+                            <h4 class="text-align:center">Victoria</h4>
+                            <p class="text-align:center">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box justify-content:center stack">
+            <h2 class="text-align:center">News Reel</h2>
+            <div class="grid center">
+                <div class="stack">
+                    <div class="frame">
+                        <img src="images/skyline.jpg" alt=""></>
+                    </div>
+                    <h4>Title of Article</h4>
+                    <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+                    <a href="/" class="button">Read More</a>
+                </div>
+                <div class="stack">
+                    <div class="frame">
+                        <img src="images/skyline.jpg" alt=""></>
+                    </div>
+                    <h4>Title of Article</h4>
+                    <p>Transforming agricultural infrastructure to ensure sustainable methods and improve the distribution, affordability
+                        and availability of locally grown nutritious food.</p>
+                    <a href="/" class="button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="cluster justify-content:space-between box nav invert">
+            <a href="/" class="logo">
+                <img src="../images/mff-logo.svg" alt=""></>
+            </a>
+            <nav>
+                <ul class="cluster" role="list">
+                    <li>
+                        <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                    </li>
+                    {% for page in collections.pages %}
+                        <li>
+                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                {{ page.data.title }}
+                            </a>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</main>

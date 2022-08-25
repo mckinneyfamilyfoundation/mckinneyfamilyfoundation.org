@@ -10,13 +10,16 @@
   --font-serif: Georgia, serif;
   --font-special: Barlow Condensed, Helvetica, sans-serif;
   --font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
-  --color-dark: #050505;
-  --color-darkish: #404040;
-  --color-lightish: #e6e6e6;
-  --color-light: #fafafa;
-  --color-mid: grey;
-  --color-brand: #B4D586;
-  --color-brand-text: #19220c;
+
+
+  --light: #fefbe9;
+
+  --dark-green: #183a1d;
+  --light-green: #e1eedd;
+  --light-green2: #b0c3aa;
+  --lime: #73a24e;
+  --lime2: #a9c25d;
+
 
   --step--2: clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem);
   --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
@@ -39,7 +42,7 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
 
-  --measure: 95ch;
+  --measure: 75ch;
   --line-height: var(--ratio);
   --line-height-small: calc(0.8*var(--ratio));
   --border-thin: var(--s-4);
@@ -57,19 +60,19 @@ h1 {
 }
 
 h2 {
-  font-size: var(--step-2);
+  font-size: var(--step-3);
 }
 
 h3 {
-  font-size: var(--step-0);
+  font-size: var(--step-2);
 }
 
 h4 {
-  font-size: var(--step-0);
+  font-size: var(--step-1);
 }
 
 p {
-  font-size: var(--step--1);
+  font-size: var(--step-0);
 }
 
 a {
@@ -101,8 +104,7 @@ details>summary {
   list-style: none;
 }
 
-summary {
-}
+summary {}
 
 summary::-webkit-details-marker {
   display: none
@@ -160,10 +162,9 @@ ol {
 /* box primitive */
 
 .box {
-  padding: var(--s1);
-
-  color: var(--color-brand-text);
-  background-color: var(--color-lightish);
+  padding: var(--s2);
+  color: var(--dark-green);
+  background-color: var(--light);
 }
 
 .box * {
@@ -171,24 +172,42 @@ ol {
 }
 
 .box.invert {
-  color: var(--color-lightish);
-  background-color: var(--color-brand-text);
+  color: var(--light);
+  background-color: var(--dark-green);
 }
 
-.box.brand {
-  color: var(--color-brand-text);
-  background-color: var(--color-brand);
+.box.green {
+  color: var(--dark-green);
+  background-color: var(--light-green2);
 }
 
+.box.nav {
+  padding: var(--s0) var(--s2);
+}
 
+.wrapper {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
 
 /* switcher primitive */
 
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s1);
-
+  gap: var(--s2);
 }
 
 .switcher>* {
@@ -238,7 +257,7 @@ ol {
 /* grid */
 .grid {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: var(--s2);
 }
 
 @supports (width: min(250px, 100%)) {
@@ -250,7 +269,6 @@ ol {
 .with-sidebar {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s1);
 }
 
 .with-sidebar> :first-child {
@@ -306,13 +324,14 @@ ol {
 
 
 /* utility */
-.wrapper {
-  max-width: 70rem;
-  padding: 0 var(--s1);
+.container {
+  max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
+
+
 
 .text-align\:center {
   text-align: center;
@@ -359,9 +378,8 @@ ol {
   color: var(--color-light);
 }
 
-.padding\:s1 {
-  padding-left: var(--s3);
-  padding-right: var(--s3);
+.padding\:s2 {
+  padding: var(--s0) 0;
 
 }
 
@@ -386,12 +404,12 @@ ol {
   grid-gap: 0;
 }
 
-/* .radius {
+.radius {
   border-radius: 0.50rem;
-} */
+}
 
 .logo {
-  height: 75px;
+  width: 250px;
 }
 
 
@@ -408,11 +426,28 @@ ol {
   display: grid;
   place-content: center;
   text-align: center;
-  min-height: 500px;
+  min-height: 600px;
 
   position: relative;
   isolation: isolate;
 }
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: var(--lime);
+  border-radius: 0.6em;
+  align-self: flex-start;
+  padding: var(--s-2) var(--s0);
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+}
+
 
 .bg-image::after {
   content: "";
@@ -426,9 +461,16 @@ ol {
   background-position: center;
 }
 
-.hr-box {
-  padding-right: var(--s1);
-  padding-left: var(--s1);
-  color: var(--color-brand-text);
-  background-color: var(--color-lightish);
+.leaf {
+  background-image: url(../images/leaf1.svg), url(../images/leaf1-rotated.svg);
+  background-position: right bottom, left top;
+  background-size: 25%, 25%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.leaf2 {
+  background-image: url(../images/leaf2.svg);
+  background-position: 100% 105%;
+  background-size: 45%;
+  background-repeat: no-repeat;
 }
