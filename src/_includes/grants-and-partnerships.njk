@@ -3,14 +3,13 @@ layout: base.njk
 ---
 
 <header>
-    <div class="box">
-        <div class="cluster justify-content:space-between center">
-            <a href="/" class="">Logo Here</a>
+    <div class="box nav">
+        <div class="wrapper cluster justify-content:space-between">
+            <a href="/" class="logo">
+                <img src="../images/mff-logo.svg" alt=""></>
+            </a>
             <nav>
                 <ul class="cluster" role="list">
-                    <li>
-                        <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                    </li>
                     {% for page in collections.pages %}
                         <li>
                             <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
@@ -24,145 +23,56 @@ layout: base.njk
     </div>
 </header>
 <main>
-    {# intro big picture #}
     <section>
-        <div class="bg-image box brand">
-            <div class="center">
-                <h1 class="">Grants & Partnerships</h1>
-                <p>
-                    Building a sustainable Indiana
-                </p>
+        <div class="bg-image box invert">
+            <div class="">
+                <h1>Grants & Partnerships</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
     </section>
-    {# Grant Process #}
     <section>
-        <div class="box">
-            <div class="center">
+        <div class="wrapper">
+            <div class="box green with-sidebar">
+                <h3>Grant</h3>
+                <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+            </div>
+            <div class="box with-sidebar">
+                <h3>Focus Areas</h3>
                 <div class="stack">
-                    <h2 class="">Grant Guidelines</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
+                    <p>
+                        <strong>Energy</strong>: Creating renewable energy jobs and meaningful policy changes to ensure the transition to a
+                            sustainable energy economy.</p>
+                    <p>
+                        <strong>Energy</strong>: Creating renewable energy jobs and meaningful policy changes to ensure the transition to a
+                            sustainable energy economy.</p>
+                    <p>
+                        <strong>Energy</strong>: Creating renewable energy jobs and meaningful policy changes to ensure the transition to a
+                            sustainable energy economy.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="hr-box">
-        <hr class="center"></>
-    </div>
-    {# Grants Cards #}
-    <section>
-        <div class="box ">
-            <div class="center stack">
-                <details>
-                    <summary>
-                        <h2>Grantees</h2>
-                    </summary>
-                    <div class="grid">
-                        <div class="box invert">
-                            <div class="stack">
-                                <div class="frame">
-                                    <img src="images/skyline.jpg" alt=""></>
-                                </div>
-                                <h4>Our Focus</h4>
-                            </div>
-                        </div>
-                        <div class="box invert">
-                            <div class="stack">
-                                <div class="frame">
-                                    <img src="images/skyline.jpg" alt=""></>
-                                </div>
-                                <h4>Our Focus</h4>
-                            </div>
-                        </div>
-                        <div class="box invert">
-                            <div class="stack ">
-                                <div class="frame">
-                                    <img src="images/skyline.jpg" alt=""></>
-                                </div>
-                                <h4>Our Focus</h4>
-                            </div>
-                        </div>
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-    {# Affiliations #}
-    <section>
-        <div class="box ">
-            <div class="center stack">
-                <details>
-                    <summary>
-                        <h2>Affiliations</h2>
-                    </summary>
-                    <div class="grid">
-                        <div class="box invert">
-                            <div class="stack">
-                                <div class="frame">
-                                    <img src="images/skyline.jpg" alt=""></>
-                                </div>
-                                <h4>Our Focus</h4>
-                            </div>
-                        </div>
-                        <div class="box invert">
-                            <div class="stack">
-                                <div class="frame">
-                                    <img src="images/skyline.jpg" alt=""></>
-                                </div>
-                                <h4>Our Focus</h4>
-                            </div>
-                        </div>
-                        <div class="box invert">
-                            <div class="stack ">
-                                <div class="frame">
-                                    <img src="images/skyline.jpg" alt=""></>
-                                </div>
-                                <h4>Our Focus</h4>
-                            </div>
-                        </div>
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-    {# CTA Contact #}
-    <section>
-        <div class="box brand">
-            <div class="center">
-                <div class="stack">
-                    <h2>Contact Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
+        </section>
+        <footer>
+            <div class="box invert nav">
+                <div class="wrapper cluster justify-content:space-between">
+                    <a href="/" class="logo">
+                        <img src="../images/mff-logo.svg" alt=""></>
+                    </a>
+                    <nav>
+                        <ul class="cluster" role="list">
+                            <li>
+                                <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                            </li>
+                            {% for page in collections.pages %}
+                                <li>
+                                    <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                        {{ page.data.title }}
+                                    </a>
+                                </li>
+                            {%- endfor %}
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </section>
-    {# Footer #}
-    <footer>
-        <div class="box invert">
-            <div class="center grid">
-                <div class="stack">
-                    <h2>Logo Here</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                </div>
-                <div class="cluster justify-content:flex-end">
-                    <ul class="" role="list">
-                        <li>
-                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                        </li>
-                        <li>
-                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                        </li>
-                        <li>
-                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                        </li>
-                        <li>
-                            <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-</main>
+        </footer>
+    </main>

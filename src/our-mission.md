@@ -1,5 +1,5 @@
 ---
 title: Our Mission
-layout: home.njk
+layout: our-mission.njk
 tags: pages
 ---

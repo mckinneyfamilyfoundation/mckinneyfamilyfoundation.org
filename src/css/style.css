@@ -269,10 +269,12 @@ ol {
 .with-sidebar {
   display: flex;
   flex-wrap: wrap;
+  gap: var(--s2);
 }
 
 .with-sidebar> :first-child {
   flex-grow: 1;
+  width: 300px;
 }
 
 .with-sidebar> :last-child {
@@ -280,7 +282,6 @@ ol {
   flex-grow: 999;
   min-inline-size: 50%;
 }
-
 
 
 .reel {
@@ -379,7 +380,7 @@ ol {
 }
 
 .padding\:s2 {
-  padding: var(--s0) 0;
+  padding: var(--s2) 0;
 
 }
 
@@ -464,13 +465,14 @@ ol {
 .leaf {
   background-image: url(../images/leaf1.svg), url(../images/leaf1-rotated.svg);
   background-position: right bottom, left top;
-  background-size: 25%, 25%;
+  background-size: 40vh, 40vh;
   background-repeat: no-repeat, no-repeat;
 }
 
 .leaf2 {
-  background-image: url(../images/leaf2.svg);
-  background-position: 100% 105%;
-  background-size: 45%;
+  background-image: url(../images/leaf3.svg);
+  background-position: left;
+  background-size: 40;
   background-repeat: no-repeat;
+
 }

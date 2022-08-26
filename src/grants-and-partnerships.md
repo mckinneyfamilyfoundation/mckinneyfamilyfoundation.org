@@ -1,5 +1,5 @@
 ---
 title: Grants & Partnerships
-layout: home.njk
+layout: grants-and-partnerships.njk
 tags: pages
 ---
