@@ -1,0 +1,21 @@
+
+<footer>
+    <div class="box invert nav">
+        <div class="wrapper cluster justify-content:space-between">
+            <a href="/" class="logo">
+                <img src="../images/mff-logo.svg" alt=""></>
+            </a>
+            <nav>
+                <ul class="cluster" role="list">
+                    {% for page in collections.pages %}
+                        <li>
+                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                {{ page.data.title }}
+                            </a>
+                        </li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>

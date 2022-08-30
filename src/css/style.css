@@ -87,10 +87,6 @@ a {
   margin: 0;
 }
 
-.nav {
-  text-decoration: none;
-}
-
 details summary {
   cursor: pointer;
 }
@@ -183,6 +179,10 @@ ol {
 
 .box.nav {
   padding: var(--s0) var(--s2);
+}
+
+.box .card {
+  padding: var(--s0) 0;
 }
 
 .wrapper {
@@ -410,7 +410,7 @@ ol {
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
 }
 
 
@@ -465,14 +465,22 @@ ol {
 .leaf {
   background-image: url(../images/leaf1.svg), url(../images/leaf1-rotated.svg);
   background-position: right bottom, left top;
-  background-size: 40vh, 40vh;
+  background-size: 25vh, 25vh;
   background-repeat: no-repeat, no-repeat;
 }
 
 .leaf2 {
-  background-image: url(../images/leaf3.svg);
-  background-position: left;
-  background-size: 40;
+  background-image: url(../images/leaf4.svg);
+  background-position: right;
   background-repeat: no-repeat;
 
 }
+
+nav ul {
+  list-style: none;
+}
+
+nav [aria-current="page"] {
+  text-decoration: underline var(--dark-green);
+}
+

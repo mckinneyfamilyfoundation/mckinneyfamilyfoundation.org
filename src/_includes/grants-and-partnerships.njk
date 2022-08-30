@@ -2,26 +2,6 @@
 layout: base.njk
 ---
 
-<header>
-    <div class="box nav">
-        <div class="wrapper cluster justify-content:space-between">
-            <a href="/" class="logo">
-                <img src="../images/mff-logo.svg" alt=""></>
-            </a>
-            <nav>
-                <ul class="cluster" role="list">
-                    {% for page in collections.pages %}
-                        <li>
-                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
-                                {{ page.data.title }}
-                            </a>
-                        </li>
-                    {%- endfor %}
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
 <main>
     <section>
         <div class="bg-image box invert">
@@ -32,47 +12,114 @@ layout: base.njk
         </div>
     </section>
     <section>
-        <div class="wrapper">
-            <div class="box green with-sidebar">
-                <h3>Grant</h3>
-                <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+        <div class="box green">
+            <div class="wrapper with-sidebar">
+                <h2>Guidelines</h2>
+                <p>
+                    Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy</p>
             </div>
-            <div class="box with-sidebar">
-                <h3>Focus Areas</h3>
-                <div class="stack">
-                    <p>
-                        <strong>Energy</strong>: Creating renewable energy jobs and meaningful policy changes to ensure the transition to a
-                            sustainable energy economy.</p>
-                    <p>
-                        <strong>Energy</strong>: Creating renewable energy jobs and meaningful policy changes to ensure the transition to a
-                            sustainable energy economy.</p>
-                    <p>
-                        <strong>Energy</strong>: Creating renewable energy jobs and meaningful policy changes to ensure the transition to a
-                            sustainable energy economy.</p>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <div class="wrapper">
+                <h2 class="">Current Grantees</h2>
+                <div class="grid">
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <footer>
-            <div class="box invert nav">
-                <div class="wrapper cluster justify-content:space-between">
-                    <a href="/" class="logo">
-                        <img src="../images/mff-logo.svg" alt=""></>
-                    </a>
-                    <nav>
-                        <ul class="cluster" role="list">
-                            <li>
-                                <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
-                            </li>
-                            {% for page in collections.pages %}
-                                <li>
-                                    <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
-                                        {{ page.data.title }}
-                                    </a>
-                                </li>
-                            {%- endfor %}
-                        </ul>
-                    </nav>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <div class="wrapper">
+                <h2 class="">Current Partnerships</h2>
+                <div class="grid">
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
+                    <div class="box card ">
+                        <div class="frame">
+                            <img src="../images/skyline.jpg" alt="">
+                        </div>
+                        <h3 class="">Name</h3>
+                        <p class="">Title.</p>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </section>
+</main>

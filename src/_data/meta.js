@@ -4,5 +4,5 @@ module.exports = {
   url: process.env.URL || "http://localhost:8080",
   siteName: "McKinney Family Foundation",
   siteDescription:
-    "McKinney Family Foundation Building a sustainable Indiana.",
+    "McKinney Family Foundation is Building a Sustainable Indiana.",
 };
