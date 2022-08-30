@@ -274,7 +274,6 @@ ol {
 
 .with-sidebar> :first-child {
   flex-grow: 1;
-  width: 300px;
 }
 
 .with-sidebar> :last-child {
