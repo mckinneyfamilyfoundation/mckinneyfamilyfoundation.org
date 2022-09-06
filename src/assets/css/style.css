@@ -425,8 +425,8 @@ h3+* {
   color: var(--color-light);
 }
 
-.padding\:s2 {
-  padding: var(--s2) 0;
+.padding\:s0 {
+  padding: var(--s0) 0;
 
 }
 
@@ -467,7 +467,7 @@ h3+* {
 /* bg-image */
 
 .bg-image {
-  --bg-image: url("../images/sunrise.jpg");
+  --bg-image: url("images/sunrise.jpg");
   --bg-image-opacity: 0.60;
 
   display: grid;
