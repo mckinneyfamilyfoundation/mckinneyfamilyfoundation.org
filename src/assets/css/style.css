@@ -467,7 +467,7 @@ h3+* {
 /* bg-image */
 
 .bg-image {
-  --bg-image: url("images/sunrise.jpg");
+  --bg-image: url("../images/sunrise.jpg");
   --bg-image-opacity: 0.60;
 
   display: grid;

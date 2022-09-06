@@ -51,8 +51,8 @@ const fadeIn = function () {
     const tagTop = tag.getBoundingClientRect().top;
     const tagBottom = tag.getBoundingClientRect().bottom;
 
-    console.log(tagTop);
-
+/*     console.log(tagTop);
+ */
     if (tagTop < window.innerHeight && tagBottom > 0) {
       tag.style.animation = `fadein 1s ${delay}s forwards`;
       delay = delay + 0.25;
