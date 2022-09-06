@@ -11,9 +11,10 @@
     </title>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   </head>
-  <body class="container">
+  <body class="">
     {% include "header.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
+    <script src="/assets/js/scripts.js"></script>
   </body>
 </html>
