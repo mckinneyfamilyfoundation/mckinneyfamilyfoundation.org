@@ -182,11 +182,13 @@ h3 {
 a {
   color: currentcolor;
   text-decoration-color: var(--color-primary);
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
 }
+
 
 /* Prose */
 
@@ -216,6 +218,9 @@ h3+* {
   margin-block-start: var(--s1, 1.5rem);
 }
 
+.stack-sm>*+* {
+  margin-block-start: var(--s-1, 1rem);
+}
 /* cluster primitive */
 
 .cluster {
@@ -229,7 +234,7 @@ h3+* {
 /* box primitive */
 
 .box {
-  padding: 0 var(--s2);
+  padding: var(--s0);  
 }
 
 .box * {
@@ -505,7 +510,6 @@ button {
   border: 0;
   padding: var(--s-3) var(--s0);
   width: fit-content;
-
 }
 
 .leaf {
