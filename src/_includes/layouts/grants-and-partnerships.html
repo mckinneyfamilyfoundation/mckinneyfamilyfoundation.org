@@ -1,8 +1,5 @@
----
-layout: base.njk
----
-
-<main>
+{% extends "layouts/base.njk" %}
+{% block content %}
     <section class="bg-image bg-green">
         <div class="stack">
             <h1>Grants & Partnerships</h1>
@@ -174,4 +171,4 @@ layout: base.njk
         </toggle-section>
         <script type="module" src="/js/toggle-section.js"></script>
     </section>
-</main>
+{% endblock %}

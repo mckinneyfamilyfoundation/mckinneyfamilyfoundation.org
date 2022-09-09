@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+    <section class="bg-image bg-green">
+        <div class="stack">
+            <h1>{{ intro.title }}</h1>
+            <p>{{ intro.tagline }}</p>
+        </div>
+    </section>
+    <section class="wrapper switcher region js-fade">
+        <div class="frame">
+            <img loading="lazy" src="{{ mission.image }}" alt="{{ mission.imageAlt }}">
+        </div>
+        <div class="justify-content:center stack">
+            <h2>{{ mission.header }}</h2>
+            <p>{{ mission.text }}</p>
+            <button href="{{ mission.buttonUrl }}">{{ mission.buttonText }}</button>
+        </div>
+    </section>
+    <section class="wrapper switcher flex-wrap:wrap-reverse region js-fade">
+        <div class="justify-content:center stack">
+            <h2>{{ team.header }}</h2>
+            <p>{{ team.text }}</p>
+            <button href="{{ team.buttonUrl }}">{{ team.buttonText }}</button>
+        </div>
+        <div class="frame">
+            <img loading="lazy" src="{{ team.image }}" alt="{{ team.imageAlt }}">
+        </div>
+    </section>
+    <section class="wrapper switcher region js-fade">
+        <div class="frame">
+            <img loading="lazy" src="{{ grants.image }}" alt="{{ grants.imageAlt }}">
+        </div>
+        <div class="justify-content:center stack">
+            <h2>{{ grants.header }}</h2>
+            <p>{{ grants.text }}</p>
+            <button href="{{ grants.buttonUrl }}">{{ grants.buttonText }}</button>
+        </div>
+    </section>
+    <section class="wrapper region-bottom stack js-fade">
+        <h2 class="text-align:center" style="margin: auto;">{{ community.header }}</h2>
+        <div class="grid">
+            <div class="stack">
+                <div class="frame">
+                    <img loading="lazy" src="images/skyline.jpg" alt="">
+                </div>
+                <h3>Title of Article</h3>
+                <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+                <a href="/" class="link">Read More</a>
+            </div>
+            <div class="stack">
+                <div class="frame">
+                    <img loading="lazy" src="images/skyline.jpg" alt="">
+                </div>
+                <h3>Title of Article</h3>
+                <p>Transforming agricultural infrastructure to ensure sustainable methods and improve the distribution, affordability and availability of locally grown nutritious food.</p>
+                <a href="/" class="link">Read More</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

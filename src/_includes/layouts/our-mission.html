@@ -1,8 +1,5 @@
----
-layout: base.njk
----
-
-<main>
+{% extends "layouts/base.njk" %}
+{% block content %}
     <section class="bg-image bg-green">
         <div class="stack">
             <h1 style="max-width: 100%">Our Mission</h1>
@@ -42,4 +39,4 @@ layout: base.njk
                 </div>
             </div>
     </section>
-</main>
+{% endblock %}

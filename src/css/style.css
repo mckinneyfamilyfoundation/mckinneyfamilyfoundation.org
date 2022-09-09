@@ -221,6 +221,7 @@ h3+* {
 .stack-sm>*+* {
   margin-block-start: var(--s-1, 1rem);
 }
+
 /* cluster primitive */
 
 .cluster {
@@ -234,7 +235,7 @@ h3+* {
 /* box primitive */
 
 .box {
-  padding: var(--s0);  
+  padding: var(--s0);
 }
 
 .box * {
@@ -535,9 +536,27 @@ nav ul {
 }
 
 nav [aria-current="page"] {
-  text-decoration: underline var(--dark-green);
+  text-decoration: underline 3px var(--lime);
 }
 
+.skip-link {
+  position: absolute;
+  top: var(--s0);
+  left: var(--s0);
+  z-index: 99;
+}
+
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
 
 /* Utilities */
 

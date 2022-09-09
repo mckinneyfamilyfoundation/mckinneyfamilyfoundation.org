@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "Mission",
+      "url": "/mission/"
+    },
+    {
+      "text": "Team",
+      "url": "/team/"
+    },
+    {
+      "text": "Grants & Partnerships",
+      "url": "/grants-and-partnerships/"
+    },
+    {
+      "text": "News",
+      "url": "/news/"
+    }
+  ]
+}
