@@ -1,18 +1,53 @@
 <footer class="bg-green">
-    <div class="wrapper cluster nav justify-content:space-between">
-        <a href="/" class="logo">
-            <img src="../images/mff-logo.svg" alt=""></>
-        </a>
-        <nav>
-            <ul class="cluster" role="list">
-                {% for page in collections.pages %}
+    <div class="wrapper nav cluster justify-content:space-between">
+        <div class="stack-sm">
+            <a href="/" aria-label="{{ site.name }} - home" class="logo">
+                <img src="../images/mff-logo.svg" alt="McKinney Family Foundation Logo">
+                {# {% include "partials/logo.svg" %} #}
+            </a>
+        </div>
+        <nav class="cluster gap:s3">
+            <div class="stack-sm">
+                <h4>heading</h4>
+                <ul role="list">
                     <li>
-                        <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
-                            {{ page.data.title }}
+                        <a>
+                            Hello
                         </a>
                     </li>
-                {%- endfor %}
-            </ul>
+                    <li>
+                        <a>
+                            Hello
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Hello
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack-sm">
+                <h4>heading</h4>
+                <ul role="list">
+                    <li>
+                        <a>
+                            Hello
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Hello
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Hello
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
     </div>
 </footer>

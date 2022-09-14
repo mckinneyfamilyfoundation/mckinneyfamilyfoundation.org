@@ -19,5 +19,8 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@zachleat/details-utils": "^2.0.2"
+  },
+  "devDependencies": {
+    "luxon": "^3.0.3"
   }
 }

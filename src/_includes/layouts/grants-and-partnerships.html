@@ -1,11 +1,6 @@
-{% extends "layouts/base.njk" %}
+{% extends "layouts/base.html" %}
 {% block content %}
-    <section class="bg-image bg-green">
-        <div class="stack">
-            <h1>Grants & Partnerships</h1>
-            <p>Building A Sustainable Indiana</p>
-        </div>
-    </section>
+   {% include "partials/sub-hero.html" %}
     <section class="wrapper region-bottom js-fade">
         <toggle-section class="padding:s0 stack-sm" open="false">
             <h2>Funding Guidelines</h2>

@@ -5,13 +5,34 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
   eleventyConfig.addLayoutAlias('home', 'layouts/home.html');
+  eleventyConfig.addLayoutAlias('mission', 'layouts/mission.html');
+  eleventyConfig.addLayoutAlias('about-us', 'layouts/about-us.html');
+
+  eleventyConfig.addLayoutAlias('grants', 'layouts/grants-and-partnerships.html');
+
 
   // Returns a collection of blog posts in reverse date order
-  eleventyConfig.addCollection('news', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().slice(0,2);
+  eleventyConfig.addCollection('featuredNews', collection => {
+    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 2);
   });
-
-  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addCollection('news', collection => {
+    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();
+  });
+  eleventyConfig.addCollection('focusAreas', collection => {
+    return [...collection.getFilteredByGlob('./src/focusAreas/*.md')].reverse();
+  });
+  eleventyConfig.addCollection('board', collection => {
+    return [...collection.getFilteredByGlob('./src/board/*.md')];
+  });
+  eleventyConfig.addCollection('staff', collection => {
+    return [...collection.getFilteredByGlob('./src/staff/*.md')];
+  });
+  eleventyConfig.addCollection('grantees', collection => {
+    return [...collection.getFilteredByGlob('./src/grantees/*.md')];
+  });
+  eleventyConfig.addCollection('partnerships', collection => {
+    return [...collection.getFilteredByGlob('./src/partnerships/*.md')];
+  });
 
   return {
     markdownTemplateEngine: 'njk',

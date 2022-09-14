@@ -1,9 +1,9 @@
 ---
-image: '../images/sunrise.jpg'
-imageAlt: 'Indianapolis Skyline as the sun rises'
+image: '../images/skyline.jpg'
+imageAlt: 'Indianapolis Skyline'
 grantee: Earth Charter Indiana
-date: '2022-04-20'
-articleTitle: 'New news On the Block'
+date: '2021-04-20'
+articleTitle: 'news 2 news On the Block'
 articleSummary: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
 url: 'google.com'
 ---
