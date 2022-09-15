@@ -5,12 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/news.md
-  label: News
-  match: "**/*"
-- type: document
-  path: src/grants-and-partnerships.md
-  label: Grants & Partnerships
+  path: src/index.md
+  label: Home
   match: "**/*"
 - type: document
   path: src/focus-areas.md
@@ -21,8 +17,12 @@ sections:
   label: About Us
   match: "**/*"
 - type: document
-  path: src/index.md
-  label: Home
+  path: src/grants-and-partnerships.md
+  label: Grants & Partnerships
+  match: "**/*"
+- type: document
+  path: src/news.md
+  label: News
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
