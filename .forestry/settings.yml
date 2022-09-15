@@ -4,6 +4,28 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Data
+- type: directory
+  path: src/partnerships
+  label: Partnerships
+  create: documents
+  match: "**/*"
+- type: directory
+  path: src/news
+  label: News
+  create: documents
+  match: "**/*"
+- type: directory
+  path: src/grantees
+  label: Grantees
+  create: documents
+  match: "**/*"
+- type: directory
+  path: src/board
+  label: Board
+  create: documents
+  match: "**/*"
 - type: directory
   path: src/staff
   label: Staff
