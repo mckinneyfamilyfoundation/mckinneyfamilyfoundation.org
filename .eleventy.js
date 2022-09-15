@@ -5,15 +5,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
   eleventyConfig.addLayoutAlias('home', 'layouts/home.html');
-  eleventyConfig.addLayoutAlias('mission', 'layouts/mission.html');
+  eleventyConfig.addLayoutAlias('focus-areas', 'layouts/focus-areas.html');
   eleventyConfig.addLayoutAlias('about-us', 'layouts/about-us.html');
-
   eleventyConfig.addLayoutAlias('grants', 'layouts/grants-and-partnerships.html');
+  eleventyConfig.addLayoutAlias('news', 'layouts/news.html');
 
 
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection('featuredNews', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 2);
+    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 3);
   });
   eleventyConfig.addCollection('news', collection => {
     return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();

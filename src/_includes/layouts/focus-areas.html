@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+    {% include "partials/hero.html" %}
+    <section class="wrapper switcher region js-fade">
+        <div class="frame">
+            <img loading="lazy" src="{{ energy.image }}" alt="{{ energy.imageAlt }}">
+        </div>
+        <div class="justify-content:center stack-sm">
+            <h2>{{ energy.title }}</h2>
+            <p>{{ energy.summary }}</p>
+        </div>
+    </section>
+    <section class="wrapper switcher flex-wrap:wrap-reverse region js-fade">
+        <div class="justify-content:center stack-sm">
+            <h2>{{ agriculture.title }}</h2>
+            <p>{{ agriculture.summary }}</p>
+        </div>
+        <div class="frame">
+            <img loading="lazy" src="{{ agriculture.image }}" alt="{{ agriculture.imageAlt }}">
+        </div>
+    </section>
+
+    <section class="wrapper switcher region-bottom js-fade">
+        <div class="frame">
+            <img loading="lazy" src="{{ leadership.image }}" alt="{{ leadership.imageAlt }}">
+        </div>
+        <div class="justify-content:center stack-sm">
+            <h2>{{ leadership.title }}</h2>
+            <p>{{ leadership.summary }}</p>
+        </div>
+    </section>
+{% endblock %}

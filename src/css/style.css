@@ -266,8 +266,10 @@ h3+* {
   padding: var(--s0) var(--s2);
 }
 
-.box .card {
+.box.card {
   padding: var(--s0) 0;
+  color: var(--dark-green);
+  background-color: var(--dark-green);
 }
 
 
@@ -317,8 +319,8 @@ h3+* {
   --d: 1;
   aspect-ratio: var(--n) / var(--d);
   border-radius: 50%;
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 200px;
 }
 
 /* grid */
@@ -327,6 +329,7 @@ h3+* {
   gap: var(--s2);
 }
 
+
 .gap\:s3 {
   gap: var(--s3);
 
@@ -334,7 +337,10 @@ h3+* {
 
 @supports (width: min(250px, 100%)) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  }
+  .grid.news {
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   }
 }
 

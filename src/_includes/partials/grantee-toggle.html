@@ -1,0 +1,19 @@
+<toggle-section class="padding:s0 stack" open="false">
+    <h2>{{ grantees }}</h2>
+    <div class="grid">
+        {% for item in collections.grantees %}
+            <a class="link" href="https://{{ item.data.url }}">
+                <div class="stack-sm">
+                    <div class="frame">
+                        <img loading="lazy" src="..{{ item.data.image }}" alt="{{ item.data.imageAlt }}">
+                    </div>
+                    <p>
+                        <strong>{{ item.data.title }}</strong>
+                    </p>
+
+                    <p>{{ item.data.summary }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</toggle-section>

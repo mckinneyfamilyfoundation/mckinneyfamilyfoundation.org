@@ -1,0 +1,14 @@
+<section class="wrapper region-bottom js-fade stack">
+    <h2 class="text-align:center" style="margin: auto;">Staff</h2>
+    <div class="grid">
+        <div style="align-items:center" class="text-align:center stack-sm">
+            {% for item in collections.staff %}
+                <div class="frame staff">
+                    <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}">
+                </div>
+                <h3>{{item.data.name}}</h3>
+                <p>{{item.data.position}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
