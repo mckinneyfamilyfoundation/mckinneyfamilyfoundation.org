@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: Data
+- type: document
+  path: src/_data/navigation.json
+  label: Navigation
+  match: "**/*"
 - type: directory
   path: src/partnerships
   label: Partnerships
