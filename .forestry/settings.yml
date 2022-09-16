@@ -52,7 +52,7 @@ sections:
   path: src/news.md
   label: News
 upload_dir: src/images
-public_path: public/images
+public_path: "../images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
