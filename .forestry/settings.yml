@@ -9,7 +9,6 @@ sections:
 - type: document
   path: src/_data/navigation.json
   label: Navigation
-  match: "**/*"
 - type: directory
   path: src/partnerships
   label: Partnerships
@@ -52,8 +51,8 @@ sections:
 - type: document
   path: src/news.md
   label: News
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: src/images
+public_path: public/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
