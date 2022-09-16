@@ -5,7 +5,7 @@ layout: home
 hero:
   eyebrow: BUILDING A SUSTAINABLE INDIANA
   title: McKinney Family Foundation
-  image: public/images/orange-melon.jpeg
+  image: "../images/orange-melon.jpeg"
   imageAlt: Indianapolis skyline in the morning
 mission:
   title: Our Mission
