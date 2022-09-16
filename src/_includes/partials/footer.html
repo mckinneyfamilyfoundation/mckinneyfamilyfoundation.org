@@ -6,48 +6,14 @@
                 {# {% include "partials/logo.svg" %} #}
             </a>
         </div>
-        <nav class="cluster gap:s3">
-            <div class="stack-sm">
-                <h4>heading</h4>
-                <ul role="list">
+        <nav>
+            <ul class="cluster" role="list" aria-label="Primary">
+                {% for item in footer.items %}
                     <li>
-                        <a>
-                            Hello
-                        </a>
+                        <a href="{{ item.url }}">{{ item.text }}</a >
                     </li>
-                    <li>
-                        <a>
-                            Hello
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            Hello
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="stack-sm">
-                <h4>heading</h4>
-                <ul role="list">
-                    <li>
-                        <a>
-                            Hello
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            Hello
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            Hello
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
+                {% endfor %}
+            </ul>
         </nav>
     </div>
 </footer>

@@ -1,6 +1,6 @@
 :root {
-  --font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-plain: 'Roboto', sans-serif;
+  --font-serif: 'Arvo', serif;
   --font-special: Barlow Condensed, Helvetica, sans-serif;
   --font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
 
@@ -50,7 +50,6 @@
   --border-thick: var(--s-2);
 
   font-size: var(--text-size-1);
-  font-family: var(--font-plain);
   background-color: var(--light);
   color: var(--dark-green);
   overflow-x: hidden;
@@ -148,9 +147,11 @@ select {
 /* Global style */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.1;
   font-weight: 900;
+  font-family: var(--font-serif);
 }
 
 h1 {
@@ -166,8 +167,10 @@ h3 {
 }
 
 p,
-li {
+li,
+a {
   max-width: 50ch;
+  font-family: var(--font-plain);
 }
 
 h1 {
@@ -678,6 +681,9 @@ toggle-section {
   display: block;
 }
 
+toggle-section h2 {
+  font-family: var(--font-serif);
+}
 /*
 Only applies if script runs and 
 `role="region"` is added

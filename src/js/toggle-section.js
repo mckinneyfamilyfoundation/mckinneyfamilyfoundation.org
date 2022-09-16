@@ -20,6 +20,7 @@
         <style>
           h2 {
             margin: 0;
+            font-family: var(--font-serif);
           }
   
           h2 button {
