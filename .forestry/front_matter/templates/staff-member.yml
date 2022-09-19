@@ -1,0 +1,16 @@
+---
+label: Staff Member
+hide_body: true
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: position
+  label: position
+- type: file
+  name: image
+  label: image
+- type: text
+  name: imageAlt
+  label: imageAlt
