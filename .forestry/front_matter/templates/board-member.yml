@@ -9,4 +9,5 @@ fields:
   name: position
   label: position
 pages:
+- src/board/kevin.md
 - src/board/marni.md
