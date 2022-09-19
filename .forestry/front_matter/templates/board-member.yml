@@ -10,4 +10,5 @@ fields:
   label: position
 pages:
 - src/board/kevin.md
+- src/board/lisa.md
 - src/board/marni.md
