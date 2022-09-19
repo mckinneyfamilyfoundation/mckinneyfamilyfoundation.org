@@ -1,0 +1,19 @@
+---
+label: Grantee
+hide_body: true
+fields:
+- type: file
+  name: image
+  label: image
+- type: text
+  name: imageAlt
+  label: imageAlt
+- type: text
+  name: title
+  label: title
+- type: text
+  name: summary
+  label: summary
+- type: text
+  name: url
+  label: url
