@@ -1,0 +1,25 @@
+---
+label: News Post
+hide_body: true
+fields:
+- type: file
+  name: image
+  label: image
+- type: text
+  name: imageAlt
+  label: imageAlt
+- type: text
+  name: grantee
+  label: grantee
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: articleTitle
+  label: articleTitle
+- type: textarea
+  name: articleSummary
+  label: articleSummary
+- type: text
+  name: url
+  label: url
