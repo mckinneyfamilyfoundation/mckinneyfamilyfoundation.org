@@ -32,6 +32,6 @@ grants:
   image: "/images/sunrise.jpg"
   imageAlt: Indianapolis skyline in the morning
 featuredNews:
-  title: Small Tagline
+  title: Featured News
 
 ---
