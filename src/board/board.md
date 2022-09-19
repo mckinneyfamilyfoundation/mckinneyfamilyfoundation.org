@@ -1,4 +1,5 @@
 ---
-name: 'Alex'
-position: 'Web Dev'
+name: Robert H. McKinney
+position: Chair
+
 ---
