@@ -19,7 +19,7 @@ about:
   title: About Us
   summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus
     inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-  buttonText: See The Team Behind It All
+  buttonText: Meet The Team
   buttonUrl: "/about-us"
   image: "/images/sunrise.jpg"
   imageAlt: Indianapolis skyline in the morning
