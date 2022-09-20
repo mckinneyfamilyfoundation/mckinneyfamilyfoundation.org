@@ -1,5 +1,5 @@
 ---
-image: "/images/img_8307.PNG"
+image: "/images/aee.jpeg"
 imageAlt: Advanced Energy Economy Logo
 title: Advanced Energy Economy
 summary: Advanced Energy Economy (AEE) is a national association of businesses that
