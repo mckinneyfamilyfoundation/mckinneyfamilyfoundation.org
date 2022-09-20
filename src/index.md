@@ -5,12 +5,13 @@ layout: home
 hero:
   eyebrow: BUILDING A SUSTAINABLE INDIANA
   title: McKinney Family Foundation
-  image: "/images/orange-melon.jpeg"
-  imageAlt: Indianapolis skyline in the morning
+  image: "/images/landscape.jpeg"
+  imageAlt: Landscape
 mission:
   title: Our Mission
   summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus
-    inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. banjo
+    dog
   buttonText: Our Focus Areas
   buttonUrl: "/focus-areas"
   image: "/images/sunrise.jpg"
