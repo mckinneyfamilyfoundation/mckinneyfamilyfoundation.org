@@ -19,3 +19,4 @@ fields:
   label: url
 pages:
 - src/grantees/advanced-energy-economy.md
+- src/partnerships/banjo.md
