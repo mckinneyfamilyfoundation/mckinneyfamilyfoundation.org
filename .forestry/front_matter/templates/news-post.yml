@@ -23,3 +23,6 @@ fields:
 - type: text
   name: url
   label: url
+pages:
+- src/news/banjo-news.md
+- src/news/clean-energy-jobs-bounce-back.md

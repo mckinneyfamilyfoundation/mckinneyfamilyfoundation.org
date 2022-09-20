@@ -14,3 +14,6 @@ fields:
 - type: text
   name: imageAlt
   label: imageAlt
+pages:
+- src/staff/angelica-lopez.md
+- src/staff/banjo.md

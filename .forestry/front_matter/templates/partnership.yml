@@ -1,8 +1,8 @@
 ---
-label: Grantee/Partnership
+label: Partnership
 hide_body: true
 fields:
-- type: file
+- type: text
   name: image
   label: image
 - type: text
@@ -11,12 +11,9 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
+- type: textarea
   name: summary
   label: summary
 - type: text
   name: url
   label: url
-pages:
-- src/grantees/advanced-energy-economy.md
-- src/partnerships/banjo.md
