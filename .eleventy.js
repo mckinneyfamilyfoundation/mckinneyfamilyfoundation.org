@@ -1,4 +1,6 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('src/images');
@@ -13,7 +15,7 @@ module.exports = function (eleventyConfig) {
 
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection('featuredNews', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 2);
+    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 3);
   });
   eleventyConfig.addCollection('news', collection => {
     return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();

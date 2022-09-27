@@ -28,11 +28,13 @@ grants:
   title: Grants & Partnerships
   summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus
     inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-  buttonText: Who We Fund
+  buttonText: 'Who We Fund'
   buttonUrl: "/grants-and-partnerships"
   image: "/images/sunrise.jpg"
   imageAlt: Indianapolis skyline in the morning
 featuredNews:
-  title: Featured News
+  title: 'Featured News'
+  buttonText: 'News Archive'
+  buttonUrl: "/news"
 
 ---

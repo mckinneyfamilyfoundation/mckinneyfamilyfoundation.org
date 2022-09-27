@@ -205,6 +205,12 @@ h3+* {
   --flow-space: var(--space-base);
 }
 
+.text strong {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* stack primitive */
 
 .stack {
@@ -265,9 +271,7 @@ h3+* {
   background-color: var(--light-green2);
 }
 
-.box.nav {
-  padding: var(--s0) var(--s2);
-}
+
 
 .box.card {
   padding: var(--s0) 0;
@@ -342,6 +346,7 @@ h3+* {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   }
+
   .grid.news {
     grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
   }
@@ -460,6 +465,7 @@ h3+* {
   padding: var(--s0) 0;
 
 }
+
 .padding\:s0 {
   padding: var(--s0) 0;
 
@@ -581,7 +587,7 @@ button:hover {
 }
 
 .nav {
-  padding: var(--s0);
+  padding: var(--s-1) var(--s2);
 }
 
 nav ul {
@@ -684,6 +690,7 @@ toggle-section {
 toggle-section h2 {
   font-family: var(--font-serif);
 }
+
 /*
 Only applies if script runs and 
 `role="region"` is added
@@ -695,6 +702,125 @@ toggle-section[role="region"] {
 
 toggle-section[role="region"]+toggle-section {
   border-top: 0;
+}
+
+/* card */
+
+.cards>ul {
+  list-style: none;
+}
+
+.card+.card {
+  margin-top: 1.5rem;
+}
+
+@supports (display: grid) {
+  .cards>ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .card+.card {
+    margin-top: 0;
+  }
+
+  @media (max-width: 400px) {
+    .cards>ul {
+      grid-gap: 2.5rem;
+    }
+  }
+}
+
+.card {
+  border: 2px solid;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card .text {
+  padding: 1rem;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  max-width: 60ch;
+}
+
+.card .img {
+  height: 7.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
+}
+
+.card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.15rem;
+
+  object-fit: cover;
+}
+
+.card a {
+  outline: none;
+}
+
+.card strong a {
+  text-decoration: none;
+}
+
+.card strong a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card strong a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.card:focus-within,
+.card:hover {
+  box-shadow: 0 0 0 0.25rem;
+}
+
+.card:focus-within strong a:focus {
+  text-decoration: none;
+}
+
+.card small {
+  display: block;
+}
+
+.card small a {
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.card small a:hover,
+.card small a:focus {
+  font-weight: bold;
+}
+
+.card .text>*+* {
+  margin-top: 0.75rem;
+}
+
+.card .text> :last-child {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 @keyframes fadein {

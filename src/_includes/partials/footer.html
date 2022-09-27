@@ -1,11 +1,6 @@
 <footer class="bg-green">
     <div class="wrapper nav cluster justify-content:space-between">
-        <div class="stack-sm">
-            <a href="/" aria-label="{{ site.name }} - home" class="logo">
-                <img src="../images/mff-logo.svg" alt="McKinney Family Foundation Logo">
-                {# {% include "partials/logo.svg" %} #}
-            </a>
-        </div>
+
         <nav>
             <ul class="cluster" role="list" aria-label="Primary">
                 {% for item in footer.items %}
@@ -15,5 +10,11 @@
                 {% endfor %}
             </ul>
         </nav>
+        <div>
+            <p>
+                McKinney Family Foundation &copy;
+                {% year %}
+            </p>
+        </div>
     </div>
 </footer>
