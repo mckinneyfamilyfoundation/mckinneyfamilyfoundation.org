@@ -2,29 +2,34 @@
 title: Focus Areas
 layout: focus-areas
 hero:
-  eyebrow: 'FOCUS AREAS'
-  title: 'Small Tagline'
-  image: '/images/sunrise.jpg'
-  imageAlt: 'Indianapolis skyline in the morning'
+  eyebrow: FOCUS AREAS
+  title: Small Tagline
+  image: "/images/sunrise.jpg"
+  imageAlt: Indianapolis skyline in the morning
 energy:
-  title: 'Energy'
-  summary: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
-  buttonText: 'Learn About Our Focus Areas'
-  buttonUrl: '/mission'
-  image: '/images/sunrise.jpg'
-  imageAlt: 'Indianapolis skyline in the morning'
+  title: Energy
+  summary: Creating renewable energy jobs and meaningful policy changes to ensure
+    the transition to a sustainable energy economy.
+  buttonText: Learn About Our Focus Areas
+  buttonUrl: "/mission"
+  image: "/images/sunrise.jpg"
+  imageAlt: Indianapolis skyline in the morning
 agriculture:
-  title: 'Agriculture'
-  summary: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
-  buttonText: 'See The Team Behind It All'
-  buttonUrl: '/about-us'
-  image: '/images/sunrise.jpg'
-  imageAlt: 'Indianapolis skyline in the morning'
+  title: Agriculture
+  summary: Transforming agricultural infrastructure to ensure sustainable methods
+    and improve the distribution, affordability and availability of locally grown
+    nutritious food.
+  buttonText: See The Team Behind It All
+  buttonUrl: "/about-us"
+  image: "/images/sunrise.jpg"
+  imageAlt: Indianapolis skyline in the morning
 leadership:
-  title: 'Leadership'
-  summary: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
-  buttonText: 'Check Out Who We Fund'
-  buttonUrl: '/leadership-and-partnerships'
-  image: '/images/sunrise.jpg'
-  imageAlt: 'Indianapolis skyline in the morning'
+  title: Leadership
+  summary: Ensuring the long-term viability of the nonprofit environmental sector
+    through capacity building and leadership development.
+  buttonText: Check Out Who We Fund
+  buttonUrl: "/leadership-and-partnerships"
+  image: "/images/sunrise.jpg"
+  imageAlt: Indianapolis skyline in the morning
+
 ---
