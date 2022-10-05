@@ -13,7 +13,7 @@ mission:
     sustainable future for every Hoosier.
   buttonText: Our Focus Areas
   buttonUrl: "/focus-areas"
-  image: "/images/sunrise.jpg"
+  image: "/images/Peony-State-Flower.jpg"
   imageAlt: Indianapolis skyline in the morning
 about:
   title: About Us
@@ -21,7 +21,7 @@ about:
     inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
   buttonText: Meet The Team
   buttonUrl: "/about-us"
-  image: "/images/sunrise.jpg"
+  image: "/images/skyline.jpg"
   imageAlt: Indianapolis skyline in the morning
 grants:
   title: Grants & Partnerships
@@ -29,7 +29,7 @@ grants:
     inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
   buttonText: Who We Fund
   buttonUrl: "/grants-and-partnerships"
-  image: "/images/sunrise.jpg"
+  image: "/images/Cardinal.jpg"
   imageAlt: Indianapolis skyline in the morning
 featuredNews:
   title: Featured News

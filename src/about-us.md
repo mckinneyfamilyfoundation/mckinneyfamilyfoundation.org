@@ -4,6 +4,6 @@ layout: about-us
 hero:
   eyebrow: 'ABOUT US'
   title: 'Small Tagline'
-  image: '/images/sunrise.jpg'
+  image: '/images/Bloomington.jpg'
   imageAlt: 'Indianapolis skyline in the morning'
 ---
