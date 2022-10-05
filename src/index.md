@@ -9,9 +9,12 @@ hero:
   imageAlt: Landscape
 mission:
   title: Our Mission
-  summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus
-    inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. banjo
-    dog
+  summary: The McKinney Family believes environmental sustainability is the key to
+    the future of Indiana. Therefore, the McKinney Family Foundation (MFF) is committed
+    to building an environmentally sustainable future for every Hoosier.  Through
+    strategic partnerships, MFF advocates for environmental justice, seeks to conserve
+    natural resources, and empower Indiana communities to live in a healthier, more
+    prosperous, and more sustainable manner.
   buttonText: Our Focus Areas
   buttonUrl: "/focus-areas"
   image: "/images/sunrise.jpg"
@@ -28,13 +31,13 @@ grants:
   title: Grants & Partnerships
   summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus
     inventore ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-  buttonText: 'Who We Fund'
+  buttonText: Who We Fund
   buttonUrl: "/grants-and-partnerships"
   image: "/images/sunrise.jpg"
   imageAlt: Indianapolis skyline in the morning
 featuredNews:
-  title: 'Featured News'
-  buttonText: 'News Archive'
+  title: Featured News
+  buttonText: News Archive
   buttonUrl: "/news"
 
 ---
