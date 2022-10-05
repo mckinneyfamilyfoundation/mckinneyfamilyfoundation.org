@@ -6,7 +6,7 @@ hero:
   eyebrow: BUILDING A SUSTAINABLE INDIANA
   title: McKinney Family Foundation
   image: "/images/sunrise.jpg"
-  imageAlt: Landscape
+  imageAlt: Indianapolis Indiana sunrise behind the skyline.
 mission:
   title: Our Mission
   summary: McKinney Family Foundation (MFF) is committed to building an environmentally
