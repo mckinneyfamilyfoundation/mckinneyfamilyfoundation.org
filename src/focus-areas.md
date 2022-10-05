@@ -10,10 +10,10 @@ energy:
   title: Energy
   summary: Creating renewable energy jobs and meaningful policy changes to ensure
     the transition to a sustainable energy economy.
-  buttonText: Learn About Our Focus Areas
-  buttonUrl: "/mission"
-  image: "/images/sunrise.jpg"
-  imageAlt: Indianapolis skyline in the morning
+  buttonText: ''
+  buttonUrl: ''
+  image: "/images/solar-panels-in.jpg"
+  imageAlt: Indiana Solar Panels
 agriculture:
   title: Agriculture
   summary: Transforming agricultural infrastructure to ensure sustainable methods
