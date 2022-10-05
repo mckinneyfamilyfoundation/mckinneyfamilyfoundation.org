@@ -1,5 +1,5 @@
 ---
-image: "/images/earthcharterindiana.png"
+image: "/images/placeholder-960.jpeg"
 imageAlt: Earth Charter Indiana
 title: Earth Charter Indiana
 summary: Lorem Ipsum

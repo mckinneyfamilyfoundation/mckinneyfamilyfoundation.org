@@ -721,6 +721,12 @@ toggle-section[role="region"]+toggle-section {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
   }
+  .cards>ul.fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
 
   .card+.card {
     margin-top: 0;
@@ -754,8 +760,8 @@ toggle-section[role="region"]+toggle-section {
 
 .card .img {
   height: 7.5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
 }
+
 
 .card .img img {
   width: 100%;

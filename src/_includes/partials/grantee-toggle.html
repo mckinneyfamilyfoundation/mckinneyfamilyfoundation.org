@@ -4,7 +4,7 @@
         <ul>
             {% for item in collections.grantees %}
                 <li class="card">
-                    <div class="img"><img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}"></div>
+                    <div class="img" style="height:auto;"><img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}"></div>
                     <div class="text">
                         <strong>
                             <a href="{{ item.data.url }}" target="_blank">{{ item.data.title }}</a>

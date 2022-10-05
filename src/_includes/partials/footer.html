@@ -1,7 +1,13 @@
 <footer class="bg-green">
     <div class="wrapper nav cluster justify-content:space-between">
-
-        <nav>
+        <div>
+            <p>
+                &copy;
+                {% year %}
+                McKinney Family Foundation
+            </p>
+        </div>
+        {# <nav>
             <ul class="cluster" role="list" aria-label="Primary">
                 {% for item in footer.items %}
                     <li>
@@ -9,12 +15,7 @@
                     </li>
                 {% endfor %}
             </ul>
-        </nav>
-        <div>
-            <p>
-                McKinney Family Foundation &copy;
-                {% year %}
-            </p>
-        </div>
+        </nav> #}
+        
     </div>
 </footer>
