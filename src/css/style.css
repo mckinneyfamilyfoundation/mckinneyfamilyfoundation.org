@@ -169,7 +169,7 @@ h3 {
 p,
 li,
 a {
-  max-width: 50ch;
+  max-width: 60ch;
   font-family: var(--font-plain);
 }
 

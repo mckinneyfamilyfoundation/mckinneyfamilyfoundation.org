@@ -4,7 +4,7 @@
     <section class="wrapper region-bottom js-fade">
         <toggle-section class="padding:s0 stack-sm" open="true">
             <h2>{{ funding.title }}</h2>
-            <p>{{ funding.content }}</p>
+            {{content | safe}}
         </toggle-section>
         {% include "partials/grantee-toggle.html" %}
         {% include "partials/partnership-toggle.html" %}
