@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block content %}
     {% include "partials/hero.html" %}
-    <section class="wrapper switcher region js-fade">
+    <section class="wrapper switcher region-bottom border-bottom js-fade">
         <div class="frame">
             <img loading="lazy" src="{{ energy.image }}" alt="{{ energy.imageAlt }}">
         </div>
@@ -10,7 +10,7 @@
             <p>{{ energy.summary }}</p>
         </div>
     </section>
-    <section class="wrapper switcher flex-wrap:wrap-reverse region js-fade">
+    <section class="wrapper switcher flex-wrap:wrap-reverse region-bottom border-bottom js-fade">
         <div class="justify-content:center stack-sm">
             <h2>{{ agriculture.title }}</h2>
             <p>{{ agriculture.summary }}</p>

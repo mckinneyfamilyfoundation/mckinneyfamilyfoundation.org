@@ -2,7 +2,6 @@
 title: Focus Areas
 layout: focus-areas
 hero:
-  eyebrow: FOCUS AREAS
   title: Small Tagline
   image: '/images/indiana-peony.jpg'
   imageAlt: Indianapolis skyline in the morning

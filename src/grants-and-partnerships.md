@@ -2,7 +2,6 @@
 title: Grants & Partnerships
 layout: grants
 hero:
-  eyebrow: GRANTS & PARTNERSHIPS
   title: Small Tagline
   image: "/images/Cardinal.jpg"
   imageAlt: Indianapolis skyline in the morning

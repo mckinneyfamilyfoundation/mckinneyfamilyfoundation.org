@@ -167,25 +167,25 @@ h3 {
 }
 
 p,
-li,
-a {
-  max-width: 60ch;
+li {
+  max-width: 50ch;
   font-family: var(--font-plain);
+  font-size: var(--text-size-0);
 }
 
-h1 {
-  max-width: 18ch;
-}
-
+h1,
 h2,
 h3 {
-  max-width: 30ch;
+  max-width: 20ch;
 }
 
 a {
   color: currentcolor;
   text-decoration-color: var(--color-primary);
   text-decoration: none;
+  font-family: var(--font-plain);
+  font-size: var(--text-base);
+  
 }
 
 a:hover {
@@ -196,12 +196,14 @@ a:hover {
 /* Prose */
 
 h2,
-h3 {
+h3,
+h4 {
   --flow-space: var(--space-size-3);
 }
 
 h2+*,
-h3+* {
+h3+*,
+h4+* {
   --flow-space: var(--space-base);
 }
 
@@ -532,7 +534,7 @@ h3+* {
 .hero:after {
   content: "";
   background-color: var(--dark-green);
-  opacity: 0.7;
+  opacity: 0.5;
   grid-area: 1/-1;
 }
 
@@ -548,7 +550,7 @@ input:focus {
 
 button {
   color: var(--light);
-  background-color: var(--lime);
+  background-color: var(--dark-green);
   border-radius: 16px;
   border: 0;
   padding: var(--s-3) var(--s0);
@@ -556,7 +558,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--lime2);
+  background-color: var(--lime);
   border-radius: 16px;
   border: 0;
   padding: var(--s-3) var(--s0);
@@ -721,6 +723,7 @@ toggle-section[role="region"]+toggle-section {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
   }
+
   .cards>ul.fit {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
@@ -837,4 +840,33 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+.border-bottom {
+  color: var(--dark-green);
+  border-width: 0 0 2px 0;
+  border-style: solid;
+}
+
+.icon {
+  width: 0.75em;
+  width: 1cap;
+  height: 0.75em;
+  height: 1cap;
+}
+
+.with-icon {
+  align-items: baseline;
+  gap: .5rem;
+  width: fit-content;
+}
+
+.with-icon:hover {
+  text-decoration: underline currentColor;
+  gap: 1rem;
+}
+
+
+.with-icon .icon {
+  margin-inline-end: 1rem;
 }

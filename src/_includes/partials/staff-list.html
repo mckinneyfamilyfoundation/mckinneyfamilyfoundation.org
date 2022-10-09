@@ -1,16 +1,23 @@
 <section class="wrapper region-bottom js-fade stack">
-    <h2 class="text-align:center" style="margin: auto;">Staff</h2>
+    <h2>Staff Members</h2>
     <div class="grid">
         {% for item in collections.staff %}
-            <div style="align-items:center" class="text-align:center stack-sm">
+            <div class="stack-sm">
 
                 <div class="frame staff">
                     <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}">
                 </div>
                 <h4>{{item.data.name}}</h4>
-                <p>{{item.data.position}}</p>
-                <p>{{item.data.email}}</p>
-                <p>{{item.data.number}}</p>
+                <div class="stack-sm">
+                    <p>{{item.data.position}}</p>
+                    <p>
+                        {{item.data.email}}
+                    </p>
+                    <p>
+                        {{item.data.number}}
+                    </p>
+                </div>
+
             </div>
 
         {% endfor %}
