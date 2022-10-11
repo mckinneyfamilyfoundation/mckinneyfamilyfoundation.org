@@ -1,9 +1,9 @@
 ---
 name: Victoria Seest
 position: Climate Fellow
-image: "/images/sunrise.jpg"
-imageAlt: sunrise
-title: victoria-seest
+image: "/images/blank-profile.webp"
+imageAlt: Victoria Seest profile placeholder
+title: victoria-seest.md
 email: ''
 number: ''
 
