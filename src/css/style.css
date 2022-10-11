@@ -1,6 +1,6 @@
 :root {
-  --font-plain: 'Roboto', sans-serif;
-  --font-serif: 'Arvo', serif;
+  --font-plain: 'Roboto', system-ui, sans-serif;
+  --font-serif: 'Arvo', system-ui, serif;
   --font-special: Barlow Condensed, Helvetica, sans-serif;
   --font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
 
