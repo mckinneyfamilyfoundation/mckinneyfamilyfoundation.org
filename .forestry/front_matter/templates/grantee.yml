@@ -12,9 +12,6 @@ fields:
   name: title
   label: title
 - type: text
-  name: summary
-  label: summary
-- type: text
   name: url
   label: url
 pages:
