@@ -182,16 +182,18 @@ h3 {
 a {
   color: currentcolor;
   text-decoration-color: var(--color-primary);
-  text-decoration: none;
   font-family: var(--font-plain);
-  font-size: var(--text-base);
+  font-size: var(--text-size-0);
   
+}
+
+nav ul li a {
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
 }
-
 
 /* Prose */
 
@@ -849,15 +851,8 @@ ul {
 
 .with-icon {
   align-items: baseline;
-  gap: .5rem;
   width: fit-content;
 }
-
-.with-icon:hover {
-  text-decoration: underline currentColor;
-  gap: 1rem;
-}
-
 
 .with-icon .icon {
   margin-inline-end: 1rem;
