@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
 
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection('featuredNews', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 3);
+    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 2);
   });
   eleventyConfig.addCollection('news', collection => {
     return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();
