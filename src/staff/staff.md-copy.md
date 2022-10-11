@@ -1,9 +1,10 @@
 ---
-name: Alex
-position: Web Dev
+name: Victoria Seest
+position: Climate Fellow
 image: "/images/sunrise.jpg"
 imageAlt: sunrise
-title: staff.md-(copy)
-email: 'angelica-lopez@gmail.com'
-number: '317-281-4167'
+title: victoria-seest
+email: ''
+number: ''
+
 ---
