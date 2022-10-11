@@ -1,6 +1,7 @@
 ---
-image: "/images/placeholder-960.jpeg"
-imageAlt: Earth Charter Indiana
+image: "/images/eci.png"
+imageAlt: Earth Charter Indiana Logo
 title: Earth Charter Indiana
 url: https://www.earthcharterindiana.org/
+
 ---
