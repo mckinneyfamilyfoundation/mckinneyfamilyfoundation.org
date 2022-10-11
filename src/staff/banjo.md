@@ -1,8 +1,9 @@
 ---
-name: Banjo Dog
-position: Good Boy
+name: Angelica Lopez
+position: Grants Administrative Associate
 image: "/images/img_8307.PNG"
 imageAlt: Good boy Banjo
-email: 'angelica-lopez@gmail.com'
-number: '317-281-4167'
+email: angelica@mckinneyfamilyfoundation.org
+number: "(317) 296-3318"
+
 ---
