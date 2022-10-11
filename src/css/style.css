@@ -275,14 +275,6 @@ h4+* {
 
 
 
-.box.card {
-  padding: var(--s0) 0;
-  color: var(--dark-green);
-  background-color: var(--dark-green);
-}
-
-
-
 /* switcher primitive */
 
 .switcher {
@@ -762,7 +754,7 @@ toggle-section[role="region"]+toggle-section {
 }
 
 .card .img {
-  height: 7.5rem;
+  height: 9.5rem;
 }
 
 
