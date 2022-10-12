@@ -1,21 +1,25 @@
-<footer class="bg-green">
-    <div class="wrapper nav cluster justify-content:flex-end">
-        <div>
-            <p>
-                &copy;
-                {% year %}
-                McKinney Family Foundation
-            </p>
+<footer class="primary-footer | bg-green">
+    <div class="wrapper nav">
+      <div class="primary-footer-wrapper">
+        <div class="primary-footer-logo-social">
+          <a href="/" aria-label="{{ site.name }} - home" class="logo">
+            <img src="../images/mff-logo.svg" alt="McKinney Family Foundation Logo">
+        </a>
+                <p>Copyright 2022. All Rights Reserved</p>
+
         </div>
-        {# <nav>
-            <ul class="cluster" role="list" aria-label="Primary">
-                {% for item in footer.items %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.text }}</a >
-                    </li>
-                {% endfor %}
+        <div class="primary-footer-nav">
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Grants & Partnerships</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
-        </nav> #}
-        
+          </nav>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>

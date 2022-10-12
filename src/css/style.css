@@ -49,6 +49,16 @@
   --border-thin: var(--s-4);
   --border-thick: var(--s-2);
 
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.5rem;
+  --size-600: 2rem;
+  --size-700: 3rem;
+  --size-800: 4rem;
+  --size-900: 5rem;
+
   font-size: var(--text-size-1);
   background-color: var(--light);
   color: var(--dark-green);
@@ -583,7 +593,7 @@ button:hover {
 }
 
 .nav {
-  padding: var(--s-1) var(--s2);
+  padding: var(--s-1) 0;
 }
 
 nav ul {
@@ -640,10 +650,15 @@ nav [aria-current="page"] {
   A common wrapper/container
   */
 .wrapper {
-  margin-inline: auto;
+  /* margin-inline: auto;
   width: clamp(16rem, 95vw, 85rem);
   padding-inline: var(--space-size-1);
-  position: relative;
+  position: relative; */
+  --max-width:  1110px;
+  --container-padding:  1rem;
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+
 }
 
 /* 
@@ -856,4 +871,69 @@ ul {
 
 .with-icon .icon {
   margin-inline-end: 1rem;
+}
+
+/* footer */
+
+.primary-footer {
+  --logo-color: var(--clr-neutral-100);
+}
+
+.primary-footer-wrapper {
+  display: grid;
+  gap: var(--s3);
+  grid-template-areas:
+    "nav"
+    "logo-social";
+}
+
+.primary-footer-logo-social {
+  grid-area: logo-social;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s0);
+}
+
+.primary-footer-nav {
+  grid-area: nav;
+}
+
+@media (min-width: 50em) {
+  .primary-footer-wrapper {
+    grid-template-areas: "logo-social nav";
+  }
+
+  .primary-footer-logo-social {
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--s0);
+  }
+}
+
+@media (max-width: 50em) {
+  .primary-footer-wrapper > * {
+    margin-inline: auto;
+  }
+}
+
+/* footer navigation */
+
+.footer-nav {
+  columns: 2;
+  gap: clamp(var(--s-1), 30vw, var(--s3));
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-nav a:is(:hover, :focus) {
+  color: var(--lime);
+  margin-top: 1em;
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 3em);
 }
