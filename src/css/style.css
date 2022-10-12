@@ -169,11 +169,11 @@ h1 {
 }
 
 h2 {
-  font-size: var(--text-size-3);
+  font-size: var(--text-size-2);
 }
 
 h3 {
-  font-size: var(--text-size-2);
+  font-size: var(--text-size-1);
 }
 
 p,
