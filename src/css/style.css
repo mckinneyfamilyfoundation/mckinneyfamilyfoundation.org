@@ -907,8 +907,6 @@ ul {
 
   .primary-footer-logo-social {
     align-items: flex-start;
-    justify-content: space-between;
-    gap: var(--s0);
   }
 }
 
@@ -921,8 +919,7 @@ ul {
 /* footer navigation */
 
 .footer-nav {
-  columns: 2;
-  gap: clamp(var(--s-1), 30vw, var(--s3));
+  gap: clamp(var(--space-size-0), 15vw, var(--space-base));
 }
 
 .footer-nav a {
