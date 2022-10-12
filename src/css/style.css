@@ -881,7 +881,7 @@ ul {
 
 .primary-footer-wrapper {
   display: grid;
-  gap: var(--s3);
+  gap: var(--s0);
   grid-template-areas:
     "nav"
     "logo-social";
