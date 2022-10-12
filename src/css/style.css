@@ -894,6 +894,7 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: var(--s0);
+  justify-content: space-evenly;
 }
 
 .primary-footer-nav {
