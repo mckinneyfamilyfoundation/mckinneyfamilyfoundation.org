@@ -1,68 +1,99 @@
 {% extends "layouts/base.html" %}
 {% block content %}
     {% include "partials/hero.html" %}
-    <section class="wrapper switcher region-bottom border-bottom js-fade">
-        <div class="frame">
-            <img loading="lazy" src="{{ mission.image }}" alt="{{ mission.imageAlt }}">
-        </div>
-        <div class="stack-sm">
-            <h2>{{ mission.title }}</h2>
-            <p>{{ mission.summary }}</p>
+        <section class="wrapper switcher border-bottom region-bottom js-fade">
+            <div class="stack-sm">
+            
+                <h2>{{ mission.title }}</h2>
+                <p>{{ mission.summary }}</p>
+            </div>
+            <div class="stack-sm">
+                <ul class="stack" role="list">
 
-            <span class="with-icon">
-                <a class="link" href="{{ mission.buttonUrl }}">{{ mission.buttonText }}</a>
+                    <li>
+                        <div class="stack-sm">
+                            <h3>Energy</h3>
+                            <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stack-sm">
+                            <h3>Agriculture</h3>
+                            <p>Transforming agricultural infrastructure to ensure sustainable methods and improve the distribution, affordability and availability of locally grown nutritious food.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stack-sm">
+                            <h3>Leadership</h3>
+                            <p>Ensuring the long-term viability of the nonprofit environmental sector through capacity building and leadership development.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="wrapper border-bottom region-bottom js-fade stack">
+            <div class="stack-sm">
+            
+                <h2>{{ mission.title }}</h2>
+                <p>{{ mission.summary }}</p>
+            </div>
+                <ul class="grid" role="list">
 
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </span>
-        </div>
-    </section>
-    {# <section class="wrapper switcher region-bottom border-bottom js-fade">
-        
-          <div class="stack">
-            <h2>Our Mission</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum ducimus ipsum odit enim ad sequi, incidunt omnis culpa quos repellendus, doloribus optio explicabo? Commodi nihil optio sit incidunt sequi.</p>
-          </div>
-          <div class="stack">
-            <h3>Focus Areas</h3>
-          </div>
-    </section> #}
-    <section class="wrapper switcher flex-wrap:wrap-reverse region-bottom border-bottom js-fade">
-        <div class="stack-sm">
-            <h2>{{ about.title }}</h2>
-            <p>{{ about.summary }}</p>
+                    <li>
+                        <div class="stack-sm">
+                            <h3>Energy</h3>
+                            <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stack-sm">
+                            <h3>Agriculture</h3>
+                            <p>Transforming agricultural infrastructure to ensure sustainable methods and improve the distribution, affordability and availability of locally grown nutritious food.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stack-sm">
+                            <h3>Leadership</h3>
+                            <p>Ensuring the long-term viability of the nonprofit environmental sector through capacity building and leadership development.</p>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+        <section class="wrapper switcher flex-wrap:wrap-reverse region-bottom border-bottom js-fade">
+            <div class=" stack-sm">
+                <h2>{{ about.title }}</h2>
+                <p>{{ about.summary }}</p>
 
-            <span class="with-icon">
-                <a class="link" href="{{ about.buttonUrl }}">{{ about.buttonText }}</a>
+                <span class="with-icon">
+                    <a class="link" href="{{ about.buttonUrl }}">{{ about.buttonText }}</a>
 
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </span>
-        </div>
-        <div class="frame">
-            <img loading="lazy" src="{{ about.image }}" alt="{{ about.imageAlt }}">
-        </div>
-    </section>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="frame">
+                <img loading="lazy" src="{{ about.image }}" alt="{{ about.imageAlt }}">
+            </div>
+        </section>
 
-    <section class="wrapper switcher region-bottom border-bottom js-fade">
-        <div class="frame">
-            <img loading="lazy" src="{{ grants.image }}" alt="{{ grants.imageAlt }}">
-        </div>
-        <div class="stack-sm">
-            <h2>{{ grants.title }}</h2>
-            <p>{{ grants.summary }}</p>
+        <section class="wrapper switcher region-bottom border-bottom js-fade">
+            <div class="frame">
+                <img loading="lazy" src="{{ grants.image }}" alt="{{ grants.imageAlt }}">
+            </div>
+            <div class="stack-sm">
+                <h2>{{ grants.title }}</h2>
+                <p>{{ grants.summary }}</p>
 
-            <span class="with-icon">
-                <a class="link" href="{{ grants.buttonUrl }}">{{ grants.buttonText }}</a>
+                <span class="with-icon">
+                    <a class="link" href="{{ grants.buttonUrl }}">{{ grants.buttonText }}</a>
 
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </span>
-        </div>
-    </section>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </span>
+            </div>
+        </section>
 
-    {% include "partials/featured-news.html" %}
-{% endblock %}
+        {% include "partials/featured-news.html" %}
+    {% endblock %}
