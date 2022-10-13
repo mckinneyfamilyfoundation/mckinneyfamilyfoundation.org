@@ -1,6 +1,46 @@
 {% extends "layouts/base.html" %}
 {% block content %}
     {% include "partials/hero.html" %}
+    <section class="wrapper border-bottom region-bottom js-fade stack">
+        <div class="stack-sm">
+
+            <h2>{{ mission.title }}</h2>
+            <p>{{ mission.summary }}</p>
+        </div>
+    </section>
+    <section class="wrapper border-bottom region-bottom js-fade stack">
+        <h2>Focus Areas</h2>
+        <ul class="grid" role="list">
+
+            <li>
+                <div class="stack-sm">
+                    <div class="frame">
+                        <img src="/images/indiana-peony.jpg" alt="">
+                    </div>
+                    <h3>Energy</h3>
+                    <p>Creating renewable energy jobs and meaningful policy changes to ensure the transition to a sustainable energy economy.</p>
+                </div>
+            </li>
+            <li>
+                <div class="stack-sm">
+                <div class="frame">
+                        <img src="/images/indiana-peony.jpg" alt="">
+                    </div>
+                    <h3>Agriculture</h3>
+                    <p>Transforming agricultural infrastructure to ensure sustainable methods and improve the distribution, affordability and availability of locally grown nutritious food.</p>
+                </div>
+            </li>
+            <li>
+                <div class="stack-sm">
+                <div class="frame">
+                        <img src="/images/indiana-peony.jpg" alt="">
+                    </div>
+                    <h3>Leadership</h3>
+                    <p>Ensuring the long-term viability of the nonprofit environmental sector through capacity building and leadership development.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
     {% include "partials/board-list.html" %}
     {% include "partials/staff-list.html" %}
 {% endblock %}

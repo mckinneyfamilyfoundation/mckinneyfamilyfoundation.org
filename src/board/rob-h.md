@@ -1,5 +1,4 @@
 ---
-name: Robert H. McKinney
-position: Chair
-
+name: 
+position: 
 ---
