@@ -654,7 +654,7 @@ nav [aria-current="page"] {
   width: clamp(16rem, 95vw, 85rem);
   padding-inline: var(--space-size-1);
   position: relative; */
-  --max-width:  1110px;
+  --max-width:  1350px;
   --container-padding:  1rem;
   width: min(var(--max-width), 100% - (var(--container-padding) * 2));
   margin-inline: auto;
