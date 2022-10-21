@@ -32,13 +32,10 @@ about:
   imageAlt: Indianapolis skyline in the morning
 grants:
   title: Grants & Partnerships
-  summary: The McKinney Family believes environmental sustainability is the key to
-    the future of Indiana. Therefore, the McKinney Family Foundation (MFF) is committed
-    to building an environmentally sustainable future for every Hoosier.  Through
-    strategic partnerships, MFF advocates for environmental justice, seeks to conserve
-    natural resources, and empower Indiana communities to live in a healthier, more
-    prosperous, and more sustainable manner.
-  buttonText: Who We Fund
+  summary: MFF prioritizes creating a coalition of environmental allies. Through collaborative
+    partnerships with other funders, organizations, and communities we are all working
+    toward improving our Hoosier State.
+  buttonText: Collaborators and Funding Guidelines
   buttonUrl: "/grants-and-partnerships"
   image: "/images/Cardinal.jpg"
   imageAlt: Indianapolis skyline in the morning
