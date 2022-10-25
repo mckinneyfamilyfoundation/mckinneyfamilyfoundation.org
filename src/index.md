@@ -4,8 +4,8 @@ metaDesc: McKinney Family Foundation is Building a Sustainable Indiana
 layout: home
 hero:
   title: McKinney Family Foundation
-  image: "/images/sunrise.jpg"
-  imageAlt: Indianapolis Indiana sunrise behind the skyline.
+  image: "/images/white_river_state_park_-_july_2016_-_ad_starkel_01-1.jpg"
+  imageAlt: White River State Park
 mission:
   title: Our Values
   summary: The McKinney Family believes environmental sustainability is the key to
