@@ -1,23 +1,24 @@
 <footer class="primary-footer | bg-green">
-    <div class="wrapper nav">
-      <div class="primary-footer-wrapper">
-        <div class="primary-footer-logo-social">
-          <a href="/" aria-label="{{ site.name }} - home" class="logo">
-            <img src="../images/mff-logo.svg" alt="McKinney Family Foundation Logo">
+  <div class="wrapper nav">
+    <div class="primary-footer-wrapper">
+      <div class="primary-footer-logo-social">
+        <a href="/" aria-label="{{ site.name }} - home" class="logo">
+          <img src="../images/mff-logo.svg" alt="McKinney Family Foundation Logo">
         </a>
         <p>Copyright 2022. All Rights Reserved</p>
 
-        </div>
-        <div class="primary-footer-nav">
-          <nav class="footer-nav">
-            <ul class="stack-sm" style="--flow-spacer: 1em" aria-label="Footer" role="list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Grants & Partnerships</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </nav>
-        </div>
+      </div>
+      <div class="primary-footer-nav ">
+        <nav class="footer-nav">
+          <ul class="stack-sm" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+            {% for item in navigation.items %}
+              <li>
+                <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a >
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>

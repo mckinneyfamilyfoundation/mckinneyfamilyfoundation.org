@@ -201,6 +201,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -604,6 +608,12 @@ nav [aria-current="page"] {
   text-decoration: underline 3px var(--lime);
 }
 
+.footer-nav [aria-current="page"] {
+  text-decoration: underline 3px var(--lime);
+}
+
+
+
 .skip-link {
   position: absolute;
   top: var(--s0);
@@ -930,6 +940,10 @@ ul {
 .footer-nav a:is(:hover, :focus) {
   color: var(--lime);
   margin-top: 1em;
+}
+
+nav a:is(:hover, :focus) {
+  color: var(--lime);
 }
 
 :where(.flow :not(:first-child)) {
