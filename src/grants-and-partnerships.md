@@ -3,8 +3,8 @@ title: Grants & Partnerships
 layout: grants
 hero:
   title: Grants & Partnerships
-  image: "/images/Cardinal.jpg"
-  imageAlt: Indianapolis skyline in the morning
+  image: "/images/IUPUI.jpg"
+  imageAlt: IUPUI Campus
 funding:
   title: Funding Guidelines
 grantees: Current Grantees
