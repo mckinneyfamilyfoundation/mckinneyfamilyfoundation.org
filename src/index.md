@@ -28,8 +28,8 @@ about:
     prosperous, and more sustainable manner.
   buttonText: Learn more about us
   buttonUrl: "/about-us"
-  image: "/images/Noblesville.jpg"
-  imageAlt: Noblesville, Indiana
+  image: "/images/poplar.png"
+  imageAlt: Tulip Poplar Tree
 grants:
   title: Grants & Partnerships
   summary: MFF prioritizes creating a coalition of environmental allies. Through collaborative
