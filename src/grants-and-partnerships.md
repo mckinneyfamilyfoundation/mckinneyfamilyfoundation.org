@@ -3,8 +3,8 @@ title: Grants & Partnerships
 layout: grants
 hero:
   title: Grants & Partnerships
-  image: "/images/IUPUI.jpg"
-  imageAlt: IUPUI Campus
+  image: "/images/McCormicks-Creek.jpeg"
+  imageAlt: McCormick's Creek
 funding:
   title: Funding Guidelines
 grantees: Current Grantees
