@@ -250,8 +250,8 @@ toggle-section:focus {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-dark);
-  color: var(--color-light);
+  color: var(--stone-0);
+  background: var(--stone-10);
 }
 
 .preload-transitions * {
