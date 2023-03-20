@@ -1,15 +1,24 @@
-<section class="wrapper region-bottom border-bottom js-fade stack">
-    <h2>Board Members</h2>
-    <div class="grid">
-        <div class="stack-sm">
-            <h4>Robert H. McKinney</h4>
-            <p>Chair</p>
-        </div>
-        {% for item in collections.board %}
-            <div class="stack-sm">
-                <h4>{{item.data.name}}</h4>
-                <p>{{item.data.position}}</p>
-            </div>
-        {% endfor %}
-    </div>
-</section>
+<article class="wrapper border-bottom region js-fade">
+  <h2 class="text-align:center">Board Members</h2>
+
+  <ul
+    class="grid mt-l-xl"
+    role="list"
+    style="--grid-placement: auto-fit"
+    data-rows="masonry"
+  >
+    <li class="card flow overflow-hidden" style="--flow-space: .5em">
+      <p>Robert H. McKinney</p>
+      <small>Chair</small>
+    </li>
+
+    {% for item in collections.board %}
+
+    <li class="card flow overflow-hidden">
+      <p>{{ item.data.name }}</p>
+      <small>{{ item.data.position }}</small>
+    </li>
+
+    {% endfor %}
+  </ul>
+</article>

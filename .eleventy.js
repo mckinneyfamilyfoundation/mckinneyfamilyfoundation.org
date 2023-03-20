@@ -1,4 +1,8 @@
 module.exports = function (eleventyConfig) {
+  
+  
+  
+  
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addPassthroughCopy('src/css');
@@ -11,6 +15,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('about-us', 'layouts/about-us.html');
   eleventyConfig.addLayoutAlias('grants', 'layouts/grants-and-partnerships.html');
   eleventyConfig.addLayoutAlias('news', 'layouts/news.html');
+  eleventyConfig.addLayoutAlias('privacy', 'layouts/privacy.html');
+  eleventyConfig.addLayoutAlias('imprint', 'layouts/imprint.html');
+
 
 
   // Returns a collection of blog posts in reverse date order
@@ -46,3 +53,4 @@ module.exports = function (eleventyConfig) {
     }
   };
 };
+

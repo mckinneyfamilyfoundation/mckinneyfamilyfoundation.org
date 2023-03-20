@@ -1,42 +1,66 @@
-{% extends "layouts/base.html" %}
-{% block content %}
-    {% include "partials/hero.html" %}
-       
-        <section class="wrapper switcher flex-wrap:wrap-reverse region-bottom border-bottom js-fade">
-            <div style="justify-content:center;" class=" stack-sm">
-                <h2>{{ about.title }}</h2>
-                <p>{{ about.summary }}</p>
+{% extends "layouts/base.html" %} {% block content %} {% include "partials/hero.html" %}
 
-                <span class="with-icon">
-                    <a class="link" href="{{ about.buttonUrl }}">{{ about.buttonText }}</a>
+<article class="wrapper region border-bottom js-fade with-sidebar-right">
+  <div class="flow">
+    <h2>{{ about.title }}</h2>
+    <p>{{ about.summary }}</p>
 
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </span>
-            </div>
-            <div class="frame">
-                <img loading="lazy" src="{{ about.image }}" alt="{{ about.imageAlt }}">
-            </div>
-        </section>
+    <div class="with-icon">
+      <a class="link" href="{{ about.buttonUrl }}">{{ about.buttonText }}</a>
 
-        <section class="wrapper switcher region-bottom border-bottom js-fade">
-            <div class="frame">
-                <img loading="lazy" src="{{ grants.image }}" alt="{{ grants.imageAlt }}">
-            </div>
-            <div style="justify-content:center;" class="stack-sm">
-                <h2>{{ grants.title }}</h2>
-                <p>{{ grants.summary }}</p>
+      <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewbox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+        />
+      </svg>
+    </div>
+  </div>
+  <div class="frame">
+    <img loading="lazy" src="{{ about.image }}" alt="{{ about.imageAlt }}" />
+  </div>
+</article>
 
-                <span class="with-icon">
-                    <a class="link" href="{{ grants.buttonUrl }}">{{ grants.buttonText }}</a>
+<article class="wrapper flex-wrap:wrap-reverse region js-fade with-sidebar-left">
+  <div class="frame">
+    <img loading="lazy" src="{{ grants.image }}" alt="{{ grants.imageAlt }}" />
+  </div>
+  <div class="flow">
+    <h2>{{ grants.title }}</h2>
+    <p>{{ grants.summary }}</p>
 
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </span>
-            </div>
-        </section>
+    <div class="with-icon">
+      <a class="link" href="{{ grants.buttonUrl }}">{{ grants.buttonText }}</a>
 
-        {% include "partials/featured-news.html" %}
-    {% endblock %}
+      <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewbox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+        />
+      </svg>
+    </div>
+  </div>
+</article>
+
+{# <article class="wrapper region">
+  <blockquote>
+    <p>Hi there nice to see you</p>
+  </blockquote>
+</article> #}
+{% include "partials/featured-news.html" %} {% endblock %}

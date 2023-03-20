@@ -2,12 +2,12 @@
 <header role="banner" class="bg-green">
     <div class="wrapper nav cluster justify-content:space-between">
         <a href="/" aria-label="{{ site.name }} - home" class="logo">
-            <img src="../images/mff-logo.svg" alt="McKinney Family Foundation Logo">
-            {# {% include "partials/logo.svg" %} #}
+            <img src="../images/mff.png" alt="McKinney Family Foundation Logo">
+             McKinney Family Foundation
         </a>
         <nav>
             <ul class="cluster" role="list" aria-label="Primary">
-                {% for item in navigation.items %}
+                {% for item in navigation.primary %}
                     <li>
                         <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a >
                     </li>

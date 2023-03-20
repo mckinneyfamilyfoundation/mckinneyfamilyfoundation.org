@@ -1,26 +1,19 @@
-<section class="wrapper region-bottom js-fade stack">
-    <h2>Staff Members</h2>
-    <div class="grid">
-        {% for item in collections.staff %}
-            <div class="stack-sm">
+<article class="wrapper region js-fade">
+  <h2 class="text-align:center">Staff Members</h2>
 
-                <div class="frame staff">
-                    <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}">
-                </div>
-                <div class="stack-sm">
-                    <h4>{{item.data.name}}</h4>
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" style="--grid-placement: auto-fit">
+    {% for item in collections.staff %}
 
-                    <p>{{item.data.position}}</p>
-                    <p>
-                        <small>{{item.data.email}}</small>
-                    </p>
-                    <p>
-                        <small>{{item.data.number}}</small>
-                    </p>
-                </div>
+    <li class="card flow overflow-hidden stack" style="--flow-space: .5em">
+      <div class="frame staff">
+        <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}" />
+      </div>
+      <p>{{ item.data.name }}</p>
+      <small>{{ item.data.position }}</small>
+      <small>{{item.data.email}}</small>
+      <small>{{item.data.number}}</small>
+    </li>
 
-            </div>
-
-        {% endfor %}
-    </div>
-</section>
+    {% endfor %}
+  </ul>
+</article>

@@ -1,13 +1,13 @@
 {% extends "layouts/base.html" %}
 {% block content %}
     {% include "partials/hero.html" %}
-    <section class="wrapper region-bottom js-fade">
-        <toggle-section class="padding:s0 stack-sm" open="true">
+    <article class="wrapper region js-fade">
+        <toggle-section class="flow" open="true">
             <h2>{{ funding.title }}</h2>
             {{content | safe}}
         </toggle-section>
         {% include "partials/grantee-toggle.html" %}
         {% include "partials/partnership-toggle.html" %}
         <script type="module" src="/js/toggle-section.js"></script>
-    </section>
+    </article>
 {% endblock %}

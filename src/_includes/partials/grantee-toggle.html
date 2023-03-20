@@ -1,17 +1,15 @@
-<toggle-section class="padding:s0 stack" open="false">
-    <h2>{{ grantees }}</h2>
-    <div class="cards">
-        <ul>
-            {% for item in collections.grantees %}
-                <li class="card">
-                    <div class="img"><img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}"></div>
-                    <div class="text">
-                        <strong>
-                            <a href="{{ item.data.url }}" target="_blank">{{ item.data.title }}</a>
-                        </strong>
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
+<toggle-section class="flow prose" open="false">
+  <h2>{{ grantees }}</h2>
+  <ul class="grid" role="list">
+    {% for item in collections.grantees %}
+
+    <li class="card flow overflow-hidden">
+      <div class="frame">
+        <img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}" />
+      </div>
+      <p><a href="{{ item.data.url }}" target="_blank">{{ item.data.title }}</a></p>
+    </li>
+
+    {% endfor %}
+  </ul>
 </toggle-section>
