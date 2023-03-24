@@ -3,17 +3,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="xKBD2dHuPomOdz5f4-fIP1Gue5_ht3WWIauAKLogFI4" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="xKBD2dHuPomOdz5f4-fIP1Gue5_ht3WWIauAKLogFI4"
+    />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     {% include "partials/meta-info.html" %}
-    <link rel="shortcut icon" type="image/jpg" href="/images/mff.png"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css?{{ assetHash }}">
+    <link rel="shortcut icon" type="image/jpg" href="/images/mff.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css?{{ assetHash }}" />
   </head>
   <body>
     {% include "partials/site-head.html" %}
@@ -22,5 +29,16 @@
     </main>
     {% include "partials/footer.html" %}
     <script src="/js/scripts.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

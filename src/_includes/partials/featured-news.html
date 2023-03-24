@@ -1,5 +1,5 @@
 <article class="wrapper region js-fade flow">
-  <h2 class="text-align:center" style="margin: auto">{{ featuredNews.title }}</h2>
+  <h2 class="text-align:center" style="margin: auto">{{ featuredNews_title }}</h2>
 
   <ul class="grid mt-l-xl" role="list" data-layout="50-50">
     {% for item in collections.news %}
@@ -16,8 +16,8 @@
     {% endfor %}
   </ul>
   <div class="with-icon text-align:center" style="margin: auto">
-    <a href="{{ featuredNews.buttonUrl }}" class="text-align:center link" style="margin: auto">
-      {{ featuredNews.buttonText }}
+    <a href="{{ featuredNews_buttonUrl }}" class="text-align:center link" style="margin: auto">
+      {{ featuredNews_buttonText }}
     </a>
     <svg
       class="icon"

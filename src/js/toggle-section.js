@@ -132,10 +132,7 @@
       // Define the expand/collapse all template
       const buttons = document.createElement('div');
       buttons.innerHTML = `
-          <ul style="text-align: right; margin-bottom: 1em;" aria-label="section controls">
-            <li style="display: inline; margin: .5em;"><button id="expand">Expand</button></li>
-            <li style="display: inline;"><button id="collapse">Collapse</button></li>
-          </ul>
+          
           `;
 
       // Get the first `toggle-section` on the page

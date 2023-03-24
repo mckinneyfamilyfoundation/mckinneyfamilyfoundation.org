@@ -550,10 +550,6 @@ to change how empty grid tracks are handled */
   flex-wrap: wrap-reverse;
 }
 
-.padding\:s3 {
-  padding: var(--s3);
-}
-
 .aff {
   inline-size: 125px;
 }

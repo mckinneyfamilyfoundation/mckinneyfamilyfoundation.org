@@ -1,15 +1,13 @@
 ---
-title: Grants & Partnerships
 layout: grants
-hero:
-  title: Grants & Partnerships
-  image: "/images/McCormicks-Creek.jpeg"
-  imageAlt: McCormick's Creek
-funding:
-  title: Funding Guidelines
+title: Grants & Partnerships
+metaDesc: Grants & Partnerships Page
+hero_title: Grants & Partnerships
+hero_image: /images/McCormicks-Creek.jpeg
+hero_imageAlt: McCormick's Creek
+funding_title: Funding Guidelines
 grantees: Current Grantees
 partnerships: Active Partnerships
-
 ---
 The McKinney Family Foundation (MFF) is committed to building an environmentally sustainable future for every Hoosier, therefore our grantmaking is focused within the state of Indiana. Our primary areas of focus are:
 

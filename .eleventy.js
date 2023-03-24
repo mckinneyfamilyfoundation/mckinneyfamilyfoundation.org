@@ -1,3 +1,4 @@
+
 module.exports = function (eleventyConfig) {
   
   
@@ -8,6 +9,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/admin');
+
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
   eleventyConfig.addLayoutAlias('home', 'layouts/home.html');
@@ -42,6 +45,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('partnerships', collection => {
     return [...collection.getFilteredByGlob('./src/partnerships/*.md')];
   });
+
+  
 
   return {
     markdownTemplateEngine: 'njk',

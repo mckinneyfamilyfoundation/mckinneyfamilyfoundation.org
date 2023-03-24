@@ -3,7 +3,7 @@
     {% include "partials/hero.html" %}
     <article class="wrapper region js-fade">
         <toggle-section class="flow" open="true">
-            <h2>{{ funding.title }}</h2>
+            <h2>{{ funding_title }}</h2>
             {{content | safe}}
         </toggle-section>
         {% include "partials/grantee-toggle.html" %}

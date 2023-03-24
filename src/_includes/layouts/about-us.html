@@ -1,11 +1,11 @@
 {% extends "layouts/base.html" %} {% block content %} {% include "partials/hero.html" %}
 <article class="wrapper region border-bottom js-fade with-sidebar-right">
   <div class="flow">
-    <h2>{{ mission.title }}</h2>
-    <p>{{ mission.summary }}</p>
+    <h2>{{ mission_title }}</h2>
+    <p>{{ mission_summary }}</p>
   </div>
   <div class="frame">
-    <img loading="lazy" src="{{ mission.image }}" alt="{{ mission.imageAlt }}" />
+    <img loading="lazy" src="{{ mission_image }}" alt="{{ mission_imageAlt }}" />
   </div>
 </article>
 

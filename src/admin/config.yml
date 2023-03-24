@@ -1,0 +1,165 @@
+backend:
+  # Use netlify identity as backend
+  name: 'git-gateway'
+  branch: 'master'
+media_folder: 'src/images'
+public_folder: '/images'
+
+# Please run 'npx netlify-cms-proxy-server' for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - label: 'Board'
+    name: 'board'
+    folder: 'src/board'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'name', name: 'name', widget: 'string'}
+      - {label: 'Position', name: 'position', widget: 'string'}
+  
+  - label: 'Staff'
+    name: 'staff'
+    folder: 'src/staff'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'Name', name: 'name', widget: 'string'}
+      - {label: 'Position', name: 'position', widget: 'string'}
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Image Alt Text', name: 'imageAlt', widget: 'string'}
+      - {label: 'Email', name: 'email', widget: 'string'}
+      - {label: 'Number', name: 'number', widget: 'string'}
+  
+  - label: 'Grantee'
+    name: 'grantee'
+    folder: 'src/grantees'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Image Alt Text', name: 'imageAlt', widget: 'string'}
+      - {label: 'Name', name: 'title', widget: 'string'}
+      - {label: 'URL', name: 'url', widget: 'string'}
+  
+  - label: 'Partnership'
+    name: 'partnership'
+    folder: 'src/partnerships'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Image Alt Text', name: 'imageAlt', widget: 'string'}
+      - {label: 'Name', name: 'title', widget: 'string'}
+      - {label: 'URL', name: 'url', widget: 'string'}
+  
+  - label: 'Article'
+    name: 'article'
+    folder: 'src/news'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: 'Image', name: 'image', widget: 'image'}
+      - {label: 'Title of Article', name: 'articleTitle', widget: 'string'}
+      - {label: 'Image Alt Text', name: 'imageAlt', widget: 'string'}
+      - {label: 'Article Grantee', name: 'grantee', widget: 'string'}
+      - {label: 'Summary of Article (1 sentence)', name: 'articleSummary', widget: 'string'}
+      - {label: 'URL', name: 'url', widget: 'string'}
+
+  - label: 'Pages'
+    name: 'pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        file: 'src/index.md'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: metaDesc, widget: text}
+
+          - {label: Hero Title, name: hero_title, widget: string}
+          - {label: Hero Image, name: hero_image, widget: image}
+          - {label: Hero Image Alt Text, name: hero_imageAlt, widget: string}
+
+          - {label: About Title, name: about_title, widget: string}
+          - {label: About Summary, name: about_summary, widget: text}
+          - {label: About Image, name: about_image, widget: image}
+          - {label: About Image Alt Text, name: about_imageAlt, widget: string}
+          - {label: About Link Title, name: about_buttonText, widget: string}
+          - {label: About Link Url, name: about_buttonUrl, widget: string}
+          
+          - {label: Grants Title, name: grants_title, widget: string}
+          - {label: Grants Summary, name: grants_summary, widget: text}
+          - {label: Grants Image, name: grants_image, widget: image}
+          - {label: Grants Image Alt Text, name: grants_imageAlt, widget: string}
+          - {label: Grants Link Title, name: grants_buttonText, widget: string}
+          - {label: Grants News Link Url, name: grants_buttonUrl, widget: string}
+
+          - {label: Featured News Title, name: featuredNews_title, widget: string}
+          - {label: Featured News Link Title, name: featuredNews_buttonText, widget: string}
+          - {label: Featured News Link Url, name: featuredNews_buttonUrl, widget: string}
+
+      - label: 'About Us Page'
+        name: 'about'
+        file: 'src/about-us.md'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: metaDesc, widget: text}
+
+          - {label: Hero Title, name: hero_title, widget: string}
+          - {label: Hero Image, name: hero_image, widget: image}
+          - {label: Hero Image Alt Text, name: hero_imageAlt, widget: string}
+          
+          - {label: Mission Title, name: mission_title, widget: string}
+          - {label: Mission Summary, name: mission_summary, widget: text}
+          - {label: Mission Image, name: mission_image, widget: image}
+          - {label: Mission Image Alt Text, name: mission_imageAlt, widget: string}
+
+      - label: 'Grants & Partnerships Page'
+        name: 'grants'
+        file: 'src/grants-and-partnerships.md'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: metaDesc, widget: text}
+
+          - {label: Hero Title, name: hero_title, widget: string}
+          - {label: Hero Image, name: hero_image, widget: image}
+          - {label: Hero Image Alt Text, name: hero_imageAlt, widget: string}
+
+          - { label: 'Funding Guidelines Toggle Title', name: 'funding_title', widget: 'string' }
+          - { label: 'Funding Guidelines', name: 'body', widget: 'markdown' }
+
+          - { label: 'Grantees Toggle Title', name: 'grantees', widget: 'string' }
+          - { label: 'Partnerships Toggle Title', name: 'partnerships', widget: 'string' }
+
+      - label: 'News Page'
+        name: 'news'
+        file: 'src/news.md'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: metaDesc, widget: text}
+
+          - {label: Hero Title, name: hero_title, widget: string}
+          - {label: Hero Image, name: hero_image, widget: image}
+          - {label: Hero Image Alt Text, name: hero_imageAlt, widget: string}
+
+      - label: 'Privacy Page'
+        name: 'privacy'
+        file: 'src/privacy.md'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: metaDesc, widget: text}
+
+          - {label: Hero Title, name: hero_title, widget: string}
+          - {label: Hero Image, name: hero_image, widget: image}
+          - {label: Hero Image Alt Text, name: hero_imageAlt, widget: string}
+
+          - { label: 'Privacy Body', name: 'body', widget: 'markdown' }
+
+          

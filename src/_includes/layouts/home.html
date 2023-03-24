@@ -1,14 +1,16 @@
-{% extends "layouts/base.html" %} {% block content %} {% include "partials/hero.html" %}
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/hero.html" %}
 
-<article class="wrapper region border-bottom js-fade with-sidebar-right">
-  <div class="flow">
-    <h2>{{ about.title }}</h2>
-    <p>{{ about.summary }}</p>
+  <article class="wrapper region border-bottom js-fade with-sidebar-right">
+    <div class="flow">
+      <h2>{{ about_title }}</h2>
+      <p>{{ about_summary }}</p>
 
-    <div class="with-icon">
-      <a class="link" href="{{ about.buttonUrl }}">{{ about.buttonText }}</a>
+      <div class="with-icon">
+        <a class="link" href="{{ about_buttonUrl }}">{{ about_buttonText }}</a>
 
-      <svg
+        <svg
         class="icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -16,31 +18,31 @@
         stroke-width="1.5"
         stroke="currentColor"
       >
-        <path
+          <path
           stroke-linecap="round"
           stroke-linejoin="round"
           d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-        />
-      </svg>
+/>
+        </svg>
+      </div>
     </div>
-  </div>
-  <div class="frame">
-    <img loading="lazy" src="{{ about.image }}" alt="{{ about.imageAlt }}" />
-  </div>
-</article>
+    <div class="frame">
+      <img loading="lazy" src="{{ about_image }}" alt="{{ about_imageAlt }}"/>
+    </div>
+  </article>
 
-<article class="wrapper flex-wrap:wrap-reverse region js-fade with-sidebar-left">
-  <div class="frame">
-    <img loading="lazy" src="{{ grants.image }}" alt="{{ grants.imageAlt }}" />
-  </div>
-  <div class="flow">
-    <h2>{{ grants.title }}</h2>
-    <p>{{ grants.summary }}</p>
+  <article class="wrapper flex-wrap:wrap-reverse region js-fade with-sidebar-left">
+    <div class="frame">
+      <img loading="lazy" src="{{ grants_image }}" alt="{{ grants_imageAlt }}"/>
+    </div>
+    <div class="flow">
+      <h2>{{ grants_title }}</h2>
+      <p>{{ grants_summary }}</p>
 
-    <div class="with-icon">
-      <a class="link" href="{{ grants.buttonUrl }}">{{ grants.buttonText }}</a>
+      <div class="with-icon">
+        <a class="link" href="{{ grants_buttonUrl }}">{{ grants_buttonText }}</a>
 
-      <svg
+        <svg
         class="icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -48,19 +50,15 @@
         stroke-width="1.5"
         stroke="currentColor"
       >
-        <path
+          <path
           stroke-linecap="round"
           stroke-linejoin="round"
           d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-        />
-      </svg>
+/>
+        </svg>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
 
-{# <article class="wrapper region">
-  <blockquote>
-    <p>Hi there nice to see you</p>
-  </blockquote>
-</article> #}
-{% include "partials/featured-news.html" %} {% endblock %}
+  {% include "partials/featured-news.html" %}
+{% endblock %}
