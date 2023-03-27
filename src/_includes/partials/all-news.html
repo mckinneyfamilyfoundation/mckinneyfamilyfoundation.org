@@ -1,6 +1,6 @@
 <article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-layout="50-50">
-    {% for item in collections.news %}
+  <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
+    {% for item in collections.news | reverse %}
 
     <li class="card flow overflow-hidden">
       <div class="frame">

@@ -851,7 +851,7 @@ toggle-section[role="region"]+toggle-section {
 }
 
 .card small {
-  font-size: var(--size-step-0);
+  font-size: 1rem;
 }
 
 ul {

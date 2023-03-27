@@ -1,7 +1,7 @@
 <article class="wrapper region js-fade flow">
   <h2 class="text-align:center" style="margin: auto">{{ featuredNews_title }}</h2>
 
-  <ul class="grid mt-l-xl" role="list" data-layout="50-50">
+  <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
     {% for item in collections.news %}
 
     <li class="card flow overflow-hidden">
