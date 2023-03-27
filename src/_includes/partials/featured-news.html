@@ -2,7 +2,7 @@
   <h2 class="text-align:center" style="margin: auto">{{ featuredNews_title }}</h2>
 
   <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
-    {% for item in collections.news %}
+    {% for item in collections.featuredNews | reverse %}
 
     <li class="card flow overflow-hidden">
       <div class="frame">
