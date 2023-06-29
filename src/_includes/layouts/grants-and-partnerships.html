@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block content %}
     {% include "partials/hero.html" %}
-    <article class="wrapper region js-fade prose">
+    <article class="wrapper region js-fade prose" style="margin-top: 0;">
         <toggle-section class="flow" open="true">
             <h2>{{ funding_title }}</h2>
             {{content | safe}}

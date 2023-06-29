@@ -21,22 +21,22 @@
     </div>
   </article>
 
+  <article class="wrapper region prose js-fade">
+    <div class="flow">
+      <h2 style="max-width: unset; text-align:center">Our Vision</h2>
+      <p style="max-width: unset; text-align:center">The McKinney Family Foundation strives to be the foremost catalyst for environmental advocacy, progress, and leadership in Indiana.</p>
+    </div>
+  </article>
+
   <article class="wrapper region border-bottom js-fade with-sidebar-left">
     <div class="frame">
       <img loading="lazy" src="{{ vision_image }}" alt="{{ vision_imageAlt }}"/>
     </div>
     <div class="flow">
-      <h2>{{ vision_title }}</h2>
-      <p>{{ vision_summary }}</p>
-    </div>
-  </article>
-
-  <article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
-    <div class="flow">
       <h2>Our Purpose</h2>
       <p>The McKinney Family Foundation:</p>
 
-      <ul class="flow" style="--flow-space: .5em">
+      <ul class="flow">
         <li>
           <p>Convenes local, regional, and national experts, advocates, and funders to form a collaborative and coordinated infrastructure for environmental change.</p>
 
@@ -52,16 +52,14 @@
         </li>
       </ul>
     </div>
-    <div class="frame">
-      <img loading="lazy" src="{{ vision_image }}" alt="{{ vision_imageAlt }}"/>
-    </div>
+
   </article>
 
   <article class="wrapper border-bottom region js-fade">
     <h2 style="max-width: unset; text-align:center">Focus Areas</h2>
     <ul class="grid mt-l-xl" role="list" style="--grid-placement: auto-fit">
 
-      <li class="fa">
+      <li class="">
         <div class="flow">
           <div class="frame">
             <img src="/images/wind-solar.jpg" alt=""/>
@@ -90,7 +88,7 @@
           </div>
         </div>
       </li>
-      <li class="fa">
+      <li class="">
         <div class="flow">
           <div class="frame">
             <img src="/images/sprout.jpg" alt=""/>
@@ -121,8 +119,8 @@
           </div>
         </div>
       </li>
-      <li class="fa">
-        <div class="flow">
+      <li class="">
+        <div class="flow" style="--flow-space: .5em">
           <div class="frame">
             <img src="/images/diversity.jpg" alt=""/>
           </div>
@@ -155,14 +153,15 @@
     </ul>
   </article>
 
-  <article class="wrapper region border-bottom js-fade">
+  <article class="wrapper region border-bottom js-fade flex-wrap:wrap-reverse with-sidebar-right">
     <div class="flow">
       <h2>The McKinney Family Legacy</h2>
-      <div class="column-2 flow">
-        <p>The McKinney Family Foundation (MFF) is a multi-generation family foundation established in 2010 by Robert H. McKinney (link to bio sub-page here) and his five adult children – Kent A. McKinney, Kevin K. McKinney, Lisa C. McKinney, Marni McKinney Waterfield, and Robert C. McKinney.</p>
-        <p>In addition to MFF’s focus areas, Mr. McKinney’s personal philanthropy supports postsecondary and legal education and scholarship, and numerous community-based and civic organizations.</p>
-        <p>The Foundation’s early work primarily focused on higher education and the arts. Today, MFF strives to be the foremost catalyst for climate change solutions, progress, and leadership in Indiana.</p>
-      </div>
+      <p>The McKinney Family Foundation (MFF) is a multi-generation family foundation established in 2010 by Robert H. McKinney (link to bio sub-page here) and his five adult children – Kent A. McKinney, Kevin K. McKinney, Lisa C. McKinney, Marni McKinney Waterfield, and Robert C. McKinney.</p>
+      <p>In addition to MFF’s focus areas, Mr. McKinney’s personal philanthropy supports postsecondary and legal education and scholarship, and numerous community-based and civic organizations.</p>
+      <p>The Foundation’s early work primarily focused on higher education and the arts. Today, MFF strives to be the foremost catalyst for climate change solutions, progress, and leadership in Indiana.</p>
+    </div>
+    <div class="frame">
+      <img loading="lazy" src="{{ vision_image }}" alt="{{ vision_imageAlt }}"/>
     </div>
   </article>
   {% include "partials/board-list.html" %}
