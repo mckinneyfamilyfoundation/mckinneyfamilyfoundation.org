@@ -1,55 +1,170 @@
-{% extends "layouts/base.html" %} {% block content %} {% include "partials/hero.html" %}
-<article class="wrapper region border-bottom js-fade with-sidebar-right">
-  <div class="flow">
-    <h2>{{ mission_title }}</h2>
-    <p>{{ mission_summary }}</p>
-  </div>
-  <div class="frame">
-    <img loading="lazy" src="{{ mission_image }}" alt="{{ mission_imageAlt }}" />
-  </div>
-</article>
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/hero.html" %}
 
-<article class="wrapper border-bottom region js-fade">
-  <h2 class="text-align:center">Focus Areas</h2>
-  <ul class="grid mt-l-xl" role="list" style="--grid-placement: auto-fit">
-    <li class="card">
+  <article style="margin-top: 0;" class="bg-green-1">
+    <div class="wrapper region prose" style="padding-top: var(--space-m-l);padding-bottom: var(--space-m-l);">
       <div class="flow">
-        <div class="frame">
-          <img src="/images/wind-solar.jpg" alt="" />
-        </div>
-        <h3>Energy</h3>
-        <p>
-          Creating renewable energy jobs and meaningful policy changes to ensure the
-          transition to a sustainable energy economy.
-        </p>
+        <p style="max-width: unset; text-align:center">The McKinney Family Foundation strives to be the foremost catalyst for environmental advocacy, progress, and leadership in Indiana.</p>
       </div>
-    </li>
-    <li class="card">
-      <div class="flow">
-        <div class="frame">
-          <img src="/images/sprout.jpg" alt="" />
+    </div>
+
+  </article>
+
+  <article class="wrapper region flex-wrap:wrap-reverse border-bottom js-fade with-sidebar-right">
+    <div class="flow">
+      <h2>{{ mission_title }}</h2>
+      <p>{{ mission_summary }}</p>
+    </div>
+    <div class="frame">
+      <img loading="lazy" src="{{ mission_image }}" alt="{{ mission_imageAlt }}"/>
+    </div>
+  </article>
+
+  <article class="wrapper region border-bottom js-fade with-sidebar-left">
+    <div class="frame">
+      <img loading="lazy" src="{{ vision_image }}" alt="{{ vision_imageAlt }}"/>
+    </div>
+    <div class="flow">
+      <h2>{{ vision_title }}</h2>
+      <p>{{ vision_summary }}</p>
+    </div>
+  </article>
+
+  <article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
+    <div class="flow">
+      <h2>Our Purpose</h2>
+      <p>The McKinney Family Foundation:</p>
+
+      <ul class="flow" style="--flow-space: .5em">
+        <li>
+          <p>Convenes local, regional, and national experts, advocates, and funders to form a collaborative and coordinated infrastructure for environmental change.</p>
+
+        </li>
+        <li>
+          <p>Provides expertise on Indiana environmental issues with advocacy groups, civic and nonprofit organizations, and peer funders.</p>
+        </li>
+        <li>
+          <p>Serves as Indiana’s anchor funder and the hub for national peer funders to support this work in Indiana.</p>
+        </li>
+        <li>
+          <p>Connects organizations seeking funding outside of MFF’s scope to peer funders who may support those efforts.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="frame">
+      <img loading="lazy" src="{{ vision_image }}" alt="{{ vision_imageAlt }}"/>
+    </div>
+  </article>
+
+  <article class="wrapper border-bottom region js-fade">
+    <h2 style="max-width: unset; text-align:center">Focus Areas</h2>
+    <ul class="grid mt-l-xl" role="list" style="--grid-placement: auto-fit">
+
+      <li class="fa">
+        <div class="flow">
+          <div class="frame">
+            <img src="/images/wind-solar.jpg" alt=""/>
+          </div>
+          <p>
+            <strong>Equitable Climate Change Solutions</strong>
+          </p>
+          <p>Addressing the nexus of a strong democracy, economic and health disparities, and environmental outcomes.</p>
+          <div class="with-icon">
+            <a class="link" href="{{ grants_buttonUrl }}">Discover how we empower communities and leaders</a>
+
+            <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewbox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+              <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+/>
+            </svg>
+          </div>
         </div>
-        <h3>Agriculture</h3>
-        <p>
-          Transforming agricultural infrastructure to ensure sustainable methods and
-          improve the distribution, affordability and availability of locally grown
-          nutritious food.
+      </li>
+      <li class="fa">
+        <div class="flow">
+          <div class="frame">
+            <img src="/images/sprout.jpg" alt=""/>
+          </div>
+          <p>
+            <strong>Sustainable Energy Economy</strong>
+          </p>
+          <p>
+          Expanding a sustainable clean energy economy through renewable energy jobs creation and meaningful policy change.
         </p>
-      </div>
-    </li>
-    <li class="card">
-      <div class="flow">
-        <div class="frame">
-          <img src="/images/diversity.jpg" alt="" />
+          <div class="with-icon">
+            <a class="link" href="{{ grants_buttonUrl }}">Discover how we empower communities and leaders</a>
+
+            <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewbox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+              <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+/>
+            </svg>
+          </div>
         </div>
-        <h3>Leadership</h3>
-        <p>
-          Ensuring the long-term viability of the nonprofit environmental sector through
-          capacity building and leadership development.
+      </li>
+      <li class="fa">
+        <div class="flow">
+          <div class="frame">
+            <img src="/images/diversity.jpg" alt=""/>
+          </div>
+          <p>
+            <strong>Empowered Leaders & Communities</strong>
+          </p>
+          <p>
+          Ensuring the long-term viability of the environmental nonprofit sector through capacity building and leadership development.
         </p>
+          <div class="with-icon">
+            <a class="link" href="{{ grants_buttonUrl }}">Discover how we empower communities and leaders</a>
+
+            <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewbox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+              <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+/>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article class="wrapper region border-bottom js-fade">
+    <div class="flow">
+      <h2>The McKinney Family Legacy</h2>
+      <div class="column-2 flow">
+        <p>The McKinney Family Foundation (MFF) is a multi-generation family foundation established in 2010 by Robert H. McKinney (link to bio sub-page here) and his five adult children – Kent A. McKinney, Kevin K. McKinney, Lisa C. McKinney, Marni McKinney Waterfield, and Robert C. McKinney.</p>
+        <p>In addition to MFF’s focus areas, Mr. McKinney’s personal philanthropy supports postsecondary and legal education and scholarship, and numerous community-based and civic organizations.</p>
+        <p>The Foundation’s early work primarily focused on higher education and the arts. Today, MFF strives to be the foremost catalyst for climate change solutions, progress, and leadership in Indiana.</p>
       </div>
-    </li>
-  </ul>
-</article>
-{% include "partials/board-list.html" %} {% include "partials/staff-list.html" %} {%
-endblock %}
+    </div>
+  </article>
+  {% include "partials/board-list.html" %}
+  {% include "partials/staff-list.html" %}
+{% endblock %}

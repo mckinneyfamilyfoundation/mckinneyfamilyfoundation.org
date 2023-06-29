@@ -168,18 +168,19 @@ h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
   font-family: var(--font-display);
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: var(--size-step-5);
-}
-
-h2 {
   font-size: var(--size-step-4);
 }
 
-h3 {
+h2 {
   font-size: var(--size-step-3);
+}
+
+h3 {
+  font-size: var(--size-step-2);
 }
 
 /* Set line lengths */
@@ -320,7 +321,7 @@ nav a {
 .cluster {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s0, 1rem);
+  gap: var(--gutter, 1rem);
   justify-content: flex-start;
   align-items: center;
 }
@@ -338,8 +339,8 @@ nav a {
   flex-basis: calc((30rem - 100%) * 999);
 }
 
-.switcher> :nth-last-child(n+ 5),
-.switcher> :nth-last-child(n+ 5)~* {
+.switcher> :nth-last-child(n+ 4),
+.switcher> :nth-last-child(n+ 4)~* {
   flex-basis: 100%;
 }
 
@@ -368,9 +369,23 @@ nav a {
 .frame.staff {
   --n: 1;
   --d: 1;
-  aspect-ratio: var(--n) / var(--d);
-  border-radius: 50%;
+  width: 40%;
+  border-radius: 1e5px;
+  --radius-round: 1e5px;
 }
+
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, 1rem);
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
 
 /* AUTO GRID
 Related Every Layout: https://every-layout.dev/layouts/grid/
@@ -529,6 +544,11 @@ to change how empty grid tracks are handled */
   color: var(--color-light);
 }
 
+.bg-green-1 {
+  background-color: var(--green-10);
+  color: var(--color-light);
+}
+
 .color\:color-dark {
   color: var(--color-dark);
 }
@@ -543,7 +563,7 @@ to change how empty grid tracks are handled */
 
 
 .border-bottom {
-  border-bottom: solid var(--border-thin) #19220c;
+  border-bottom: solid 2px #404040;
 }
 
 .flex-wrap\:wrap-reverse {
@@ -633,12 +653,12 @@ button:hover {
 
 .link {
   text-decoration: underline;
-  color: var(--green-8);
+  color: var(--green-10);
 }
 
 .link:hover {
   text-decoration: underline;
-  background-color: var(--green-3);
+  background-color: var(--green-2);
 }
 
 
@@ -713,10 +733,7 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
 .region {
   padding-top: var(--region-space-top, var(--space-l-2xl));
   padding-bottom: var(--region-space-bottom, var(--space-l-2xl));
-}
-
-.region-bottom {
-  padding-block: var(--s3);
+  margin-top: 0;
 }
 
 /**
@@ -808,6 +825,10 @@ toggle-section[role="region"]+toggle-section {
   max-width: unset;
 }
 
+.board {
+  padding: var(--space-m-l);
+}
+
 .card ::selection {
   color: var(--stone-0);
   background: var(--stone-10);
@@ -854,9 +875,7 @@ toggle-section[role="region"]+toggle-section {
   font-size: 1rem;
 }
 
-ul {
-  padding-inline-start: 0;
-}
+ul {}
 
 @keyframes fadein {
   0% {
@@ -911,4 +930,11 @@ nav a:is(:hover, :focus) {
 .site-foot svg {
   height: 1em;
   width: 1em
+}
+
+.column-2 {
+  columns: 2;
+  -webkit-column-width: 200px;
+  -moz-column-width: 200px;
+  column-width: 400px;
 }

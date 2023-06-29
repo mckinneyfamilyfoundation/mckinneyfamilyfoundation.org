@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('home', 'layouts/home.html');
   eleventyConfig.addLayoutAlias('focus-areas', 'layouts/focus-areas.html');
   eleventyConfig.addLayoutAlias('about-us', 'layouts/about-us.html');
+  eleventyConfig.addLayoutAlias('our-work', 'layouts/our-work.html');
   eleventyConfig.addLayoutAlias('grants', 'layouts/grants-and-partnerships.html');
   eleventyConfig.addLayoutAlias('news', 'layouts/news.html');
   eleventyConfig.addLayoutAlias('privacy', 'layouts/privacy.html');

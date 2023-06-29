@@ -4,14 +4,18 @@
   <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
     {% for item in collections.featuredNews | reverse %}
 
-    <li class="card flow overflow-hidden">
-      <div class="frame">
-        <img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}" />
-      </div>
-      <h2><a href="{{ item.data.url }}">{{ item.data.articleTitle }}</a></h2>
-      <p>{{ item.data.articleSummary }}</p>
-      <small>By: {{ item.data.grantee }}</small>
-    </li>
+      <li class="card flow overflow-hidden" style="--flow-space: .5em">
+        <div class="frame">
+          <img src="{{ item.data.image }}" alt="{{ item.data.imageAlt }}"/>
+        </div>
+        <p>
+          <strong>
+            <a href="{{ item.data.url }}">{{ item.data.articleTitle }}</a>
+          </strong>
+        </p>
+        <p>{{ item.data.articleSummary }}</p>
+        <p>By: {{ item.data.grantee }}</p>
+      </li>
 
     {% endfor %}
   </ul>
@@ -31,7 +35,7 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-      />
+/>
     </svg>
   </div>
 </article>

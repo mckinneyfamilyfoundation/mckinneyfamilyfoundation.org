@@ -2,7 +2,16 @@
 {% block content %}
   {% include "partials/hero.html" %}
 
-  <article class="wrapper region border-bottom js-fade with-sidebar-right">
+  <article style="margin-top: 0;" class="bg-green-1">
+    <div class="wrapper region prose" style="padding-top: var(--space-m-l);padding-bottom: var(--space-m-l);">
+      <div class="flow">
+        <p style="max-width: unset; text-align:center">The McKinney Family Foundation strives to be the foremost catalyst for environmental advocacy, progress, and leadership in Indiana.</p>
+      </div>
+    </div>
+
+  </article>
+
+  <article style="margin-top: 0;" class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
     <div class="flow">
       <h2>{{ about_title }}</h2>
       <p>{{ about_summary }}</p>
@@ -31,7 +40,7 @@
     </div>
   </article>
 
-  <article class="wrapper flex-wrap:wrap-reverse region js-fade with-sidebar-left">
+  <article style="margin-top: 0;" class="wrapper border-bottom region js-fade with-sidebar-left">
     <div class="frame">
       <img loading="lazy" src="{{ grants_image }}" alt="{{ grants_imageAlt }}"/>
     </div>

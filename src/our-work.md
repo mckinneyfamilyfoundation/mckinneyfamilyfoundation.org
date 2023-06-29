@@ -1,8 +1,8 @@
 ---
-layout: about-us
-title: About Us
+layout: our-work
+title: Our Work
 metaDesc: McKinney Family Foundation is Building a Sustainable Indiana
-hero_title: About Us
+hero_title: Our Work
 hero_image: "/images/Bloomington.jpg"
 hero_imageAlt: Indianapolis skyline in the morning
 mission_title: Our Mission
