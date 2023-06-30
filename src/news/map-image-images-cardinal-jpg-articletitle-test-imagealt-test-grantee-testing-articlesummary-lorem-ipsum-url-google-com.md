@@ -1,8 +1,8 @@
 ---
 image: /images/Cardinal.jpg
-articleTitle: Test
-imageAlt: Test
-grantee: Testing
+articleTitle: Test 2
+imageAlt: Test 2
+grantee: Testing Again
 articleSummary: Lorem ipsum
 url: google.com
 ---
