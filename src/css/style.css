@@ -370,19 +370,14 @@ nav a {
   --n: 1;
   --d: 1;
   width: 40%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 1e5px;
   --radius-round: 1e5px;
 }
 
 
-.staff {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gutter, 1rem);
-  justify-content: space-between;
-  align-items: center;
 
-}
 
 
 

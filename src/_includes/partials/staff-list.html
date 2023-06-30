@@ -4,7 +4,7 @@
   <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
     {% for item in collections.staff %}
 
-      <li class="card flow" style="--flow-space: .2em;">
+      <li class="card flow" style="--flow-space: .5em;">
         <div class="frame staff">
           <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}"/>
         </div>
@@ -19,28 +19,3 @@
     {% endfor %}
   </ul>
 </article>
-
-{# <article class="wrapper region js-fade">
-  <h2 class="text-align:center">Staff Members</h2>
-  <div class="mt-l-xl flow">
-    {% for item in collections.staff %}
-
-      <div class="with-sidebar-left flow">
-        <div class="frame staff" style="flex-basis: 20rem;">
-          <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}"/>
-        </div>
-        <div class="flow">
-          <p>
-            <strong>{{ item.data.name }} - {{ item.data.position }}</strong>
-          </p>
-          <p style="word-wrap:break-word">{{item.data.email}}</p>
-          <p>{{item.data.number}}</p>
-          <p>{{item.data.bio}}</p>
-        </div>
-
-      </div>
-
-    {% endfor %}
-  </div>
-</ul>
-</article> #}
