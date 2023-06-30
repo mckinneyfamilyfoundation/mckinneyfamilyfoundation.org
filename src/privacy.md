@@ -7,6 +7,7 @@ hero_image: /images/McCormicks-Creek.jpeg
 hero_imageAlt: McCormick's Creek
 ---
 **What background data is collected?**
+
 This site does not use any third party tracking scripts.
 
 **How do we use the data you provide?**
