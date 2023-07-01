@@ -933,3 +933,8 @@ nav a:is(:hover, :focus) {
   column-width: 400px;
   column-gap: var(--gutter);
 }
+
+.center > * {
+  max-width: unset;
+  text-align: center;
+}

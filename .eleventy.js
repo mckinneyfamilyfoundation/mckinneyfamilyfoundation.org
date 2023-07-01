@@ -1,4 +1,6 @@
 
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+
 module.exports = function (eleventyConfig) {
   
   
@@ -22,6 +24,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('privacy', 'layouts/privacy.html');
   eleventyConfig.addLayoutAlias('imprint', 'layouts/imprint.html');
 
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
 
   // Returns a collection of blog posts in reverse date order
@@ -32,7 +35,7 @@ module.exports = function (eleventyConfig) {
     return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();
   });
   eleventyConfig.addCollection('focusAreas', collection => {
-    return [...collection.getFilteredByGlob('./src/focusAreas/*.md')].reverse();
+    return [...collection.getFilteredByGlob('./src/focus-areas/*.md')];
   });
   eleventyConfig.addCollection('board', collection => {
     return [...collection.getFilteredByGlob('./src/board/*.md')];

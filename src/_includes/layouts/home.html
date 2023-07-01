@@ -2,19 +2,9 @@
 {% block content %}
   {% include "partials/hero.html" %}
 
-  <article style="margin-top: 0;" class="bg-green-1">
-    <div class="wrapper region prose" style="padding-top: var(--space-m-l);padding-bottom: var(--space-m-l);">
-      <div class="flow">
-        <p style="max-width: unset; text-align:center">The McKinney Family Foundation strives to be the foremost catalyst for environmental advocacy, progress, and leadership in Indiana.</p>
-      </div>
-    </div>
-
-  </article>
-
   <article style="margin-top: 0;" class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
     <div class="flow">
-      <h2>{{ about_title }}</h2>
-      <p>{{ about_summary }}</p>
+      {% renderFile "src/content/home/our-mission.md" %}
 
       <div class="with-icon">
         <a class="link" href="{{ about_buttonUrl }}">{{ about_buttonText }}</a>
@@ -45,8 +35,7 @@
       <img loading="lazy" src="{{ grants_image }}" alt="{{ grants_imageAlt }}"/>
     </div>
     <div class="flow">
-      <h2>{{ grants_title }}</h2>
-      <p>{{ grants_summary }}</p>
+      {% renderFile "src/content/home/grants-and-partnerships.md" %}
 
       <div class="with-icon">
         <a class="link" href="{{ grants_buttonUrl }}">{{ grants_buttonText }}</a>

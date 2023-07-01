@@ -3,35 +3,16 @@
     {% include "partials/hero.html" %}
     <article class="wrapper region js-fade content" style="margin-top: 0;">
         <toggle-section class="flow" open="true">
-            <h2>{{ funding_title }}</h2>
-            {{content | safe}}
+            {% renderFile "src/content/grants-and-partnerships/funding-guidelines.md" %}
         </toggle-section>
         <toggle-section class="flow" open="false">
-            <h2>Funding Restrictions</h2>
-            <ul>
-                <li>Grants will be awarded only to 501(c)3 public charities and schools located in Indiana.</li>
-                <li>MFF does not accept unsolicited proposals. The Foundation may not respond to materials sent without an explicit request.</li>
-                <li>MFF does not fund the following:</li>
-                <ul>
-                    <li>beautification programming. (e.g., creating green spaces, planting trees or gardens, sponsoring volunteer clean-up days, etc.);</li>
-                    <li>capital campaigns;</li>
-                    <li>organizations outside of Indiana;</li>
-                    <li>organizations that are not a 501(c)3 public charity or school.</li>
-                </ul>
-        </ul>
-    </toggle-section>
-    <toggle-section class="flow" open="false">
-        <h2>Inquires</h2>
-        <ul>
-            <li>Before contacting MFF to inquire if your organization may be a fit, please review the list of current grantees and the work they do.</li>
-            <li>Please do not send Letters of Inquiry, funding requests, or materials without an invitation to do so from MFF.</li>
-        </ul>
-        <i>Note: While MFF currently supports other environmental causes, we have transitioned our focus primarily to the areas listed above.</i>
-        <i>MFF has existing and continuing obligations to higher education and art education. There are no plans to expand these.</i>
-        <i>All funding is solely at the discretion of the McKinney Family Foundation Board of Directors.</i>
-    </toggle-section>
-    {% include "partials/grantee-toggle.html" %}
-    {% include "partials/partnership-toggle.html" %}
-    <script type="module" src="/js/toggle-section.js"></script>
-</article>
+            {% renderFile "src/content/grants-and-partnerships/funding-restrictions.md" %}
+        </toggle-section>
+        <toggle-section class="flow" open="false">
+            {% renderFile "src/content/grants-and-partnerships/inquires.md" %}
+        </toggle-section>
+        {% include "partials/grantee-toggle.html" %}
+        {% include "partials/partnership-toggle.html" %}
+        <script type="module" src="/js/toggle-section.js"></script>
+    </article>
 {% endblock %}

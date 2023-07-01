@@ -1,5 +1,7 @@
 <article class="wrapper region js-fade">
-  <h2 class="text-align:center">Staff Members</h2>
+  <div class="center">
+    {% renderFile "src/content/about-us/staff-members.md" %}
+  </div>
 
   <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
     {% for item in collections.staff %}

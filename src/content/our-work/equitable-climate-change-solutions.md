@@ -1,0 +1,7 @@
+## Equitable Climate Change Solutions
+
+MFF is deliberate in funding inclusive democracy in order to address economic and health disparities and their impacts on environmental outcomes. Inclusive democracy ensures a society of informed voices creating systemic change, particularly centering underrepresented communities. This work amplifies the potential opportunities to improve state and municipal environmental policies in Indiana.
+
+Through the McKinney Midwest Climate Project (MMCP), more than forty municipal governments across the state have accelerated progress toward their sustainability-related goals, begun with assistance from Indiana University’s Environmental Resilience Institute (ERI) programs and students. Climate change solutions include Indiana communities taking action to manage and reduce local greenhouse gas emissions and energy costs, creating climate action plans, and advancing green initiatives to expand solar energy or electrify transportation.
+
+Highlighted programs: <a class="link" target=”_blank” href="https://eri.iu.edu/climate-project/climate-fellows/index.html">Indiana University Environmental Resilience Institute McKinney Midwest Climate Project</a>; <a class="link" target=”_blank” href="https://www.earthcharterindiana.org/">Earth Charter Indiana</a>

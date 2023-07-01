@@ -3,18 +3,13 @@ layout: our-work
 title: Our Work
 metaDesc: McKinney Family Foundation is Building a Sustainable Indiana
 hero_title: Our Work
+hero_text: The McKinney Family Foundation (MFF) envisions a just and equitable transition to a sustainable clean energy economy; one that will advance climate change solutions and strengthen the field of environmental students, professionals, civic leaders, and philanthropists.
 hero_image: "/images/Bloomington.jpg"
 hero_imageAlt: Indianapolis skyline in the morning
-mission_title: Our Mission
-mission_summary: The McKinney Family believes environmental sustainability is the key to the future of Indiana. Therefore, the McKinney Family Foundation (MFF) is committed to building an environmentally sustainable future for every Hoosier. Through strategic partnerships, MFF advocates for environmental justice, seeks to conserve natural resources, and empowers Indiana communities to live in a healthier, more prosperous, and more sustainable manner.
-mission_image: "/images/indiana-peony.jpg"
-mission_imageAlt: Pink peonies
-vision_title: Our Vision
-vision_summary: We envision an environmentally sustainable future for every Hoosier achieved through inclusive democracy, strategic collaboration, and our resolute commitment to this vision.
-vision_image: "/images/indiana-peony.jpg"
-vision_imageAlt: Pink peonies
-purpose_title: Our Vision
-purpose_summary: We envision an environmentally sustainable future for every Hoosier achieved through inclusive democracy, strategic collaboration, and our resolute commitment to this vision.
-purpose_image: "/images/indiana-peony.jpg"
-purpose_imageAlt: Pink peonies
+eccs_image: "/images/indiana-peony.jpg"
+eccs_imageAlt: Pink peonies
+seef_image: "/images/indiana-peony.jpg"
+seef_imageAlt: Pink peonies
+elc_image: "/images/indiana-peony.jpg"
+elc_imageAlt: Pink peonies
 ---
