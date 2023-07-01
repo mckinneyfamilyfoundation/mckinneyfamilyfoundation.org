@@ -5,8 +5,6 @@ backend:
 media_folder: "src/images"
 public_folder: "/images"
 
-# Please run 'npx netlify-cms-proxy-server' for local backend
-local_backend: true
 # publish_mode: editorial_workflow
 collections:
   - label: "Board"
@@ -236,10 +234,31 @@ collections:
 
           - { label: "Privacy Body", name: "body", widget: "markdown" }
 
+  - label: "Home - Content"
+    name: "home_content"
+    editor:
+      preview: false
+    files:
+      - label: "Our Mission Block"
+        name: "our-mission"
+        file: "src/content/home/our-mission.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Grants & Partnerships Block"
+        name: "grants-and-partnerships"
+        file: "src/content/home/grants-and-partnerships.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "News Block"
+        name: "News"
+        file: "src/content/home/news.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+  
   - label: "About Us - Content"
     name: "about-us_content"
     editor:
-      preview: true
+      preview: false
     files:
       - label: "Our Mission Block"
         name: "our-mission"
@@ -274,5 +293,47 @@ collections:
       - label: "Board Members Block"
         name: "board-members"
         file: "src/content/about-us/board-members.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+  
+  - label: "Our Work - Content"
+    name: "our-work_content"
+    editor:
+      preview: false
+    files:
+      - label: "Equitable Climate Change Solutions Block"
+        name: "equitable-climate-change-solutions"
+        file: "src/content/our-work/equitable-climate-change-solutions.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Sustainable Energy Economy Framework Block"
+        name: "sustainable-energy-economy-framework"
+        file: "src/content/our-work/sustainable-energy-economy-framework.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Empowered Leaders and Communities Block"
+        name: "empowered-leaders-and-communities"
+        file: "src/content/our-work/empowered-leaders-and-communities.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+  
+  - label: "Grants & Partnerships - Content"
+    name: "grants-and-partnerships_content"
+    editor:
+      preview: false
+    files:
+      - label: "Funding Guidelines Block"
+        name: "funding-guidelines"
+        file: "src/content/grants-and-partnerships/funding-guidelines.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Funding Restrictions Block"
+        name: "funding-restrictions"
+        file: "src/content/grants-and-partnerships/funding-restrictions.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Inquires Block"
+        name: "inquires"
+        file: "src/content/grants-and-partnerships/inquires.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
