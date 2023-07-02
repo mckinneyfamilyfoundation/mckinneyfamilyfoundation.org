@@ -76,13 +76,15 @@ collections:
           widget: "string",
         }
       - { label: "URL", name: "url", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
 
-  - label: "Pages Images"
-    name: "pages"
+
+  - label: "SEO + Hero + Images"
+    name: "seo-images-hero"
     editor:
       preview: false
     files:
-      - label: "Home Page"
+      - label: "Home"
         name: "home"
         file: "src/index.md"
         fields:
@@ -94,53 +96,13 @@ collections:
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
           - { label: Hero Text, name: hero_text, widget: string }
 
-          - { label: About Title, name: about_title, widget: string }
-          - { label: About Summary, name: about_summary, widget: text }
           - { label: About Image, name: about_image, widget: image }
-          - {
-              label: About Image Alt Text,
-              name: about_imageAlt,
-              widget: string,
-            }
-          - { label: About Link Title, name: about_buttonText, widget: string }
-          - { label: About Link Url, name: about_buttonUrl, widget: string }
+          - { label: About Image Alt Text, name: about_imageAlt, widget: string }
 
-          - { label: Grants Title, name: grants_title, widget: string }
-          - { label: Grants Summary, name: grants_summary, widget: text }
           - { label: Grants Image, name: grants_image, widget: image }
-          - {
-              label: Grants Image Alt Text,
-              name: grants_imageAlt,
-              widget: string,
-            }
-          - {
-              label: Grants Link Title,
-              name: grants_buttonText,
-              widget: string,
-            }
-          - {
-              label: Grants News Link Url,
-              name: grants_buttonUrl,
-              widget: string,
-            }
+          - { label: Grants Image Alt Text, name: grants_imageAlt, widget: string }
 
-          - {
-              label: Featured News Title,
-              name: featuredNews_title,
-              widget: string,
-            }
-          - {
-              label: Featured News Link Title,
-              name: featuredNews_buttonText,
-              widget: string,
-            }
-          - {
-              label: Featured News Link Url,
-              name: featuredNews_buttonUrl,
-              widget: string,
-            }
-
-      - label: "About Us Page"
+      - label: "About Us"
         name: "about"
         file: "src/about-us.md"
         fields:
@@ -151,18 +113,18 @@ collections:
           - { label: Hero Image, name: hero_image, widget: image }
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
 
-          - { label: Mission Title, name: mission_title, widget: string }
-          - { label: Mission Summary, name: mission_summary, widget: text }
           - { label: Mission Image, name: mission_image, widget: image }
-          - {
-              label: Mission Image Alt Text,
-              name: mission_imageAlt,
-              widget: string,
-            }
+          - { label: Mission Image Alt Text, name: mission_imageAlt, widget: string }
 
-      - label: "Our Work Page"
+          - { label: Legacy Image, name: legacy_image, widget: image }
+          - { label: Legacy Image Alt Text, name: legacy_imageAlt, widget: string }
+
+          - { label: Purpose Image, name: purpose_image, widget: image }
+          - { label: Purpose Image Alt Text, name: purpose_imageAlt, widget: string }
+
+      - label: "Our Work"
         name: "our-work"
-        file: "src/about-us.md"
+        file: "src/our-work.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: metaDesc, widget: text }
@@ -172,17 +134,17 @@ collections:
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
           - { label: Hero Text, name: hero_text, widget: string }
 
-          - { label: Mission Title, name: mission_title, widget: string }
-          - { label: Mission Summary, name: mission_summary, widget: text }
-          - { label: Mission Image, name: mission_image, widget: image }
-          - {
-              label: Mission Image Alt Text,
-              name: mission_imageAlt,
-              widget: string,
-            }
+          - { label: Equitable Climate Change Solutions Image, name: eccs_image, widget: image }
+          - { label: Equitable Climate Change Solutions Image Alt Text, name: eccs_imageAlt, widget: string }
 
-      - label: "Grants & Partnerships Page"
-        name: "grants"
+          - { label: Sustainable Energy Economy Framework Image, name: seef_image, widget: image }
+          - { label: Sustainable Energy Economy Framework Image Alt Text, name: seef_imageAlt, widget: string }
+
+          - { label: Empowered Leaders and Communities Image, name: elc_image, widget: image }
+          - { label: Empowered Leaders and Communities Image Alt Text, name: elc_imageAlt, widget: string }
+
+      - label: "Grants & Partnerships"
+        name: "grants-and-partnerships"
         file: "src/grants-and-partnerships.md"
         fields:
           - { label: Title, name: title, widget: string }
@@ -192,25 +154,7 @@ collections:
           - { label: Hero Image, name: hero_image, widget: image }
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
 
-          - {
-              label: "Funding Guidelines Toggle Title",
-              name: "funding_title",
-              widget: "string",
-            }
-          - { label: "Funding Guidelines", name: "body", widget: "markdown" }
-
-          - {
-              label: "Grantees Toggle Title",
-              name: "grantees",
-              widget: "string",
-            }
-          - {
-              label: "Partnerships Toggle Title",
-              name: "partnerships",
-              widget: "string",
-            }
-
-      - label: "News Page"
+      - label: "News"
         name: "news"
         file: "src/news.md"
         fields:
@@ -221,7 +165,7 @@ collections:
           - { label: Hero Image, name: hero_image, widget: image }
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
 
-      - label: "Privacy Page"
+      - label: "Privacy"
         name: "privacy"
         file: "src/privacy.md"
         fields:

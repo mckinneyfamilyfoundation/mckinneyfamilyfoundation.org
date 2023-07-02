@@ -2,7 +2,7 @@
   <div class="center flow">{% renderFile "src/content/home/news.md" %}</div>
 
   <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
-    {% for item in collections.featuredNews | reverse %}
+    {% for item in collections.featuredNews %}
 
       <li class="card flow overflow-hidden" style="--flow-space: .5em">
         <div class="frame">

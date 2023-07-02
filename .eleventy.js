@@ -2,10 +2,10 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
-  
-  
-  
-  
+
+
+
+
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addPassthroughCopy('src/css');
@@ -28,10 +28,6 @@ module.exports = function (eleventyConfig) {
 
 
   // Returns a collection of blog posts in reverse date order
-  eleventyConfig.addCollection('featuredNews', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 2);
-  });
-  
   eleventyConfig.addCollection('focusAreas', collection => {
     return [...collection.getFilteredByGlob('./src/focus-areas/*.md')];
   });
@@ -50,8 +46,9 @@ module.exports = function (eleventyConfig) {
       .getFilteredByGlob('./src/board/*.md')
       .sort((a, b) => (Number(a.data.order) > Number(b.data.order) ? 1 : -1));
   });
+
   eleventyConfig.addCollection('news', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].sort(function(a, b) {
+    return [...collection.getFilteredByGlob('./src/news/*.md')].sort(function (a, b) {
       //return a.date - b.date; // sort by date - ascending
       return b.date - a.date; // sort by date - descending
       //return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
@@ -59,7 +56,9 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  
+  eleventyConfig.addCollection('featuredNews', collection => {
+    return [...collection.getFilteredByGlob('./src/news/*.md')].sort(function (a, b) {return b.date - a.date;}).slice(0, 2);
+  });
 
   return {
     markdownTemplateEngine: 'njk',

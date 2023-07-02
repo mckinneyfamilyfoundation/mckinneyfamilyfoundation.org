@@ -5,8 +5,6 @@ metaDesc: Grants & Partnerships Page
 hero_title: Grants & Partnerships
 hero_image: /images/McCormicks-Creek.jpeg
 hero_imageAlt: McCormick's Creek
-grantees: Current Grantees
-partnerships: Active Partnerships
 ---
 
 
