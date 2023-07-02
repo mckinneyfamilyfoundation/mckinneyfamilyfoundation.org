@@ -220,26 +220,26 @@ collections:
 
           - { label: "Privacy Body", name: "body", widget: "markdown" }
 
-  - label: "Content"
+  - label: "Home Test - Content"
     name: "content"
-    editor:
-      preview: false
-    files:
-      - label: "Home"
-        name: "home"
-        folder: "src/content/home"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "About Us"
-        name: "about-us"
-        folder: "src/content/about-us"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Our Work"
-        name: "our-work"
-        folder: "src/content/our-work"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+    folder: "src/content/home"
+    fields:
+      - {label: "Content", name: "body", widget: "markdown"}
+  - label: "About Us Test - Content"
+    name: "content"
+    folder: "src/content/about-us"
+    fields:
+      - {label: "Content", name: "body", widget: "markdown"}
+  - label: "Our Work Test - Content"
+    name: "content"
+    folder: "src/content/our-work"
+    fields:
+      - {label: "Content", name: "body", widget: "markdown"}
+  - label: "Grants & Partnerships Test - Content"
+    name: "content"
+    folder: "src/content/grants-and-partnerships"
+    fields:
+      - {label: "Content", name: "body", widget: "markdown"}
 
   - label: "Home - Content"
     name: "home-content"
