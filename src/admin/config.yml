@@ -248,8 +248,8 @@ collections:
         file: "src/content/grants-and-partnerships/funding-restrictions.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Inquires Block"
-        name: "inquires"
+      - label: "Inquiries Block"
+        name: "inquiries"
         file: "src/content/grants-and-partnerships/inquires.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
@@ -305,7 +305,7 @@ collections:
       - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
       - { label: "Button URL", name: "buttonUrl", widget: "string" }
       - { label: "Button Text", name: "buttonText", widget: "string" }
-      
+
   - label: "Grantee"
     name: "grantee"
     folder: "src/grantees"
