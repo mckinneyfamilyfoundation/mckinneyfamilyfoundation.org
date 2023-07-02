@@ -7,76 +7,6 @@ public_folder: "/images"
 
 # publish_mode: editorial_workflow
 collections:
-  - label: "Board Member"
-    name: "board"
-    folder: "src/board"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Position", name: "position", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-      - { label: "Order", name: "order", widget: "number" }
-
-  - label: "Staff Member"
-    name: "staff"
-    folder: "src/staff"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Position", name: "position", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
-      - { label: "Number", name: "number", widget: "string" }
-
-  - label: "Grantee"
-    name: "grantee"
-    folder: "src/grantees"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-      - { label: "Name", name: "title", widget: "string" }
-      - { label: "URL", name: "url", widget: "string" }
-
-  - label: "Partnership"
-    name: "partnership"
-    folder: "src/partnerships"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-      - { label: "Name", name: "title", widget: "string" }
-      - { label: "URL", name: "url", widget: "string" }
-
-  - label: "News Article"
-    name: "article"
-    folder: "src/news"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Title of Article", name: "articleTitle", widget: "string" }
-      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-      - { label: "Article Grantee", name: "grantee", widget: "string" }
-      - {
-          label: "Summary of Article (1 sentence)",
-          name: "articleSummary",
-          widget: "string",
-        }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Date", name: "date", widget: "date" }
-
   - label: "SEO + Hero + Images"
     name: "seo-images-hero"
     editor:
@@ -220,27 +150,6 @@ collections:
 
           - { label: "Privacy Body", name: "body", widget: "markdown" }
 
-  - label: "Home Test - Content"
-    name: "content-test"
-    folder: "src/content/home"
-    fields:
-      - {label: "Content", name: "body", widget: "markdown"}
-  - label: "About Us Test - Content"
-    name: "content-test2"
-    folder: "src/content/about-us"
-    fields:
-      - {label: "Content", name: "body", widget: "markdown"}
-  - label: "Our Work Test - Content"
-    name: "content-test3"
-    folder: "src/content/our-work"
-    fields:
-      - {label: "Content", name: "body", widget: "markdown"}
-  - label: "Grants & Partnerships Test - Content"
-    name: "content-test4"
-    folder: "src/content/grants-and-partnerships"
-    fields:
-      - {label: "Content", name: "body", widget: "markdown"}
-
   - label: "Home - Content"
     name: "home-content"
     editor:
@@ -344,3 +253,74 @@ collections:
         file: "src/content/grants-and-partnerships/inquires.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
+  
+  - label: "Board Member"
+    name: "board"
+    folder: "src/board"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+      - { label: "Order", name: "order", widget: "number" }
+
+  - label: "Staff Member"
+    name: "staff"
+    folder: "src/staff"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Number", name: "number", widget: "string" }
+
+  - label: "Grantee"
+    name: "grantee"
+    folder: "src/grantees"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
+
+  - label: "Partnership"
+    name: "partnership"
+    folder: "src/partnerships"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
+
+  - label: "News Article"
+    name: "article"
+    folder: "src/news"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Title of Article", name: "articleTitle", widget: "string" }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+      - { label: "Article Grantee", name: "grantee", widget: "string" }
+      - {
+          label: "Summary of Article (1 sentence)",
+          name: "articleSummary",
+          widget: "string",
+        }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+  
