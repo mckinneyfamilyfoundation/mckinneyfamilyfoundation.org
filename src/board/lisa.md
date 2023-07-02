@@ -1,5 +1,7 @@
 ---
 name: Lisa C. McKinney
 position: Treasurer
-order: 5
+image: /images/person-icon.png
+imageAlt: Icon placeholder
+order: 4
 ---
