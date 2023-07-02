@@ -1,5 +1,7 @@
 ---
 name: Robert C. McKinney
 position: Director
-order: 2
+image: /images/person-icon.png
+imageAlt: Icon placeholder
+order: 5
 ---
