@@ -20,7 +20,6 @@ collections:
       - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
       - { label: "Order", name: "order", widget: "number" }
 
-
   - label: "Staff Member"
     name: "staff"
     folder: "src/staff"
@@ -78,7 +77,6 @@ collections:
       - { label: "URL", name: "url", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
 
-
   - label: "SEO + Hero + Images"
     name: "seo-images-hero"
     editor:
@@ -97,10 +95,18 @@ collections:
           - { label: Hero Text, name: hero_text, widget: string }
 
           - { label: About Image, name: about_image, widget: image }
-          - { label: About Image Alt Text, name: about_imageAlt, widget: string }
+          - {
+              label: About Image Alt Text,
+              name: about_imageAlt,
+              widget: string,
+            }
 
           - { label: Grants Image, name: grants_image, widget: image }
-          - { label: Grants Image Alt Text, name: grants_imageAlt, widget: string }
+          - {
+              label: Grants Image Alt Text,
+              name: grants_imageAlt,
+              widget: string,
+            }
 
       - label: "About Us"
         name: "about"
@@ -114,13 +120,25 @@ collections:
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
 
           - { label: Mission Image, name: mission_image, widget: image }
-          - { label: Mission Image Alt Text, name: mission_imageAlt, widget: string }
+          - {
+              label: Mission Image Alt Text,
+              name: mission_imageAlt,
+              widget: string,
+            }
 
           - { label: Legacy Image, name: legacy_image, widget: image }
-          - { label: Legacy Image Alt Text, name: legacy_imageAlt, widget: string }
+          - {
+              label: Legacy Image Alt Text,
+              name: legacy_imageAlt,
+              widget: string,
+            }
 
           - { label: Purpose Image, name: purpose_image, widget: image }
-          - { label: Purpose Image Alt Text, name: purpose_imageAlt, widget: string }
+          - {
+              label: Purpose Image Alt Text,
+              name: purpose_imageAlt,
+              widget: string,
+            }
 
       - label: "Our Work"
         name: "our-work"
@@ -134,14 +152,38 @@ collections:
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
           - { label: Hero Text, name: hero_text, widget: string }
 
-          - { label: Equitable Climate Change Solutions Image, name: eccs_image, widget: image }
-          - { label: Equitable Climate Change Solutions Image Alt Text, name: eccs_imageAlt, widget: string }
+          - {
+              label: Equitable Climate Change Solutions Image,
+              name: eccs_image,
+              widget: image,
+            }
+          - {
+              label: Equitable Climate Change Solutions Image Alt Text,
+              name: eccs_imageAlt,
+              widget: string,
+            }
 
-          - { label: Sustainable Energy Economy Framework Image, name: seef_image, widget: image }
-          - { label: Sustainable Energy Economy Framework Image Alt Text, name: seef_imageAlt, widget: string }
+          - {
+              label: Sustainable Energy Economy Framework Image,
+              name: seef_image,
+              widget: image,
+            }
+          - {
+              label: Sustainable Energy Economy Framework Image Alt Text,
+              name: seef_imageAlt,
+              widget: string,
+            }
 
-          - { label: Empowered Leaders and Communities Image, name: elc_image, widget: image }
-          - { label: Empowered Leaders and Communities Image Alt Text, name: elc_imageAlt, widget: string }
+          - {
+              label: Empowered Leaders and Communities Image,
+              name: elc_image,
+              widget: image,
+            }
+          - {
+              label: Empowered Leaders and Communities Image Alt Text,
+              name: elc_imageAlt,
+              widget: string,
+            }
 
       - label: "Grants & Partnerships"
         name: "grants-and-partnerships"
@@ -177,7 +219,28 @@ collections:
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
 
           - { label: "Privacy Body", name: "body", widget: "markdown" }
-  
+
+  - label: "Content"
+    name: "content"
+    editor:
+      preview: false
+    files:
+      - label: "Home"
+        name: "home"
+        folder: "src/content/home"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "About Us"
+        name: "about-us"
+        folder: "src/content/about-us"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Our Work"
+        name: "our-work"
+        folder: "src/content/our-work"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+
   - label: "Home - Content"
     name: "home-content"
     editor:
@@ -198,7 +261,7 @@ collections:
         file: "src/content/home/news.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
-      
+
   - label: "About Us - Content"
     name: "about-us_content"
     editor:
@@ -239,7 +302,7 @@ collections:
         file: "src/content/about-us/board-members.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
-  
+
   - label: "Our Work - Content"
     name: "our-work_content"
     editor:
@@ -260,7 +323,7 @@ collections:
         file: "src/content/our-work/empowered-leaders-and-communities.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
-  
+
   - label: "Grants & Partnerships - Content"
     name: "grants-and-partnerships_content"
     editor:
