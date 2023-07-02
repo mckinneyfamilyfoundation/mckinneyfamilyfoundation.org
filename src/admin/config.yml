@@ -221,22 +221,22 @@ collections:
           - { label: "Privacy Body", name: "body", widget: "markdown" }
 
   - label: "Home Test - Content"
-    name: "content"
+    name: "content-test"
     folder: "src/content/home"
     fields:
       - {label: "Content", name: "body", widget: "markdown"}
   - label: "About Us Test - Content"
-    name: "content"
+    name: "content-test2"
     folder: "src/content/about-us"
     fields:
       - {label: "Content", name: "body", widget: "markdown"}
   - label: "Our Work Test - Content"
-    name: "content"
+    name: "content-test3"
     folder: "src/content/our-work"
     fields:
       - {label: "Content", name: "body", widget: "markdown"}
   - label: "Grants & Partnerships Test - Content"
-    name: "content"
+    name: "content-test4"
     folder: "src/content/grants-and-partnerships"
     fields:
       - {label: "Content", name: "body", widget: "markdown"}
