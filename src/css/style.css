@@ -656,6 +656,13 @@ button:hover {
   background-color: var(--green-2);
 }
 
+/* .link::after {
+  content: '→';
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+} */
+
 
 
 .leaf {
@@ -934,7 +941,7 @@ nav a:is(:hover, :focus) {
   column-gap: var(--gutter);
 }
 
-.center > * {
+.center>* {
   max-width: unset;
   text-align: center;
 }

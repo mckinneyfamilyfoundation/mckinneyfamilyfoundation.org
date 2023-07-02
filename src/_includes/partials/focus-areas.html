@@ -5,7 +5,7 @@
     <ul class="grid mt-l-xl" role="list" style="--grid-placement: auto-fit">
         {% for item in collections.focusAreas %}
 
-            <li class="">
+            <li class="flow">
                 <div class="flow" style="--flow-space: .5em">
                     <div class="frame">
                         <img src="{{item.data.image}}" alt="{{item.data.imageAlt}}"/>
@@ -14,13 +14,8 @@
                         <strong>{{item.data.title}}</strong>
                     </p>
                     <p>{{item.data.text}}</p>
-                    <div class="with-icon">
+                    <div>
                         <a class="link" href="{{item.data.buttonUrl}}">{{item.data.buttonText}}</a>
-
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                        </svg>
                     </div>
                 </div>
             </li>

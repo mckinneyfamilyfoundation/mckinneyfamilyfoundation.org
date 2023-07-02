@@ -31,14 +31,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('featuredNews', collection => {
     return [...collection.getFilteredByGlob('./src/news/*.md')].reverse().splice(0, 2);
   });
-  eleventyConfig.addCollection('news', collection => {
-    return [...collection.getFilteredByGlob('./src/news/*.md')].reverse();
-  });
+  
   eleventyConfig.addCollection('focusAreas', collection => {
     return [...collection.getFilteredByGlob('./src/focus-areas/*.md')];
-  });
-  eleventyConfig.addCollection('board', collection => {
-    return [...collection.getFilteredByGlob('./src/board/*.md')];
   });
   eleventyConfig.addCollection('staff', collection => {
     return [...collection.getFilteredByGlob('./src/staff/*.md')];
@@ -48,6 +43,20 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addCollection('partnerships', collection => {
     return [...collection.getFilteredByGlob('./src/partnerships/*.md')];
+  });
+
+  eleventyConfig.addCollection('board', collection => {
+    return collection
+      .getFilteredByGlob('./src/board/*.md')
+      .sort((a, b) => (Number(a.data.order) > Number(b.data.order) ? 1 : -1));
+  });
+  eleventyConfig.addCollection('news', collection => {
+    return [...collection.getFilteredByGlob('./src/news/*.md')].sort(function(a, b) {
+      //return a.date - b.date; // sort by date - ascending
+      return b.date - a.date; // sort by date - descending
+      //return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
+      //return b.inputPath.localeCompare(a.inputPath); // sort by path - descending
+    });
   });
 
   

@@ -1,3 +1,3 @@
 ## News
 
-[Archive](https://duckduckgo.com)
+<a class="link" href="/news">Archive</a>
