@@ -7,7 +7,7 @@ public_folder: "/images"
 
 # publish_mode: editorial_workflow
 collections:
-  - label: "Board"
+  - label: "Board Member"
     name: "board"
     folder: "src/board"
     create: true
@@ -21,7 +21,7 @@ collections:
       - { label: "Order", name: "order", widget: "number" }
 
 
-  - label: "Staff"
+  - label: "Staff Member"
     name: "staff"
     folder: "src/staff"
     create: true
@@ -59,7 +59,7 @@ collections:
       - { label: "Name", name: "title", widget: "string" }
       - { label: "URL", name: "url", widget: "string" }
 
-  - label: "Article"
+  - label: "News Article"
     name: "article"
     folder: "src/news"
     create: true
@@ -233,107 +233,112 @@ collections:
           - { label: Hero Image Alt Text, name: hero_imageAlt, widget: string }
 
           - { label: "Privacy Body", name: "body", widget: "markdown" }
-
-  - label: "Home - Content"
-    name: "home_content"
-    editor:
-      preview: false
-    files:
-      - label: "Our Mission Block"
-        name: "our-mission"
-        file: "src/content/home/our-mission.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Grants & Partnerships Block"
-        name: "grants-and-partnerships"
-        file: "src/content/home/grants-and-partnerships.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "News Block"
-        name: "News"
-        file: "src/content/home/news.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
   
-  - label: "About Us - Content"
-    name: "about-us_content"
+  - label: "Content Blocks"
+    name: "content-block"
     editor:
-      preview: false
+      preview: true
     files:
-      - label: "Our Mission Block"
-        name: "our-mission"
-        file: "src/content/about-us/our-mission.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Our Vision Block"
-        name: "our-vision"
-        file: "src/content/about-us/our-vision.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Our Purpose Block"
-        name: "our-purpose"
-        file: "src/content/about-us/our-purpose.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Focus Areas Block"
-        name: "focus-areas"
-        file: "src/content/about-us/focus-areas.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "McKinney Legacy Block"
-        name: "mckinney-legacy"
-        file: "src/content/about-us/the-mckinney-family-legacy.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Staff Members Block"
-        name: "staff-members"
-        file: "src/content/about-us/staff-members.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Board Members Block"
-        name: "board-members"
-        file: "src/content/about-us/board-members.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-  
-  - label: "Our Work - Content"
-    name: "our-work_content"
-    editor:
-      preview: false
-    files:
-      - label: "Equitable Climate Change Solutions Block"
-        name: "equitable-climate-change-solutions"
-        file: "src/content/our-work/equitable-climate-change-solutions.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Sustainable Energy Economy Framework Block"
-        name: "sustainable-energy-economy-framework"
-        file: "src/content/our-work/sustainable-energy-economy-framework.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Empowered Leaders and Communities Block"
-        name: "empowered-leaders-and-communities"
-        file: "src/content/our-work/empowered-leaders-and-communities.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-  
-  - label: "Grants & Partnerships - Content"
-    name: "grants-and-partnerships_content"
-    editor:
-      preview: false
-    files:
-      - label: "Funding Guidelines Block"
-        name: "funding-guidelines"
-        file: "src/content/grants-and-partnerships/funding-guidelines.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Funding Restrictions Block"
-        name: "funding-restrictions"
-        file: "src/content/grants-and-partnerships/funding-restrictions.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
-      - label: "Inquires Block"
-        name: "inquires"
-        file: "src/content/grants-and-partnerships/inquires.md"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Home - Content"
+        name: "home-content"
+        editor:
+          preview: false
+        files:
+          - label: "Our Mission Block"
+            name: "our-mission"
+            file: "src/content/home/our-mission.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Grants & Partnerships Block"
+            name: "grants-and-partnerships"
+            file: "src/content/home/grants-and-partnerships.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "News Block"
+            name: "news"
+            file: "src/content/home/news.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+      
+      - label: "About Us - Content"
+        name: "about-us_content"
+        editor:
+          preview: false
+        files:
+          - label: "Our Mission Block"
+            name: "our-mission"
+            file: "src/content/about-us/our-mission.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Our Vision Block"
+            name: "our-vision"
+            file: "src/content/about-us/our-vision.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Our Purpose Block"
+            name: "our-purpose"
+            file: "src/content/about-us/our-purpose.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Focus Areas Block"
+            name: "focus-areas"
+            file: "src/content/about-us/focus-areas.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "McKinney Legacy Block"
+            name: "mckinney-legacy"
+            file: "src/content/about-us/the-mckinney-family-legacy.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Staff Members Block"
+            name: "staff-members"
+            file: "src/content/about-us/staff-members.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Board Members Block"
+            name: "board-members"
+            file: "src/content/about-us/board-members.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+      
+      - label: "Our Work - Content"
+        name: "our-work_content"
+        editor:
+          preview: false
+        files:
+          - label: "Equitable Climate Change Solutions Block"
+            name: "equitable-climate-change-solutions"
+            file: "src/content/our-work/equitable-climate-change-solutions.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Sustainable Energy Economy Framework Block"
+            name: "sustainable-energy-economy-framework"
+            file: "src/content/our-work/sustainable-energy-economy-framework.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Empowered Leaders and Communities Block"
+            name: "empowered-leaders-and-communities"
+            file: "src/content/our-work/empowered-leaders-and-communities.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+      
+      - label: "Grants & Partnerships - Content"
+        name: "grants-and-partnerships_content"
+        editor:
+          preview: false
+        files:
+          - label: "Funding Guidelines Block"
+            name: "funding-guidelines"
+            file: "src/content/grants-and-partnerships/funding-guidelines.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Funding Restrictions Block"
+            name: "funding-restrictions"
+            file: "src/content/grants-and-partnerships/funding-restrictions.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
+          - label: "Inquires Block"
+            name: "inquires"
+            file: "src/content/grants-and-partnerships/inquires.md"
+            fields:
+              - { label: "Content", name: "body", widget: "markdown" }
