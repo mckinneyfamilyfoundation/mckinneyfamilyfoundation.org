@@ -253,6 +253,16 @@ collections:
         file: "src/content/grants-and-partnerships/inquires.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Grantees Block"
+        name: "grantees"
+        file: "src/content/grants-and-partnerships/current-grantees.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Partnerships Block"
+        name: "partnerships"
+        file: "src/content/grants-and-partnerships/active-partnerships.md"
+        fields:
+          - { label: "Content", name: "body", widget: "markdown" }
   
   - label: "Board Member"
     name: "board"
