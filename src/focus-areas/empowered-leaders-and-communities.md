@@ -1,8 +1,9 @@
 ---
 title: Empowered Leaders and Communities
-text: Addressing the nexus of a strong democracy, economic and health disparities, and environmental outcomes.
+text: Ensuring the long-term viability of the environmental nonprofit sector
+  through capacity building and leadership development.
 image: /images/diversity.jpg
-imageAlt: test
-buttonUrl: '/our-work#equitable-climate-change-solutions'
+imageAlt: Empowered leaders photo
+buttonUrl: /our-work#equitable-climate-change-solutions
 buttonText: Understand why Environmental Justice works
 ---
