@@ -1,9 +1,9 @@
 ---
 title: Equitable Climate Change Solutions
-text: Ensuring the long-term viability of the environmental nonprofit sector
-  through capacity building and leadership development.
+text: Addressing the nexus of civic engagement, economic conditions, health
+  disparities, and environmental outcomes.
 image: /images/sunrise.jpg
-imageAlt: test
+imageAlt: Indianapolis skyline
 buttonUrl: /our-work#empowered-leaders-and-communities
 buttonText: Discover how we empower communities and leaders
 ---
