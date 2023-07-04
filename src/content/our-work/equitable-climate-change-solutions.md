@@ -1,7 +1,9 @@
-## Equitable Climate Change Solutions
+## Sustainable Energy Economy Framework
 
-MFF is deliberate in funding inclusive democracy in order to address economic and health disparities and their impacts on environmental outcomes. Inclusive democracy ensures a society of informed voices creating systemic change, particularly centering underrepresented communities. This work amplifies the potential opportunities to improve state and municipal environmental policies in Indiana.
+MFF is resolute in our efforts to expand a sustainable clean energy economy through renewable energy jobs creation and meaningful policy change.
 
-Through the McKinney Midwest Climate Project (MMCP), more than forty municipal governments across the state have accelerated progress toward their sustainability-related goals, begun with assistance from Indiana University’s Environmental Resilience Institute (ERI) programs and students. Climate change solutions include Indiana communities taking action to manage and reduce local greenhouse gas emissions and energy costs, creating climate action plans, and advancing green initiatives to expand solar energy or electrify transportation.
+We partner with Indiana-based private, public, and nonprofit organizations that develop and implement programs to reach sustainability goals.
 
-Highlighted programs: <a class="link" target=”_blank” href="https://eri.iu.edu/climate-project/climate-fellows/index.html">Indiana University Environmental Resilience Institute McKinney Midwest Climate Project</a>; <a class="link" target=”_blank” href="https://www.earthcharterindiana.org/">Earth Charter Indiana</a>
+MFF’s work helps build the framework to support a clean energy economy. Strategies include active partnerships with the Indiana Energy Independence Fund and Advanced Energy United.
+
+Highlighted programs: <a class="link" target=”_blank” href="https://advancedenergyunited.org/">Advanced Energy United</a>, <a class="link" target=”_blank” href="https://www.solarunitedneighbors.org/">Solar United Neighbors</a>, <a class="link" target=”_blank” href="https://energyindependencefund.org/">Indiana Energy Independence Fund</a>
