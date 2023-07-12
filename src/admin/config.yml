@@ -1,9 +1,9 @@
 backend:
   # Use netlify identity as backend
-  name: "git-gateway"
-  branch: "beta"
-media_folder: "src/images"
-public_folder: "/images"
+  name: 'git-gateway'
+  branch: 'main'
+  media_folder: 'src/images'
+  public_folder: '/images'
 
 # publish_mode: editorial_workflow
 collections:
