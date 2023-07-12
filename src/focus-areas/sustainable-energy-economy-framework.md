@@ -1,9 +1,10 @@
 ---
-title: Empowered Leaders and Communities
-text: Ensuring the long-term viability of the environmental nonprofit sector
-  through capacity building and leadership development.
-image: /images/diversity.jpg
-imageAlt: Empowered leaders image
-buttonUrl: /our-work#empowered-leaders-and-communities
-buttonText: Understand why Environmental Justice works
+title: Sustainable Energy Economy
+text: Expanding a sustainable clean energy economy through renewable energy jobs
+  creation and meaningful policy change.
+image: /images/Solar-panels.jpg
+imageAlt: Solar panels image
+buttonUrl: /our-work#sustainable-energy-economy
+buttonText: Learn what conservation is beyond reduce, reuse, and recycle
+order: 3
 ---

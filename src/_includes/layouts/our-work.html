@@ -2,21 +2,21 @@
 {% block content %}
     {% include "partials/hero.html" %}
 
-    <article class="wrapper region border-bottom js-fade flex-wrap:wrap-reverse with-sidebar-right" id="equitable-climate-change-solutions">
-        <div class="flow">
-            {% renderFile 'src/content/our-work/equitable-climate-change-solutions.md' %}
-        </div>
-        <div class="frame">
-            <img loading="lazy" src="{{ eccs_image }}" alt="{{ eccs_imageAlt }}"/>
-        </div>
-    </article>
-
     <article class="wrapper region border-bottom js-fade with-sidebar-left" id="sustainable-energy-economy">
         <div class="frame">
             <img loading="lazy" src="{{ seef_image }}" alt="{{ seef_imageAlt }}"/>
         </div>
         <div class="flow">
             {% renderFile 'src/content/our-work/sustainable-energy-economy-framework.md' %}
+        </div>
+    </article>
+
+    <article class="wrapper region border-bottom js-fade flex-wrap:wrap-reverse with-sidebar-right" id="equitable-climate-change-solutions">
+        <div class="flow">
+            {% renderFile 'src/content/our-work/equitable-climate-change-solutions.md' %}
+        </div>
+        <div class="frame">
+            <img loading="lazy" src="{{ eccs_image }}" alt="{{ eccs_imageAlt }}"/>
         </div>
     </article>
 

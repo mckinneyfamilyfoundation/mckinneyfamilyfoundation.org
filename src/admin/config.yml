@@ -222,6 +222,7 @@ collections:
         file: "src/content/our-work/equitable-climate-change-solutions.md"
         fields:
           - { label: "Content", name: "body", widget: "markdown" }
+
       - label: "Sustainable Energy Economy Framework Block"
         name: "sustainable-energy-economy-framework"
         file: "src/content/our-work/sustainable-energy-economy-framework.md"
@@ -305,6 +306,8 @@ collections:
       - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
       - { label: "Button URL", name: "buttonUrl", widget: "string" }
       - { label: "Button Text", name: "buttonText", widget: "string" }
+      - { label: "Order", name: "order", widget: "number" }
+
 
   - label: "Grantee"
     name: "grantee"
