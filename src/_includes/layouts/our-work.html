@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+    {% include "partials/hero.html" %}
+
+    <article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right" id="sustainable-energy-economy">
+        <div class="flow">
+            {% renderFile 'src/content/our-work/sustainable-energy-economy-framework.md' %}
+        </div>
+        <div class="frame">
+            <img loading="lazy" src="{{ seef_image }}" alt="{{ seef_imageAlt }}"/>
+        </div>
+    </article>
+
+    <article class="wrapper region border-bottom js-fade with-sidebar-left" id="equitable-climate-change-solutions">
+        <div class="frame">
+            <img loading="lazy" src="{{ eccs_image }}" alt="{{ eccs_imageAlt }}"/>
+        </div>
+        <div class="flow">
+            {% renderFile 'src/content/our-work/equitable-climate-change-solutions.md' %}
+        </div>
+    </article>
+
+    <article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right" id="empowered-leaders-and-communities">
+        <div class="flow">
+            {% renderFile 'src/content/our-work/empowered-leaders-and-communities.md' %}
+        </div>
+        <div class="frame">
+            <img loading="lazy" src="{{ elc_image }}" alt="{{ elc_imageAlt }}"/>
+        </div>
+    </article>
+
+{% endblock %}

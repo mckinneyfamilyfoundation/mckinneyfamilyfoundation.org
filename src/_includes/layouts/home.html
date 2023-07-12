@@ -2,28 +2,9 @@
 {% block content %}
   {% include "partials/hero.html" %}
 
-  <article class="wrapper region border-bottom js-fade with-sidebar-right">
+  <article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
     <div class="flow">
-      <h2>{{ about_title }}</h2>
-      <p>{{ about_summary }}</p>
-
-      <div class="with-icon">
-        <a class="link" href="{{ about_buttonUrl }}">{{ about_buttonText }}</a>
-
-        <svg
-        class="icon"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewbox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-      >
-          <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-/>
-        </svg>
+      {% renderFile "src/content/home/our-mission.md" %}
       </div>
     </div>
     <div class="frame">
@@ -31,31 +12,12 @@
     </div>
   </article>
 
-  <article class="wrapper flex-wrap:wrap-reverse region js-fade with-sidebar-left">
+  <article class="wrapper border-bottom region js-fade with-sidebar-left">
     <div class="frame">
       <img loading="lazy" src="{{ grants_image }}" alt="{{ grants_imageAlt }}"/>
     </div>
     <div class="flow">
-      <h2>{{ grants_title }}</h2>
-      <p>{{ grants_summary }}</p>
-
-      <div class="with-icon">
-        <a class="link" href="{{ grants_buttonUrl }}">{{ grants_buttonText }}</a>
-
-        <svg
-        class="icon"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewbox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-      >
-          <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-/>
-        </svg>
+      {% renderFile "src/content/home/grants-and-partnerships.md" %}
       </div>
     </div>
   </article>

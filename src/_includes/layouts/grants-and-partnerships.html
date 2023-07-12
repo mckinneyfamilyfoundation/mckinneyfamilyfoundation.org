@@ -1,10 +1,15 @@
 {% extends "layouts/base.html" %}
 {% block content %}
     {% include "partials/hero.html" %}
-    <article class="wrapper region js-fade">
+    <article class="wrapper region js-fade content" style="margin-top: 0;">
         <toggle-section class="flow" open="true">
-            <h2>{{ funding_title }}</h2>
-            {{content | safe}}
+            {% renderFile "src/content/grants-and-partnerships/funding-guidelines.md" %}
+        </toggle-section>
+        <toggle-section class="flow" open="false">
+            {% renderFile "src/content/grants-and-partnerships/funding-restrictions.md" %}
+        </toggle-section>
+        <toggle-section class="flow" open="false">
+            {% renderFile "src/content/grants-and-partnerships/inquires.md" %}
         </toggle-section>
         {% include "partials/grantee-toggle.html" %}
         {% include "partials/partnership-toggle.html" %}

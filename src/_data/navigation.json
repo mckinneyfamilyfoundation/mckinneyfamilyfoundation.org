@@ -1,12 +1,12 @@
 {
   "primary": [
     {
-      "text": "Home",
-      "url": "/"
-    },
-    {
       "text": "About Us",
       "url": "/about-us/"
+    },
+    {
+      "text": "Our Work",
+      "url": "/our-work/"
     },
     {
       "text": "Grants & Partnerships",

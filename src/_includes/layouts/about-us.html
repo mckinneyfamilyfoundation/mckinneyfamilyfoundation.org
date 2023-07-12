@@ -1,55 +1,41 @@
-{% extends "layouts/base.html" %} {% block content %} {% include "partials/hero.html" %}
-<article class="wrapper region border-bottom js-fade with-sidebar-right">
+{% extends "layouts/base.html" %}
+{% block content %}
+{% include "partials/hero.html" %}
+
+<article class="wrapper region flex-wrap:wrap-reverse border-bottom js-fade with-sidebar-right">
   <div class="flow">
-    <h2>{{ mission_title }}</h2>
-    <p>{{ mission_summary }}</p>
+    {% renderFile "src/content/about-us/our-mission.md" %}
   </div>
   <div class="frame">
     <img loading="lazy" src="{{ mission_image }}" alt="{{ mission_imageAlt }}" />
   </div>
 </article>
 
-<article class="wrapper border-bottom region js-fade">
-  <h2 class="text-align:center">Focus Areas</h2>
-  <ul class="grid mt-l-xl" role="list" style="--grid-placement: auto-fit">
-    <li class="card">
-      <div class="flow">
-        <div class="frame">
-          <img src="/images/wind-solar.jpg" alt="" />
-        </div>
-        <h3>Energy</h3>
-        <p>
-          Creating renewable energy jobs and meaningful policy changes to ensure the
-          transition to a sustainable energy economy.
-        </p>
-      </div>
-    </li>
-    <li class="card">
-      <div class="flow">
-        <div class="frame">
-          <img src="/images/sprout.jpg" alt="" />
-        </div>
-        <h3>Agriculture</h3>
-        <p>
-          Transforming agricultural infrastructure to ensure sustainable methods and
-          improve the distribution, affordability and availability of locally grown
-          nutritious food.
-        </p>
-      </div>
-    </li>
-    <li class="card">
-      <div class="flow">
-        <div class="frame">
-          <img src="/images/diversity.jpg" alt="" />
-        </div>
-        <h3>Leadership</h3>
-        <p>
-          Ensuring the long-term viability of the nonprofit environmental sector through
-          capacity building and leadership development.
-        </p>
-      </div>
-    </li>
-  </ul>
+<article class="wrapper region prose js-fade">
+  <div class="flow center">
+    {% renderFile "src/content/about-us/our-vision.md" %}
+  </div>
 </article>
-{% include "partials/board-list.html" %} {% include "partials/staff-list.html" %} {%
-endblock %}
+
+<article class="wrapper region border-bottom js-fade with-sidebar-left">
+  <div class="frame">
+    <img loading="lazy" src="{{ purpose_image }}" alt="{{ purpose_imageAlt }}" />
+  </div>
+  <div class="flow">
+    {% renderFile "src/content/about-us/our-purpose.md" %}
+  </div>
+</article>
+
+{% include "partials/focus-areas.html" %}
+
+<article class="wrapper region border-bottom js-fade flex-wrap:wrap-reverse with-sidebar-right">
+  <div class="flow">
+    {% renderFile "src/content/about-us/the-mckinney-family-legacy.md" %}
+  </div>
+  <div class="frame">
+    <img loading="lazy" src="{{ legacy_image }}" alt="{{ legacy_imageAlt }}" />
+  </div>
+</article>
+{% include "partials/board-list.html" %}
+{% include "partials/staff-list.html" %}
+{% endblock %}

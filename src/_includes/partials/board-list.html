@@ -1,23 +1,17 @@
 <article class="wrapper border-bottom region js-fade">
-  <h2 class="text-align:center">Board Members</h2>
-
-  <ul
-    class="grid mt-l-xl"
-    role="list"
-    style="--grid-placement: auto-fit"
-    data-rows="masonry"
-  >
-    <li class="card flow overflow-hidden" style="--flow-space: .5em">
-      <p>Robert H. McKinney</p>
-      <small>Chair</small>
-    </li>
+  <div class="center">
+    {% renderFile "src/content/about-us/board-members.md" %}
+  </div>
+  <ul class="cluster justify-content:center mt-l-xl" role="list">
 
     {% for item in collections.board %}
 
-    <li class="card flow overflow-hidden">
-      <p>{{ item.data.name }}</p>
-      <small>{{ item.data.position }}</small>
-    </li>
+      <li class="flow card" style="--flow-space: .2em">
+        <p>
+          <strong>{{ item.data.name }}</strong>
+        </p>
+        <p>{{ item.data.position }}</p>
+      </li>
 
     {% endfor %}
   </ul>

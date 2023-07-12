@@ -5,5 +5,4 @@ image: "/images/headshot-1.jpg"
 imageAlt: Angelica Lopez placeholder image
 email: angelica@mckinneyfamilyfoundation.org
 number: "(317) 296-3318"
-
 ---

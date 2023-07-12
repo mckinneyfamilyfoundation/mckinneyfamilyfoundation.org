@@ -1,18 +1,22 @@
 <article class="wrapper region js-fade">
-  <h2 class="text-align:center">Staff Members</h2>
+  <div class="center">
+    {% renderFile "src/content/about-us/staff-members.md" %}
+  </div>
 
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" style="--grid-placement: auto-fit">
+  <ul class="grid mt-l-xl" role="list" data-rows='masonry' data-layout="50-50">
     {% for item in collections.staff %}
 
-    <li class="card flow overflow-hidden stack" style="--flow-space: .5em">
-      <div class="frame staff">
-        <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}" />
-      </div>
-      <p>{{ item.data.name }}</p>
-      <small>{{ item.data.position }}</small>
-      <small>{{item.data.email}}</small>
-      <small>{{item.data.number}}</small>
-    </li>
+      <li class="card flow" style="--flow-space: .5em;">
+        <div class="frame staff">
+          <img loading="lazy" src="..{{item.data.image}}" alt="{{item.data.imageAlt}}"/>
+        </div>
+        <p>
+          <strong>{{ item.data.name }}</strong>
+        </p>
+        <p>{{ item.data.position }}</p>
+        <p style="word-wrap:break-word">{{item.data.email}}</p>
+        <p>{{item.data.number}}</p>
+      </li>
 
     {% endfor %}
   </ul>

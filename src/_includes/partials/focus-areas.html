@@ -1,0 +1,24 @@
+<article class="wrapper border-bottom region js-fade">
+    <div class="center">
+        {% renderFile "src/content/about-us/focus-areas.md" %}
+    </div>
+    <ul class="grid mt-l-xl" role="list" style="--grid-placement: auto-fit">
+        {% for item in collections.focusAreas %}
+
+            <li class="flow">
+                <div class="flow" style="--flow-space: .5em">
+                    <div class="frame">
+                        <img src="{{item.data.image}}" alt="{{item.data.imageAlt}}"/>
+                    </div>
+                    <p>
+                        <strong>{{item.data.title}}</strong>
+                    </p>
+                    <p>{{item.data.text}}</p>
+                    <div>
+                        <a class="link" href="{{item.data.buttonUrl}}">{{item.data.buttonText}}</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</article>
