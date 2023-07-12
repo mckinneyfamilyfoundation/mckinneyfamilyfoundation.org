@@ -6,5 +6,5 @@ image: /images/diversity.jpg
 imageAlt: Empowered leaders image
 buttonUrl: /our-work#empowered-leaders-and-communities
 buttonText: Understand why Environmental Justice works
-order: 1
+order: 3
 ---

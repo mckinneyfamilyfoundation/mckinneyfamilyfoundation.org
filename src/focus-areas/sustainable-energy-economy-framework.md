@@ -6,5 +6,5 @@ image: /images/Solar-panels.jpg
 imageAlt: Solar panels image
 buttonUrl: /our-work#sustainable-energy-economy
 buttonText: Learn what conservation is beyond reduce, reuse, and recycle
-order: 3
+order: 1
 ---
