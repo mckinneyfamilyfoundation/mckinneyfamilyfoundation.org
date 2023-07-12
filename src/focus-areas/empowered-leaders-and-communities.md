@@ -5,6 +5,6 @@ text: Ensuring the long-term viability of the environmental nonprofit sector
 image: /images/diversity.jpg
 imageAlt: Empowered leaders image
 buttonUrl: /our-work#empowered-leaders-and-communities
-buttonText: Understand why Environmental Justice works
+buttonText: Discover how we empower communities and leaders
 order: 3
 ---
