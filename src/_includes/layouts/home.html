@@ -1,26 +1,43 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-  {% include "partials/hero.html" %}
+{% include "partials/hero.html" %}
 
-  <article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
-    <div class="flow">
-      {% renderFile "src/content/home/our-mission.md" %}
-      </div>
-    </div>
-    <div class="frame">
-      <img loading="lazy" src="{{ about_image }}" alt="{{ about_imageAlt }}"/>
-    </div>
-  </article>
+<article class="wrapper region border-bottom flex-wrap:wrap-reverse js-fade with-sidebar-right">
+  <div class="flow">
+    {% renderFile "src/content/home/our-mission.md" %}
+  </div>
+  </div>
+  <div class="frame">
+    <img loading="lazy" src="{{ about_image }}" alt="{{ about_imageAlt }}" />
+  </div>
+</article>
 
-  <article class="wrapper border-bottom region js-fade with-sidebar-left">
-    <div class="frame">
-      <img loading="lazy" src="{{ grants_image }}" alt="{{ grants_imageAlt }}"/>
-    </div>
-    <div class="flow">
-      {% renderFile "src/content/home/grants-and-partnerships.md" %}
-      </div>
-    </div>
-  </article>
+<article class="wrapper border-bottom region js-fade with-sidebar-left">
+  <div class="frame">
+    <img loading="lazy" src="{{ grants_image }}" alt="{{ grants_imageAlt }}" />
+  </div>
+  <div class="flow">
+    {% renderFile "src/content/home/grants-and-partnerships.md" %}
+  </div>
+  </div>
+</article>
 
-  {% include "partials/featured-news.html" %}
+<article class="wrapper center region js-fade flow">
+  <div class="center flow">
+    <h2>Showcasing Indiana</h2>
+    <div class="frame"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LQLJDvcJXEs?si=IicRqJ9u0ia70XfB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    
+  </div>
+  
+
+</article>
+
+{% include "partials/featured-news.html" %}
 {% endblock %}
+
+<style>
+ .youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+</style>

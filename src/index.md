@@ -10,4 +10,5 @@ about_image: "/images/poplar.png"
 about_imageAlt: Tulip Poplar Tree
 grants_image: "/images/Cardinal.jpg"
 grants_imageAlt: Indianapolis skyline in the morning
+youtube: true
 ---
