@@ -1,8 +1,8 @@
 ---
 name: Angelica Lopez
 position: Grants Administrative Associate
-image: "/images/headshot-1.jpg"
+image: /images/headshot-1.jpg
 imageAlt: Angelica Lopez placeholder image
 email: angelica@mckinneyfamilyfoundation.org
-number: "(317) 296-3318"
+number: (317) 661-1813
 ---
