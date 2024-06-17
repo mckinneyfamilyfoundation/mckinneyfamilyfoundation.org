@@ -1,8 +1,8 @@
 ---
 name: Stephanie Goodrid Lawson
 position: Executive Director
-image: "/images/sgl-headshot-crop-1.png"
+image: /images/headshot-2023-stephanie.jpg
 imageAlt: Stephanie Goodrid Lawson profile
 email: sgoodridlawson@mckinneyfamilyfoundation.org
-number: "(317) 643-1384"
+number: (317) 643-1384
 ---
