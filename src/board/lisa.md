@@ -1,6 +1,6 @@
 ---
 name: Lisa C. McKinney
-position: Treasurer
+position: Secretary
 image: /images/person-icon.png
 imageAlt: Icon placeholder
 order: 4
