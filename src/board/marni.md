@@ -1,7 +1,7 @@
 ---
 name: Marni McKinney Waterfield
-position: President
+position: Chair and President
 image: /images/person-icon.png
 imageAlt: Placeholder image
-order: 2
+order: 1
 ---
