@@ -1,5 +1,5 @@
 ---
-title: Equitable Climate Change Solutions
+title: Resilient Environmental Solutions
 text: Addressing the nexus of civic engagement, economic conditions, health
   disparities, and environmental outcomes.
 image: /images/sunrise.jpg
