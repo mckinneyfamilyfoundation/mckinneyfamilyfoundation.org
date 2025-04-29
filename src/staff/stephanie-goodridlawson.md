@@ -4,5 +4,5 @@ position: Executive Director
 image: /images/headshot-2023-stephanie.jpg
 imageAlt: Stephanie Goodrid Lawson profile
 email: sgoodridlawson@mckinneyfamilyfoundation.org
-number: (317) 643-1384
+number: " "
 ---
