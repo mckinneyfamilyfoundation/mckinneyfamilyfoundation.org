@@ -1,4 +1,4 @@
-## Equitable Climate Change Solutions
+## Resilient Environmental Solutions
 
 MFF is deliberate in funding inclusive democracy in order to address economic and health disparities and their impacts on environmental outcomes. Inclusive democracy ensures a society of informed voices creating systemic change, particularly centering underrepresented communities. This work amplifies the potential opportunities to improve state and municipal environmental policies in Indiana.
 
