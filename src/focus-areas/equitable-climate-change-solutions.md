@@ -5,6 +5,6 @@ text: Addressing the nexus of civic engagement, economic conditions, health
 image: /images/sunrise.jpg
 imageAlt: Indianapolis skyline
 buttonUrl: /our-work#equitable-climate-change-solutions
-buttonText: Understand why environmental justice works
+buttonText: Understand why more resilient communities thrive
 order: 2
 ---
